@@ -248,7 +248,7 @@
                     ></textarea>
                   </div>
 
-                  <!-- GDPR / POPIA consent -->
+                  <!-- POPIA consent -->
                   <div class="flex items-start gap-3">
                     <input
                       id="consent" v-model="form.consent" type="checkbox"
@@ -259,7 +259,7 @@
                     <label for="consent" class="font-sans text-charcoal-500 text-xs leading-relaxed cursor-pointer">
                       I agree to Zar Media Group processing my information as described in the
                       <a href="/privacy-policy" class="text-gold-600 hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
-                      This form is POPIA and GDPR compliant.
+                      This form is POPIA compliant.
                     </label>
                   </div>
 
@@ -361,7 +361,7 @@
                     <div class="font-sans text-navy-900/50 text-xs uppercase tracking-wider mb-1">Location</div>
                     <div class="font-sans text-navy-900 text-sm">
                       Cape Town, Western Cape, South Africa<br/>
-                      <span class="text-charcoal-400 text-xs">Serving accounting firms across South Africa and globally</span>
+                      <span class="text-charcoal-400 text-xs">Serving accounting firms across South Africa</span>
                     </div>
                   </div>
                 </div>

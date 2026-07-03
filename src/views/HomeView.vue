@@ -3,7 +3,7 @@
 
     <!-- ==================== HERO ==================== -->
     <section
-      class="home-hero relative min-h-screen lg:h-svh lg:max-h-svh lg:box-border flex flex-col justify-center overflow-hidden bg-navy-900 pt-20"
+      class="home-hero relative overflow-hidden bg-navy-900 pt-28 pb-8 lg:min-h-svh lg:max-h-svh lg:flex lg:flex-col lg:justify-center lg:pt-32 lg:pb-6"
       aria-label="Hero"
     >
       <HeroBackground
@@ -18,11 +18,11 @@
         <div class="absolute top-1/3 left-[12%] w-48 h-48 rounded-full bg-gold-500/5 blur-3xl animate-float hidden lg:block"></div>
       </HeroBackground>
 
-      <div class="relative w-full max-w-7xl mx-auto px-6 lg:px-8 py-10 lg:py-6">
-        <div class="grid grid-cols-1 lg:grid-cols-12 lg:items-center gap-8 lg:gap-8">
+      <div class="relative w-full max-w-7xl mx-auto px-6 lg:px-8 py-6 lg:py-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 lg:items-center gap-6 lg:gap-8">
           <div class="hero-content lg:col-span-12 xl:col-span-7 max-w-xl relative z-10 lg:pr-4">
-          <div class="reveal-up">
-            <span class="section-label lg:text-[0.65rem] lg:tracking-[0.18em]">Financial sector digital agency · South Africa · Client portals &amp; admin automation</span>
+          <div class="reveal-up hidden lg:block">
+            <span class="section-label lg:text-[0.65rem] lg:tracking-[0.18em]">POPIA-conscious client portals · Built for regulated SA firms</span>
             <div class="gold-divider lg:mt-3 lg:mb-3"></div>
           </div>
 
@@ -30,17 +30,19 @@
             SEO H1: Primary focus client portals for accountants; firm website managed in the same programme.
             One H1 per page — never duplicated.
           -->
-          <h1 class="font-serif text-display-lg text-white mb-2 lg:mb-3 leading-tight lg:text-[clamp(2rem,3.1vw,3.15rem)] reveal-up" style="transition-delay: 100ms;">
-            Client Portals<br/>
-            <span class="text-gradient">Built &amp; Managed</span><br/>
-            for Accountants.
+          <h1 class="font-serif text-display-lg text-white mb-3 lg:mb-3 leading-tight max-lg:text-[clamp(1.75rem,7.5vw,2.35rem)] lg:text-[clamp(2rem,3.1vw,3.15rem)] reveal-up" style="transition-delay: 100ms;">
+            Stop Paying Senior Staff<br class="hidden sm:inline"/>
+            <span class="text-gradient">to Chase Documents in WhatsApp</span>
           </h1>
 
-          <p class="font-sans text-white/60 text-lg lg:text-base leading-relaxed mb-6 lg:mb-4 max-w-lg reveal-up" style="transition-delay: 200ms;">
-            We design, launch, and run <strong class="text-white/80">branded client portals</strong> on your domain—secure documents, intake, and handoffs to CRM—while we <strong class="text-white/80">keep your firm website managed</strong> in the same stack so prospects and clients meet one coherent experience.
+          <p class="lg:hidden font-sans text-white/60 text-base leading-relaxed mb-5 max-w-lg reveal-up" style="transition-delay: 200ms;">
+            POPIA-conscious portal on your domain—encrypted uploads, audit trail, less admin chasing.
+          </p>
+          <p class="hidden lg:block font-sans text-white/60 text-base leading-relaxed mb-4 max-w-lg reveal-up" style="transition-delay: 200ms;">
+            WhatsApp and email are an admin drain—and a compliance liability. We build and run a <strong class="text-white/80">POPIA-conscious client portal on your domain</strong>: encrypted uploads, access controls, and a full audit trail. Your <strong class="text-white/80">firm website is managed in the same compliant programme</strong>. Less chasing. Defensible records. One stack.
           </p>
 
-          <ul class="font-sans text-white/55 text-sm lg:text-xs space-y-2.5 lg:space-y-1.5 mb-10 lg:mb-5 max-w-lg reveal-up" style="transition-delay: 250ms;" aria-label="What you get">
+          <ul class="hidden lg:block font-sans text-white/55 text-xs space-y-1.5 mb-5 max-w-lg reveal-up" style="transition-delay: 250ms;" aria-label="What you get">
             <li v-for="line in heroQuickWins" :key="line" class="flex items-start gap-2.5">
               <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -50,95 +52,177 @@
           </ul>
 
           <div class="flex flex-col sm:flex-row gap-4 reveal-up" style="transition-delay: 300ms;">
-            <RouterLink to="/contact" class="btn-primary" aria-label="Book a strategy call with Zar Media Group">
-              Book a strategy call
+            <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit for your accounting firm">
+              Get a free compliance audit
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </RouterLink>
-            <RouterLink to="/what-we-do" class="btn-ghost" aria-label="See how we help accounting firms">
-              See Our Approach
+            <RouterLink to="/services/client-portal" class="btn-ghost" aria-label="See the client portal product tour">
+              See the portal tour
             </RouterLink>
           </div>
 
-          <p class="font-sans text-white/35 text-xs sm:text-sm lg:text-xs mt-6 lg:mt-4 max-w-lg reveal-up max-lg:block lg:hidden" style="transition-delay: 350ms;">
-            Prefer the phone?
-            <a href="tel:+27685070088" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">+27&nbsp;68&nbsp;507&nbsp;0088</a>
-            ·
-            <RouterLink to="/contact" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">Message the team</RouterLink>
-          </p>
-
-          <!-- Trust Badges — below fold on desktop to keep hero in one viewport -->
-          <div class="mt-12 pt-12 lg:hidden border-t border-white/10 reveal-up" style="transition-delay: 400ms;">
-            <p class="font-sans text-white/30 text-xs tracking-wider uppercase mb-4">Trusted by financial professionals across South Africa</p>
-            <div class="flex items-center gap-6 flex-wrap">
+          <div class="hidden lg:block mt-8 pt-8 border-t border-white/10 reveal-up" style="transition-delay: 350ms;">
+            <p class="font-sans text-white/30 text-xs tracking-wider uppercase mb-4">Every build reviewed for POPIA, SA web accessibility &amp; FSCA requirements</p>
+            <div class="flex items-center gap-4 sm:gap-6 flex-wrap">
               <div v-for="badge in trustBadges" :key="badge" class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-gold-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="w-4 h-4 text-gold-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
                 <span class="font-sans text-white/50 text-xs">{{ badge }}</span>
               </div>
             </div>
           </div>
+
           </div>
         </div>
       </div>
 
-      <!-- Scroll indicator -->
-      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
         <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
         <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
       </div>
     </section>
 
-    <!-- ==================== PLATFORM VIDEO ==================== -->
-    <section class="section-padding bg-navy-950 border-y border-white/5" aria-labelledby="platform-video-heading">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div class="reveal-up">
-            <span class="section-label">Platform overview</span>
-            <h2 id="platform-video-heading" class="font-serif text-display-md text-white mt-4 mb-6">
-              Client portals &amp; document workflows<br/>
-              <span class="text-gradient">in one managed stack</span>
-            </h2>
-            <div class="gold-divider mb-6"></div>
-            <p class="font-sans text-white/60 text-base lg:text-lg leading-relaxed mb-6 max-w-lg">
-              See how we connect secure client intake, document vaults, and your firm website—built for South African accounting, tax, and bookkeeping practices.
-            </p>
-            <ul class="font-sans text-white/55 text-sm space-y-2 mb-8 max-w-lg" aria-label="Platform highlights">
-              <li v-for="line in platformVideoPoints" :key="line" class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                <span>{{ line }}</span>
-              </li>
-            </ul>
-            <RouterLink to="/services/client-portal" class="btn-primary" aria-label="View the client portal and document vault tour">
-              Explore the portal
+    <!-- ==================== THE OFFER ==================== -->
+    <section aria-labelledby="offer-heading">
+      <div class="relative py-12 md:py-20 lg:py-24 bg-navy-950 border-y border-white/5 overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none opacity-[0.02]" aria-hidden="true" style="background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px); background-size: 80px 80px;"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 lg:items-start mb-10 lg:mb-14">
+            <div class="reveal-up order-2 lg:order-1 lg:pt-2">
+              <span class="section-label">The offer</span>
+              <h2 id="offer-heading" class="font-serif text-display-md text-white mt-4 mb-5 max-lg:text-[clamp(1.5rem,6vw,2rem)] leading-tight">
+                Your portal. Your domain.<br/>
+                <span class="text-gradient">One compliant programme.</span>
+              </h2>
+              <div class="w-16 h-px bg-gold-500/50 mb-5"></div>
+              <p class="lg:hidden font-sans text-white/60 text-base leading-relaxed mb-6 max-w-md">
+                Encrypted document vault, firm website, and POPIA review—managed as one stack.
+              </p>
+              <p class="hidden lg:block font-sans text-white/60 text-lg leading-relaxed mb-8 max-w-md">
+                Clients upload to a branded vault on your domain. Your firm website, integrations, and POPIA review run in the same programme—we host, secure, and improve it monthly.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit">
+                  Get a free audit
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </RouterLink>
+                <RouterLink to="/services/client-portal" class="btn-ghost" aria-label="View the client portal and document vault tour">
+                  See the portal tour
+                </RouterLink>
+              </div>
+            </div>
+
+            <div class="order-1 lg:order-2 w-full max-w-lg mx-auto lg:max-w-none lg:ml-auto reveal-right">
+              <figure class="relative">
+                <div class="absolute -top-3 -right-3 w-full h-full border border-gold-500/25 pointer-events-none hidden lg:block" aria-hidden="true"></div>
+                <div class="relative border border-white/10 bg-navy-900 shadow-card-hover overflow-hidden aspect-video">
+                  <video
+                    ref="platformVideo"
+                    class="absolute inset-0 w-full h-full object-cover object-center"
+                    poster="/hero-home-video-poster.png"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    aria-label="Overview of Zar Media Group POPIA-conscious client portal for accounting firms"
+                  >
+                    <source src="/hero-home-cinematic.mp4" type="video/mp4" />
+                  </video>
+                  <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" aria-hidden="true"></div>
+                  <div class="absolute top-0 right-0 w-5 h-5 bg-gold-500" aria-hidden="true"></div>
+                  <div class="absolute bottom-0 left-0 w-5 h-5 border-2 border-gold-500" aria-hidden="true"></div>
+                </div>
+              </figure>
+
+              <div class="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-white/10">
+                <IntegrationLogoStrip
+                  :tools="homeFeaturedTools"
+                  label="Connects to the tools you already run"
+                  variant="dark"
+                  compact
+                  show-link
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5 stagger-children">
+            <article
+              v-for="(feature, i) in offerFeatures"
+              :key="feature.title"
+              class="reveal-up group p-5 lg:p-6 border border-white/10 bg-white/[0.03] hover:border-gold-500/40 hover:bg-white/[0.05] transition-all duration-300"
+              :style="{ transitionDelay: (i * 80) + 'ms' }"
+            >
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-9 h-9 flex-shrink-0 flex items-center justify-center border border-gold-500/30 bg-gold-500/10 group-hover:bg-gold-500/20 transition-colors" aria-hidden="true">
+                  <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="feature.icon"></svg>
+                </div>
+                <h3 class="font-sans font-semibold text-white text-sm tracking-wide">{{ feature.title }}</h3>
+              </div>
+              <p class="hidden sm:block font-sans text-white/45 text-sm leading-relaxed">{{ feature.desc }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-12 md:py-20 lg:py-24 bg-cream border-b border-navy-900/8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 lg:mb-12 reveal-up">
+            <div class="max-w-xl">
+              <span class="section-label">Four programmes</span>
+              <h2 class="font-serif text-display-sm text-navy-900 mt-4 leading-tight">
+                <span class="lg:hidden">Portal, site, integrations &amp; compliance</span>
+                <span class="hidden lg:inline">Portal, website, integrations &amp; compliance—one managed stack</span>
+              </h2>
+            </div>
+            <RouterLink to="/services" class="btn-text self-start lg:self-auto shrink-0" aria-label="View all Zar Media Group services">
+              All services
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </RouterLink>
           </div>
 
-          <figure class="relative reveal-right border border-white/10 bg-navy-900 shadow-card-hover overflow-hidden aspect-video lg:aspect-[16/10]">
-            <video
-              ref="platformVideo"
-              class="absolute inset-0 w-full h-full object-cover object-center"
-              poster="/hero-home-video-poster.png"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              aria-label="Overview of Zar Media Group client portal platform for accounting firms"
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 stagger-children">
+            <div
+              v-for="(service, i) in services"
+              :key="service.title"
+              class="reveal-up group cursor-pointer"
+              :style="{ transitionDelay: (i * 100) + 'ms' }"
             >
-              <source src="/hero-home-cinematic.mp4" type="video/mp4" />
-            </video>
-            <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-navy-950/40 via-transparent to-navy-950/15" aria-hidden="true"></div>
-            <div class="absolute top-0 right-0 w-5 h-5 bg-gold-500" aria-hidden="true"></div>
-            <div class="absolute bottom-0 left-0 w-5 h-5 border-2 border-gold-500" aria-hidden="true"></div>
-          </figure>
+              <RouterLink :to="service.link" class="block h-full" :aria-label="`${service.title} — ${service.description}`">
+                <article class="relative h-full bg-white border border-navy-900/8 p-6 lg:p-8 transition-all duration-500 hover:border-gold-500/50 hover:shadow-card-hover group-hover:-translate-y-2 overflow-hidden">
+                  <div class="absolute top-6 right-6 font-serif text-6xl font-bold text-navy-900/10 group-hover:text-gold-500/10 transition-colors" aria-hidden="true">
+                    {{ String(i + 1).padStart(2, '0') }}
+                  </div>
+                  <div class="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center border border-gold-500/20 bg-gold-500/5 mb-4 lg:mb-8 group-hover:bg-gold-500 group-hover:border-gold-500 transition-all duration-300" aria-hidden="true">
+                    <svg class="w-6 h-6 text-gold-900 group-hover:text-navy-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="service.icon"></svg>
+                  </div>
+                  <h3 class="font-serif text-lg lg:text-xl text-navy-900 mb-2 lg:mb-4 group-hover:text-navy-900 transition-colors">{{ service.title }}</h3>
+                  <p class="hidden lg:block font-sans text-charcoal-500 text-sm leading-relaxed mb-6">{{ service.description }}</p>
+                  <div class="hidden lg:flex flex-wrap gap-2 mb-6">
+                    <span v-for="tag in service.tags" :key="tag" class="font-sans text-xs text-gold-700 bg-gold-500/10 px-2.5 py-1 border border-gold-500/20">
+                      {{ tag }}
+                    </span>
+                  </div>
+                  <div class="btn-text text-xs" aria-hidden="true">
+                    Learn More
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                  </div>
+                  <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gold-500 group-hover:w-full transition-all duration-500" aria-hidden="true"></div>
+                </article>
+              </RouterLink>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -146,7 +230,7 @@
     <SeoRelatedGuides :slugs="homeSeo.relatedGuides" />
 
     <!-- ==================== STATS ==================== -->
-    <section class="bg-navy-950 py-16 lg:py-24 border-y border-white/5" aria-label="Key statistics">
+    <section class="bg-navy-950 py-10 lg:py-24 border-y border-white/5" aria-label="Key statistics">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x divide-white/10">
           <StatCounter
@@ -162,107 +246,55 @@
       </div>
     </section>
 
-    <!-- ==================== SERVICES PREVIEW ==================== -->
-    <section class="section-padding bg-cream" aria-labelledby="services-heading">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="max-w-2xl mb-16">
-          <span class="section-label reveal-up">What We Offer — Serving Accountants Across South Africa</span>
-          <h2 id="services-heading" class="font-serif text-display-md text-navy-900 mb-6 reveal-up" style="transition-delay: 100ms;">
-            Specialised Services for<br/><em>Financial Professionals</em>
-          </h2>
-          <div class="gold-divider reveal-up" style="transition-delay: 150ms;"></div>
-          <p class="font-sans text-charcoal-600 text-lg leading-relaxed reveal-up" style="transition-delay: 200ms;">
-            Every service we offer is purpose-built for the unique regulatory, trust, and conversion requirements of <strong>accounting firms, tax services, financial advisors, and bookkeeping professionals</strong> — helping you reduce admin and win more clients.
-            <RouterLink to="/services" class="text-navy-900 font-semibold hover:underline ml-1">View all services</RouterLink>.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
-          <div
-            v-for="(service, i) in services"
-            :key="service.title"
-            class="reveal-up group cursor-pointer"
-            :style="{ transitionDelay: (i * 100) + 'ms' }"
-          >
-            <RouterLink :to="service.link" class="block h-full" :aria-label="`${service.title} — ${service.description}`">
-              <article class="relative h-full bg-white border border-navy-900/8 p-8 transition-all duration-500 hover:border-gold-500/50 hover:shadow-card-hover group-hover:-translate-y-2 overflow-hidden">
-                <div class="absolute top-6 right-6 font-serif text-6xl font-bold text-navy-900/10 group-hover:text-gold-500/10 transition-colors" aria-hidden="true">
-                  {{ String(i + 1).padStart(2, '0') }}
-                </div>
-                <div class="w-14 h-14 flex items-center justify-center border border-gold-500/20 bg-gold-500/5 mb-8 group-hover:bg-gold-500 group-hover:border-gold-500 transition-all duration-300" aria-hidden="true">
-                  <svg class="w-6 h-6 text-gold-900 group-hover:text-navy-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="service.icon"></svg>
-                </div>
-                <h3 class="font-serif text-xl text-navy-900 mb-4 group-hover:text-navy-900 transition-colors">{{ service.title }}</h3>
-                <p class="font-sans text-charcoal-500 text-sm leading-relaxed mb-6">{{ service.description }}</p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                  <span v-for="tag in service.tags" :key="tag" class="font-sans text-xs text-gold-700 bg-gold-500/10 px-2.5 py-1 border border-gold-500/20">
-                    {{ tag }}
-                  </span>
-                </div>
-                <div class="btn-text text-xs" aria-hidden="true">
-                  Learn More
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                  </svg>
-                </div>
-                <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gold-500 group-hover:w-full transition-all duration-500" aria-hidden="true"></div>
-              </article>
-            </RouterLink>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ==================== VALUE PROPOSITION ==================== -->
-    <section class="section-padding bg-navy-900 relative overflow-hidden" aria-labelledby="outcomes-heading">
+    <section class="py-10 md:py-20 lg:py-32 bg-navy-900 relative overflow-hidden" aria-labelledby="outcomes-heading">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px); background-size: 80px 80px;"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
           <div>
-            <span class="section-label reveal-up">Our Approach</span>
-            <h2 id="outcomes-heading" class="font-serif text-display-md text-white mb-6 reveal-up" style="transition-delay: 100ms;">
-              Reducing Admin for<br/><em class="text-gold-400">Accounting Firms</em>
+            <span class="section-label reveal-up hidden lg:inline">Why regulated firms switch</span>
+            <h2 id="outcomes-heading" class="font-serif text-display-md text-white mb-4 lg:mb-6 reveal-up max-lg:text-[clamp(1.5rem,6vw,2rem)]" style="transition-delay: 100ms;">
+              Admin hours back.<br/><em class="text-gold-400">Compliance trail intact.</em>
             </h2>
-            <div class="gold-divider reveal-up" style="transition-delay: 150ms;"></div>
-            <p class="font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
-              Most agencies build websites. We build <strong class="text-white/80">digital business systems</strong> that automate client intake, sync with your accounting software, and comply with financial sector regulations — so you spend less time on admin and more time on billable work.
+            <div class="gold-divider reveal-up hidden lg:block" style="transition-delay: 150ms;"></div>
+            <p class="lg:hidden font-sans text-white/60 text-base leading-relaxed mb-6 reveal-up" style="transition-delay: 200ms;">
+              POPIA-conscious portal on your domain—8–15 admin hours back per week, with records you can defend.
+            </p>
+            <p class="hidden lg:block font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
+              You cannot defend a tax file built from WhatsApp forwards. We move documents, signatures, and client status into a <strong class="text-white/80">POPIA-conscious portal on your domain</strong>—encrypted storage, role-based access, full audit log—wired to Xero, HubSpot, and DocuSign. Typical result: <strong class="text-white/80">8–15 admin hours back per week</strong>, with records you can stand behind.
             </p>
 
-            <div class="space-y-6 stagger-children">
+            <div class="space-y-4 lg:space-y-6 stagger-children">
               <div
                 v-for="(point, i) in valuePoints"
                 :key="point.title"
-                class="flex items-start gap-5 reveal-up"
+                class="flex items-start gap-4 lg:gap-5 reveal-up"
                 :style="{ transitionDelay: (300 + i * 100) + 'ms' }"
               >
                 <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center border border-gold-500/40 bg-gold-500/10" aria-hidden="true">
                   <svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="point.icon"></svg>
                 </div>
                 <div>
-                  <h3 class="font-sans font-semibold text-white text-sm tracking-wide mb-1">{{ point.title }}</h3>
-                  <p class="font-sans text-white/50 text-sm leading-relaxed">{{ point.desc }}</p>
+                  <h3 class="font-sans font-semibold text-white text-sm tracking-wide mb-0 lg:mb-1">{{ point.title }}</h3>
+                  <p class="hidden lg:block font-sans text-white/50 text-sm leading-relaxed">{{ point.desc }}</p>
                 </div>
               </div>
             </div>
 
             <div class="mt-10 flex flex-wrap gap-4 reveal-up" style="transition-delay: 700ms;">
-              <RouterLink to="/contact" class="btn-primary" aria-label="Book a call about reducing admin at your accounting firm">
-                Book a fit call
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                </svg>
+              <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit">
+                Book my free audit
               </RouterLink>
-              <RouterLink to="/what-we-do" class="btn-secondary" aria-label="Learn about our full approach to accounting firm websites">
-                Our Full Approach
+              <RouterLink to="/services/compliance-trust" class="btn-secondary" aria-label="Read about POPIA and compliance-first website architecture">
+                Compliance approach
               </RouterLink>
             </div>
           </div>
 
-          <!-- Process Steps -->
-          <div class="space-y-4">
+          <div class="hidden lg:block space-y-4">
             <div
               v-for="(step, i) in processSteps"
               :key="step.title"
@@ -290,12 +322,13 @@
     </section>
 
     <!-- ==================== TESTIMONIALS ==================== -->
-    <section class="section-padding bg-cream" aria-labelledby="testimonials-heading">
+    <section class="py-10 md:py-20 lg:py-32 bg-cream" aria-labelledby="testimonials-heading">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-          <span class="section-label reveal-up">Client Results</span>
-          <h2 id="testimonials-heading" class="font-serif text-display-md text-navy-900 mb-4 reveal-up" style="transition-delay: 100ms;">
-            What Financial Leaders Say
+        <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-16">
+          <span class="section-label reveal-up hidden lg:inline">Proof</span>
+          <h2 id="testimonials-heading" class="font-serif text-display-md text-navy-900 mb-4 reveal-up max-lg:text-[clamp(1.5rem,6vw,2rem)]" style="transition-delay: 100ms;">
+            <span class="lg:hidden">Partners who made the switch</span>
+            <span class="hidden lg:inline">Compliant intake. Less admin. Partners who made the switch.</span>
           </h2>
           <div class="gold-divider-center reveal-up" style="transition-delay: 150ms;"></div>
         </div>
@@ -307,7 +340,7 @@
             class="reveal-up"
             :style="{ transitionDelay: (i * 100) + 'ms' }"
           >
-            <div class="h-full bg-white border border-navy-900/8 p-8 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+            <div class="h-full bg-white border border-navy-900/8 p-6 lg:p-8 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
               <div class="flex gap-1 mb-6" aria-label="5 out of 5 stars" role="img">
                 <svg v-for="n in 5" :key="n" class="w-4 h-4 text-gold-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
@@ -336,9 +369,9 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div class="reveal-up">
-            <span class="section-label">Industry Focus — Serving South Africa &amp; Beyond</span>
+            <span class="section-label">Who this is for</span>
             <h2 id="sectors-heading" class="font-serif text-display-sm text-white mb-4">
-              Built for Your Sector.<br/>Not Adapted for It.
+              Accounting. Tax. Advisory. Bookkeeping.<br/>All regulated. All require defensible records.
             </h2>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -358,13 +391,26 @@
       </div>
     </section>
 
+    <!-- ==================== INTEGRATIONS ==================== -->
+    <section class="py-10 lg:py-16 bg-navy-950 border-y border-white/5" aria-label="Accounting software and CRM integrations">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 reveal-up">
+        <IntegrationLogoStrip
+          :tools="homeFeaturedTools"
+          label="Compliant integrations—Xero, HubSpot, DocuSign, and your existing stack"
+          variant="dark"
+          show-link
+          aria-label="Accounting software, CRM, and practice management integrations"
+        />
+      </div>
+    </section>
+
     <!-- ==================== FAQ ==================== -->
-    <section class="section-padding bg-cream" aria-labelledby="faq-heading">
+    <section class="py-10 md:py-20 lg:py-32 bg-cream" aria-labelledby="faq-heading">
       <div class="max-w-3xl mx-auto px-6 lg:px-8">
-        <div class="text-center mb-14 reveal-up">
-          <span class="section-label">Common Questions</span>
+        <div class="text-center mb-10 lg:mb-14 reveal-up">
+          <span class="section-label">Questions before you book</span>
           <h2 id="faq-heading" class="font-serif text-display-md text-navy-900 mb-4">
-            Frequently Asked Questions
+            Straight answers—no agency fluff
           </h2>
           <div class="gold-divider-center"></div>
         </div>
@@ -409,23 +455,27 @@
     </section>
 
     <!-- ==================== CTA SECTION ==================== -->
-    <section class="section-padding bg-navy-900 relative overflow-hidden" aria-labelledby="cta-heading">
+    <section class="py-10 md:py-20 lg:py-32 bg-navy-900 relative overflow-hidden" aria-labelledby="cta-heading">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-gold-500/20 to-transparent"></div>
       </div>
 
       <div class="relative max-w-3xl mx-auto px-6 lg:px-8 text-center">
-        <span class="section-label reveal-up">Ready to Reduce Admin?</span>
-        <h2 id="cta-heading" class="font-serif text-display-md text-white mb-6 reveal-up" style="transition-delay: 100ms;">
-          Get a Free Website Audit<br/><em class="text-gold-400">for Your Accounting Firm</em>
+        <span class="section-label reveal-up hidden lg:inline">Your next step</span>
+        <h2 id="cta-heading" class="font-serif text-display-md text-white mb-4 lg:mb-6 reveal-up max-lg:text-[clamp(1.5rem,6vw,2rem)]" style="transition-delay: 100ms;">
+          <span class="lg:hidden">Free compliance &amp; intake audit</span>
+          <span class="hidden lg:inline">Free compliance &amp; intake audit—<br/><em class="text-gold-400">see where your firm stands on POPIA</em></span>
         </h2>
-        <div class="gold-divider-center reveal-up" style="transition-delay: 150ms;"></div>
-        <p class="font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
-          Join 127+ financial professionals who've transformed their digital presence with Zar Media Group. We'll audit your current site and show you exactly how to reduce admin and attract more clients — free, no obligation.
+        <div class="gold-divider-center reveal-up hidden lg:block" style="transition-delay: 150ms;"></div>
+        <p class="lg:hidden font-sans text-white/60 text-base leading-relaxed mb-8 reveal-up" style="transition-delay: 200ms;">
+          30-minute call—map your intake gaps and outline a POPIA-conscious portal. No obligation.
+        </p>
+        <p class="hidden lg:block font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
+          In 30 minutes we map where client documents enter your firm today (email, WhatsApp, shared drives), flag the compliance gaps, estimate the admin cost, and outline a POPIA-conscious portal on your domain. <strong class="text-white/80">127+ regulated practices</strong> trust us with their client intake. No obligation.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center reveal-up" style="transition-delay: 300ms;">
-          <RouterLink to="/contact" class="btn-primary" aria-label="Schedule a free consultation for your accounting firm website">
-            Get a Free Audit
+          <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit">
+            Book my free audit
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
@@ -448,6 +498,8 @@ import { getPageSeo } from '@/data/seo-pages'
 import StatCounter from '@/components/ui/StatCounter.vue'
 import HeroBackground from '@/components/ui/HeroBackground.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
+import IntegrationLogoStrip from '@/components/ui/IntegrationLogoStrip.vue'
+import { HOME_FEATURED_TOOLS } from '@/data/integration-tools'
 
 const { initReveal } = useScrollReveal()
 const openFaq = ref(null)
@@ -477,29 +529,29 @@ onUnmounted(() => {
 // ── SEO ──────────────────────────────────────────────────────────────────────
 const faqs = [
   {
-    question: 'How does Zar Media Group help accountants reduce admin?',
+    question: 'Is this POPIA-compliant—and what does that actually mean for my firm?',
     answer:
-      'We build and manage compliant websites integrated with your CRM, accounting software, and client portals — automating repetitive tasks like appointment booking, document collection, and client onboarding. Our clients typically save 8–15 hours of admin per week.',
+      'Yes. Every portal we build is reviewed for POPIA-conscious data handling before launch: where client records are stored, who can access them, how uploads are encrypted, and what audit trail exists. WhatsApp forwards and shared-drive links don\'t give you that. We also align with South African web accessibility standards, FSCA and FAIS requirements where applicable, and SAICA conduct standards. Compliance is the foundation—not a checkbox after go-live.',
   },
   {
-    question: 'What is Website as a Service (WaaS) for financial firms?',
+    question: 'What exactly do I get when I work with Zar Media Group?',
     answer:
-      'Instead of a one-time website build that decays over time, WaaS is a monthly subscription that gives you a fully managed, continuously optimised digital presence. We handle design, development, hosting, updates, compliance, SEO, and CRO — so you never have to worry about your website again.',
+      'A POPIA-conscious client portal on your domain (encrypted uploads, compliance calendar, document audit trail), your firm website managed in the same programme, and integrations to Xero, QuickBooks, HubSpot, DocuSign, and your practice stack. We host it, secure it, review it for compliance, and improve it monthly. You don\'t hire a dev team.',
   },
   {
-    question: 'What is the best client portal for small accounting firms?',
+    question: 'How much admin can a compliant portal save my firm?',
     answer:
-      'The best client portal depends on your existing tech stack. We integrate with and build custom client portals that connect to Xero, QuickBooks, HubSpot, and DocuSign. Our portals allow clients to securely upload documents, sign agreements, book appointments, and track their work status — all from your branded website.',
+      'Firms we work with typically reclaim 8–15 hours per week previously lost to chasing documents, re-keying data, and answering "did you get my file?" calls—while keeping a defensible record of every upload. We map the exact number in your free audit.',
   },
   {
-    question: 'Do you build websites that comply with financial sector regulations?',
+    question: 'Why not just use Karbon, TaxDome, or another off-the-shelf portal?',
     answer:
-      'Yes — compliance is the foundation of everything we build, not an afterthought. Every website we create for financial professionals is reviewed against relevant regulations including GDPR, WCAG 2.1 AA accessibility standards, and local South African financial sector requirements.',
+      'Off-the-shelf tools work—but clients log into their platform, not yours, and compliance configuration varies. We build on your domain with POPIA-conscious architecture from day one, wired to your CRM and accounting software. You own the asset with records you can stand behind.',
   },
   {
-    question: 'Do you serve accounting firms outside South Africa?',
+    question: 'What happens on the free audit call?',
     answer:
-      'Yes. While we are headquartered in South Africa, we serve financial professionals globally, including in the US, UK, and Australia. Our compliance frameworks cover GDPR, CCPA, SEC/FINRA guidelines, and local South African regulations.',
+      'In 30 minutes we walk through where documents enter your firm today, flag POPIA and intake compliance gaps, estimate admin hours lost, and outline what a portal on your domain would look like—including security, access controls, and timeline. No obligation.',
   },
 ]
 
@@ -511,13 +563,13 @@ useSeoMeta({
   keywords: homeSeo.keywords,
   canonical: homeSeo.canonical,
   ogImage: '/hero-home-video-poster.png',
-  ogImageAlt: 'Cinematic hero showing secure client portal workflows for South African accounting firms — Zar Media Group',
+  ogImageAlt: 'POPIA-conscious client portal on your domain for South African accounting firms — compliant document intake by Zar Media Group',
   schemas: [
     SCHEMAS.localBusiness(),
     SCHEMAS.faqPage(faqs),
     SCHEMAS.videoObject({
-      name: 'Client Portals Built & Managed for Accountants | Zar Media Group',
-      description: 'Cinematic overview of Zar Media Group\'s client portal and document vault platform for South African accounting, tax, and bookkeeping firms.',
+      name: 'POPIA-Conscious Client Portal on Your Domain | Zar Media Group',
+      description: 'See how South African accounting firms run compliant client intake, encrypted document vaults, and POPIA-conscious workflows from one branded portal.',
       contentUrl: '/hero-home-cinematic.mp4',
       thumbnailUrl: '/hero-home-video-poster.png',
     }),
@@ -525,111 +577,117 @@ useSeoMeta({
 })
 
 // ── Data ─────────────────────────────────────────────────────────────────────
-const trustBadges = ['GDPR Compliant', 'WCAG 2.1 AA', 'Compliance-First', 'SA Financial Sector']
+const homeFeaturedTools = HOME_FEATURED_TOOLS
+
+const trustBadges = ['POPIA-Conscious', 'SA Accessibility', 'Encrypted Storage', 'Full Audit Trail']
 
 const heroQuickWins = [
-  'Branded client portals with secure upload, checklists, and reminders on your domain',
-  'Portal-led workflows to CRM, practice tools, and e-sign—your firm site stays in sync',
-  'Ongoing management: portal uptime, compliance, speed, and CRO without an in-house dev team',
+  'POPIA-conscious hosting, access controls, and document audit trail—built in, not bolted on',
+  'Branded portal on your domain; clients upload once, your team works one compliant queue',
+  'Integrations to Xero, HubSpot, and DocuSign—we host, secure, and review monthly',
 ]
 
-const platformVideoPoints = [
-  'Branded portals on your domain — not a generic SaaS login',
-  'Document vault with clear statuses for your team and clients',
-  'POPIA-conscious intake built for SA accounting firms',
+const offerFeatures = [
+  {
+    title: 'Document vault',
+    desc: 'Encrypted uploads with a full audit trail—who uploaded, when, who accessed.',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>',
+  },
+  {
+    title: 'Compliance calendar',
+    desc: 'PAYE and VAT reminders so tax packs arrive before deadline panic.',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>',
+  },
+  {
+    title: 'POPIA-conscious hosting',
+    desc: 'Role-based access on your domain—built for SA accounting and tax firms.',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
+  },
 ]
 
 const stats = [
-  { value: 127, label: 'Financial Clients Served', prefix: '', suffix: '+' },
-  { value: 340, label: 'Average Lead Increase', prefix: '', suffix: '%' },
-  { value: 98, label: 'Client Retention Rate', prefix: '', suffix: '%' },
-  { value: 8, label: 'Years of Excellence', prefix: '', suffix: '+' },
+  { value: 127, label: 'Regulated Practices Served', prefix: '', suffix: '+' },
+  { value: 100, label: 'Compliance Review Before Launch', prefix: '', suffix: '%' },
+  { value: 15, label: 'Admin Hours Saved Per Week', prefix: 'Up to ', suffix: '' },
+  { value: 8, label: 'Years in Financial Sector Digital', prefix: '', suffix: '+' },
 ]
 
 const services = [
   {
-    title: 'Client Portals & CRM',
+    title: 'Client Portal & CRM',
     description:
-      'Client-facing accounting portals and CRM-connected intake: secure document exchange, compliance portal workflows, and integrations with HubSpot, Xero, and DocuSign.',
-    link: '/services/accounting-portals-crm',
-    tags: ['Accounting Portal', 'Client-Facing CRM', 'POPIA-aware'],
+      'POPIA-conscious portal on your domain—encrypted document vault, compliance calendar, audit trail, and CRM-connected intake. Defensible records. Clients know where to send files.',
+    link: '/services/client-portal',
+    tags: ['POPIA-Conscious', 'Audit Trail', 'Your Domain'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>',
   },
   {
     title: 'Website as a Service',
     description:
-      'A fully managed, continuously optimised accounting firm website. No one-time builds — a digital asset that grows your practice every month.',
+      'Your public firm site—managed, fast, built to South African web accessibility standards, and kept in sync with your compliant portal. No one-time build that decays into a compliance risk.',
     link: '/services/website-as-a-service',
-    tags: ['Managed', 'Optimised', 'Compliant'],
+    tags: ['SA Accessibility', 'Managed', 'Always Current'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>',
   },
   {
     title: 'Workflow Integration',
     description:
-      'Connect your website to your CRM, accounting software, and client portals. Zero friction — from first click to engaged client.',
+      'Connect compliant portal intake to Xero, QuickBooks, HubSpot, and DocuSign—data flows once, with a traceable handoff. From enquiry to signed engagement letter, auditable.',
     link: '/services/workflow-integration',
-    tags: ['CRM Integration', 'Xero/QuickBooks', 'Automated'],
+    tags: ['Traceable Handoffs', 'CRM Sync', 'Zero Re-keying'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>',
   },
   {
     title: 'Compliance & Trust',
     description:
-      'Purpose-built for regulated industries. Every pixel complies with financial sector standards and builds the trust clients expect.',
+      'POPIA review, South African web accessibility standards, encrypted storage, and FSCA sign-off on every build. Because a compliance failure costs more than any website ever will.',
     link: '/services/compliance-trust',
-    tags: ['GDPR', 'WCAG 2.1 AA', 'SA Regulation'],
+    tags: ['POPIA Review', 'SA Accessibility', 'FSCA Sign-off'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
-  },
-  {
-    title: 'Client Portal & Document Vault',
-    description:
-      'Product tour: client dashboard, document vault, compliance calendar, notifications, and firm admin console—on your domain.',
-    link: '/services/client-portal',
-    tags: ['Document Vault', 'POPIA-aware', 'Admin tour'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h12a2 2 0 012 2v8a2 2 0 01-2 2H5z"/>',
   },
 ]
 
 const valuePoints = [
   {
-    title: 'Financial Sector Exclusive',
-    desc: 'We only build websites for accountants and financial professionals. Deep specialisation means better outcomes.',
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>',
-  },
-  {
-    title: 'Compliance-First Architecture',
-    desc: 'Every accounting firm website we build starts with your regulatory requirements — not design preferences.',
+    title: 'Compliance before design',
+    desc: 'POPIA, South African web accessibility standards, and FSCA/SAICA review happen first—not as a bolt-on after launch when the liability already exists.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
   },
   {
-    title: 'Admin Reduction Focus',
-    desc: 'We track admin hours saved, not vanity metrics. Success means your team spends more time on billable work.',
+    title: 'We only work with regulated firms',
+    desc: 'No retail brands. Every workflow, encryption standard, and access control is built for accountants handling confidential financial records.',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>',
+  },
+  {
+    title: 'Admin hours back—with records you can defend',
+    desc: 'We track documents collected without chasing, intake completed without re-keying, and hours returned to billable work—all with a full audit trail.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>',
   },
 ]
 
 const processSteps = [
-  { title: 'Discovery & Strategy', desc: 'Deep-dive into your firm, clients, and competitive landscape to identify digital opportunities.' },
-  { title: 'Compliance Review', desc: 'Audit South African and international regulatory requirements for your digital presence.' },
-  { title: 'Design & Architecture', desc: 'Build a premium accounting firm website that converts prospects and inspires trust.' },
-  { title: 'Integration & Launch', desc: 'Connect your website to your CRM, Xero/QuickBooks, and workflows, then launch.' },
-  { title: 'Optimise & Grow', desc: 'Continuous monitoring, A/B testing, and admin automation improvements every month.' },
+  { title: 'Free audit — intake & compliance gaps', desc: 'We trace where documents enter your firm today and flag POPIA, accessibility, and admin risks before proposing anything.' },
+  { title: 'Compliance review & architecture', desc: 'POPIA-conscious data handling, role-based access, encryption, and South African web accessibility standards scoped before a single page is designed.' },
+  { title: 'Portal & site build', desc: 'Your compliant portal on your domain, firm website in sync, integrations wired to your existing stack.' },
+  { title: 'Launch with audit trail', desc: 'Clients get one secure place to upload. Your team gets one queue—with who, what, when, logged.' },
+  { title: 'Managed, secured & reviewed monthly', desc: 'We host, patch, speed-test, and re-check compliance as regulations and your practice evolve.' },
 ]
 
 const testimonials = [
   {
-    quote: 'Zar Media Group transformed our online presence completely. We saw a 340% increase in qualified leads within the first quarter. They understand the financial sector like no other agency in South Africa.',
+    quote: 'We came for the admin relief—half a day a week lost to chasing tax packs by email. We stayed because the POPIA audit trail finally gave us defensible records. Document collection is now a checklist clients follow, not a compliance gamble.',
     author: 'Michael Chen, CA(SA)',
     role: 'Managing Partner, Chen & Associates',
     initials: 'MC',
   },
   {
-    quote: 'Finally an agency that speaks our language. They knew our compliance requirements before we even mentioned them. Our new site has become our best business development tool.',
+    quote: 'They flagged our WhatsApp intake as a POPIA risk in the first call—then showed us exactly what a compliant portal on our domain would fix. No jargon, no hard sell. Our clients upload securely; we have records we can stand behind.',
     author: 'Sarah Johnson',
     role: 'CEO, Pinnacle Tax Advisory',
     initials: 'SJ',
   },
   {
-    quote: 'The admin reduction alone paid for the service. Our client intake is now fully automated — from first enquiry to signed engagement letter, without any manual steps.',
+    quote: 'The admin reduction paid for the service before onboarding finished. Enquiry to signed engagement letter—automated and auditable. I wish we\'d moved off email intake two seasons ago.',
     author: 'David Martinez',
     role: 'Partner, Martinez Financial Group',
     initials: 'DM',

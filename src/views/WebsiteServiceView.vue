@@ -349,7 +349,7 @@ const benefits = [
   },
   {
     title: 'Compliance-Ready Architecture',
-    description: 'Every accounting firm website we manage is reviewed against GDPR, POPIA, and FSCA requirements — protecting your firm and your clients.',
+    description: 'Every accounting firm website we manage is reviewed against POPIA, FSCA, and FAIS requirements — protecting your firm and your clients.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
   },
   {
@@ -382,8 +382,8 @@ const featureGroups = [
   {
     category: 'Compliance & Security',
     items: [
-      'GDPR and POPIA-compliant data collection forms',
-      'WCAG 2.1 AA accessibility compliance',
+      'POPIA-compliant data collection forms',
+      'South African web accessibility standards',
       'Monthly compliance monitoring and audit reports',
       'SSL, DDoS protection, and daily backups',
     ],

@@ -243,10 +243,9 @@ export const SCHEMAS = {
         },
       ],
       priceRange: '$$',
-      currenciesAccepted: 'ZAR, USD',
+      currenciesAccepted: 'ZAR',
       areaServed: [
         { '@type': 'Country', name: 'South Africa' },
-        { '@type': 'Country', name: 'United States' },
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',

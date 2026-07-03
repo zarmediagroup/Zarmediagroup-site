@@ -127,8 +127,8 @@
           </div>
 
           <p class="font-sans text-charcoal-500 text-sm leading-relaxed mb-2">
-            Google Analytics data is processed by Google LLC in the United States under Standard Contractual Clauses.
-            For more information, see
+            Google Analytics data may be processed outside South Africa by Google LLC. Cross-border transfers are
+            handled under POPIA Section 72 with appropriate contractual safeguards. For more information, see
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-navy-900 hover:underline">Google's Privacy Policy</a>.
           </p>
 

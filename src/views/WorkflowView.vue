@@ -103,10 +103,19 @@
               <div class="flex flex-wrap gap-2">
                 <span
                   v-for="tool in integration.tools"
-                  :key="tool"
-                  class="font-sans text-xs text-white/60 bg-white/5 border border-white/10 px-2.5 py-1 group-hover:border-white/20 transition-colors"
+                  :key="tool.name"
+                  class="inline-flex items-center gap-2 font-sans text-xs text-white/70 bg-white/5 border border-white/10 px-2.5 py-1.5 group-hover:border-white/20 transition-colors"
                 >
-                  {{ tool }}
+                  <img
+                    v-if="tool.logo"
+                    :src="tool.logo"
+                    :alt="tool.alt"
+                    class="h-4 w-4 flex-shrink-0 object-contain brightness-0 invert opacity-90"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                  />
+                  {{ tool.name }}
                 </span>
               </div>
             </div>
@@ -199,6 +208,7 @@ import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
 import HeroBackground from '@/components/ui/HeroBackground.vue'
 import RelatedServices from '@/components/ui/RelatedServices.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
+import { WORKFLOW_INTEGRATIONS } from '@/data/integration-tools'
 
 const pageSeo = getPageSeo('workflow-integration')
 
@@ -246,38 +256,7 @@ const adminStats = [
   { value: '70%', label: 'Admin Reduction', detail: 'Achieved by our integrated clients' },
 ]
 
-const integrations = [
-  {
-    category: 'Accounting Software',
-    tools: ['Xero', 'QuickBooks', 'Sage', 'FreshBooks', 'MYOB'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>',
-  },
-  {
-    category: 'CRM Systems',
-    tools: ['HubSpot', 'Salesforce', 'Pipedrive', 'Zoho CRM', 'Microsoft Dynamics'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>',
-  },
-  {
-    category: 'Document & E-Signature',
-    tools: ['DocuSign', 'HelloSign', 'Adobe Sign', 'PandaDoc'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
-  },
-  {
-    category: 'Appointment Booking',
-    tools: ['Calendly', 'Microsoft Bookings', 'Acuity Scheduling', 'Google Calendar'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>',
-  },
-  {
-    category: 'Communication',
-    tools: ['Intercom', 'Drift', 'Slack', 'Microsoft Teams', 'WhatsApp Business'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>',
-  },
-  {
-    category: 'Practice Management',
-    tools: ['Karbon', 'Canopy', 'Jetpack Workflow', 'TaxDome', 'Practice Ignition'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>',
-  },
-]
+const integrations = WORKFLOW_INTEGRATIONS
 
 const automationSteps = [
   { title: 'Prospect fills in enquiry form', description: 'Smart forms on your accounting website capture name, services needed, and preferred contact time.' },

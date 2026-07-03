@@ -21,7 +21,7 @@
           <span class="text-gradient">for Financial Services</span>
         </h1>
         <p class="font-sans text-white/60 text-lg max-w-2xl leading-relaxed reveal-up" style="transition-delay: 200ms;">
-          Every accounting firm website and financial services website we build is reviewed against GDPR, POPIA, WCAG 2.1 AA, and South African financial sector regulations — protecting your firm and building trust with clients in regulated industries.
+          Every accounting firm website and financial services website we build is reviewed against POPIA, FSCA, FAIS, SAICA standards, and South African web accessibility requirements — protecting your firm and building trust with clients across South Africa.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
 
@@ -53,7 +53,7 @@
           </h2>
           <div class="gold-divider mb-8"></div>
           <p class="font-sans text-charcoal-600 text-lg leading-relaxed">
-            Regulated industries like accounting, financial advisory, and tax services cannot afford compliance gaps online. A poorly built accounting firm website can create data protection violations, accessibility lawsuits, and regulatory sanctions — before you've served a single client through it.
+            Regulated industries like accounting, financial advisory, and tax services cannot afford compliance gaps online. A poorly built accounting firm website can create POPIA violations, Information Regulator complaints, accessibility failures, and FSCA sanctions — before you've served a single client through it.
           </p>
         </div>
 
@@ -196,7 +196,7 @@ useSeoMeta({
   keywords: pageSeo.keywords,
   canonical: pageSeo.canonical,
   ogImage: '/compliance-data-protection-financial-services.png',
-  ogImageAlt: 'Legal compliance and data protection for financial services websites — POPIA, GDPR, and regulatory trust',
+  ogImageAlt: 'Legal compliance and data protection for financial services websites — POPIA, FSCA, and regulatory trust in South Africa',
   schemas: [
     SCHEMAS.breadcrumb([
       { name: 'Home', url: '/' },
@@ -206,19 +206,19 @@ useSeoMeta({
     ...SCHEMAS.servicePage({
       name: 'Compliant Website Design for Financial Services',
       description:
-        'Purpose-built compliant digital presence for regulated industries. Every website reviewed against GDPR, POPIA, WCAG 2.1 AA, and South African financial sector regulations.',
+        'Purpose-built compliant digital presence for South African regulated industries. Every website reviewed against POPIA, FSCA, FAIS, SAICA standards, and South African web accessibility requirements.',
       url: '/services/compliance-trust',
     }),
     SCHEMAS.faqPage([
       {
         question: 'What compliance regulations apply to accounting firm websites in South Africa?',
         answer:
-          'Accounting firm websites in South Africa must comply with POPIA (Protection of Personal Information Act) for data collection, WCAG 2.1 AA for accessibility, and relevant FSCA (Financial Sector Conduct Authority) requirements for firms that provide financial advice. Firms serving international clients must also comply with GDPR.',
+          'Accounting firm websites in South Africa must comply with POPIA (Protection of Personal Information Act) for data collection, South African web accessibility standards for inclusive access, and relevant FSCA (Financial Sector Conduct Authority) and FAIS Act requirements for firms that provide financial advice.',
       },
       {
         question: 'What does a compliant digital presence mean for regulated industries?',
         answer:
-          'A compliant digital presence for regulated industries means your website handles client data according to applicable privacy laws, is accessible to users with disabilities (WCAG 2.1 AA), displays required regulatory disclosures, uses secure data collection forms, and has appropriate cookie consent mechanisms.',
+          'A compliant digital presence for South African regulated industries means your website handles client data according to POPIA, is accessible under South African web accessibility standards, displays required FSCA and FAIS disclosures, uses secure data collection forms, and has appropriate POPIA-compliant cookie consent mechanisms.',
       },
     ]),
   ],
@@ -233,16 +233,16 @@ const regulations = [
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>',
   },
   {
-    name: 'GDPR',
-    scope: 'EU/UK — If Applicable',
-    description: 'If you serve clients in the EU or UK, GDPR compliance is mandatory on your accounting website — including explicit consent and right to erasure.',
-    requirements: ['Explicit consent for data collection', 'Right to erasure request process', 'Data processing agreements', 'Cookie consent banner'],
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
+    name: 'PAIA',
+    scope: 'South Africa — Mandatory',
+    description: 'The Promotion of Access to Information Act gives clients the right to request access to personal information your firm holds—with clear procedures published on your website.',
+    requirements: ['Published PAIA manual or access procedure', 'Information Officer contact details', 'Documented response timeframes', 'Reasonable access request process'],
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
   },
   {
-    name: 'WCAG 2.1 AA',
-    scope: 'Global — Best Practice',
-    description: 'Web Content Accessibility Guidelines ensure your accounting website is usable by clients with visual, hearing, motor, or cognitive impairments.',
+    name: 'Web Accessibility',
+    scope: 'South Africa — Required',
+    description: 'South African web accessibility standards ensure your accounting website is usable by clients with visual, hearing, motor, or cognitive impairments—aligned with government web guidelines and equality law.',
     requirements: ['Keyboard navigation support', 'Screen reader compatibility', 'Sufficient colour contrast', 'Alt text on all images'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>',
   },
@@ -262,9 +262,9 @@ const regulations = [
   },
   {
     name: 'SSL & Data Security',
-    scope: 'Global — Mandatory',
-    description: 'TLS 1.3 encryption, secure contact forms, and data-at-rest encryption for any financial information processed through your website.',
-    requirements: ['TLS 1.3 SSL certificate', 'Encrypted data transmission', 'Secure form handling', 'PCI DSS for payments'],
+    scope: 'South Africa — Mandatory',
+    description: 'TLS 1.3 encryption, secure contact forms, and data-at-rest encryption for any financial information processed through your website—meeting South African financial-sector security expectations.',
+    requirements: ['TLS 1.3 SSL certificate', 'Encrypted data transmission', 'Secure form handling', 'Secure payment processing'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>',
   },
 ]
@@ -273,9 +273,9 @@ const complianceChecklist = [
   { check: 'Privacy policy accurately describes all data collection activities', common: false },
   { check: 'Cookie consent banner with granular opt-in/opt-out controls', common: true },
   { check: 'Contact forms collect only data that is necessary (POPIA minimum data principle)', common: true },
-  { check: 'All images have descriptive alt text (WCAG 2.1 AA)', common: true },
+  { check: 'All images have descriptive alt text (South African web accessibility standards)', common: true },
   { check: 'Website passes keyboard-only navigation test', common: true },
-  { check: 'Colour contrast ratio meets WCAG 2.1 AA (4.5:1 for normal text)', common: false },
+  { check: 'Colour contrast ratio meets South African web accessibility standards (4.5:1 for normal text)', common: false },
   { check: 'FSCA licence number prominently displayed (for financial advisors)', common: false },
   { check: 'SSL certificate active and enforced (HTTPS everywhere)', common: false },
   { check: 'Data breach response process documented and accessible', common: true },

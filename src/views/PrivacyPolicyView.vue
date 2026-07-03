@@ -24,8 +24,8 @@
             <p class="font-sans text-charcoal-600 text-sm leading-relaxed">
               This Privacy Policy describes how <strong>ZARMEDIAGROUP (PTY) LTD</strong> (Registration No: 2026/166396/07),
               trading as <strong>Zar Media Group</strong>, collects, uses, stores, and protects personal information in
-              accordance with the <strong>Protection of Personal Information Act 4 of 2013 (POPIA)</strong> and the
-              EU General Data Protection Regulation (GDPR) where applicable.
+              accordance with the <strong>Protection of Personal Information Act 4 of 2013 (POPIA)</strong>.
+              We serve accounting and financial services firms in South Africa only.
             </p>
           </div>
 
@@ -111,7 +111,7 @@
           </ul>
 
           <!-- 4 -->
-          <h2 class="font-serif text-navy-900 text-2xl mb-4 mt-10">4. Legal Basis for Processing (POPIA &amp; GDPR)</h2>
+          <h2 class="font-serif text-navy-900 text-2xl mb-4 mt-10">4. Legal Basis for Processing (POPIA)</h2>
           <div class="gold-divider mb-6"></div>
           <ul class="legal-list">
             <li><strong>Consent:</strong> Where you have given clear consent (e.g. newsletter sign-up, contact page submission, and analytics via our cookie banner when you choose Accept).</li>
@@ -138,10 +138,9 @@
           <h3 class="font-sans font-semibold text-navy-900 text-base mb-3 mt-6">5.1 Cross-Border Transfers (POPIA Section 72)</h3>
           <p class="font-sans text-charcoal-600 leading-relaxed mb-4">
             Some service providers we use (including Google Analytics, Vercel, and Resend) may process personal
-            information in countries outside South Africa, such as the United States or the European Union. Where
-            personal information is transferred cross-border, we rely on appropriate safeguards permitted under POPIA,
-            including contractual protections with operators and, where applicable, adequacy decisions or standard
-            contractual clauses. You may request further details about these safeguards by contacting our Information Officer.
+            information in countries outside South Africa, where those providers host or operate their services. Where
+            personal information is transferred cross-border, we rely on appropriate safeguards permitted under POPIA Section 72,
+            including contractual protections with operators. You may request further details about these safeguards by contacting our Information Officer.
           </p>
 
           <!-- 6 -->
@@ -158,7 +157,7 @@
           <h2 class="font-serif text-navy-900 text-2xl mb-4 mt-10">7. Your Rights</h2>
           <div class="gold-divider mb-6"></div>
           <p class="font-sans text-charcoal-600 leading-relaxed mb-4">
-            Under POPIA (and GDPR where applicable), you have the right to:
+            Under POPIA, you have the right to:
           </p>
           <ul class="legal-list">
             <li><strong>Access</strong> the personal information we hold about you</li>
@@ -237,7 +236,7 @@ import { useSeoMeta } from '@/composables/useSeoMeta'
 
 useSeoMeta({
   title: 'Privacy Policy | Zar Media Group',
-  description: 'Read the Zar Media Group Privacy Policy. We are committed to protecting your personal information in compliance with POPIA and GDPR.',
+  description: 'Read the Zar Media Group Privacy Policy. We are committed to protecting your personal information in compliance with POPIA.',
   keywords: 'Zar Media Group privacy policy, POPIA compliance, data protection South Africa',
   canonical: '/privacy-policy',
   schemas: [],

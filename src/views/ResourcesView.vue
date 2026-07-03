@@ -286,7 +286,7 @@ const faqs = [
   {
     question: 'How does Zar Media Group help with financial sector compliance on websites?',
     answer:
-      'We review every accounting and financial services website we build against POPIA, GDPR (if applicable), WCAG 2.1 AA accessibility standards, and FSCA requirements. We implement compliant cookie consent, privacy policies, data handling forms, and accessibility features — and monitor compliance monthly.',
+      'We review every accounting and financial services website we build against POPIA, South African web accessibility standards, and FSCA requirements. We implement POPIA-compliant cookie consent, privacy policies, data handling forms, and accessibility features — and monitor compliance monthly.',
   },
 ]
 

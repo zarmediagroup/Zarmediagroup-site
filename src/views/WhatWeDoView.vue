@@ -28,8 +28,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>
           </RouterLink>
-          <RouterLink to="/services/accounting-portals-crm" class="btn-ghost" aria-label="Explore client portals and CRM for accountants">
-            See portals &amp; CRM
+          <RouterLink to="/services/client-portal" class="btn-ghost" aria-label="Explore the client portal and CRM for accountants">
+            See client portal
           </RouterLink>
         </div>
       </div>
@@ -52,7 +52,7 @@
             </h2>
             <div class="gold-divider mb-8"></div>
             <p class="font-sans text-charcoal-600 text-base leading-relaxed mb-8">
-              Most accounting firms in South Africa and globally suffer from the same digital problems: outdated websites that don't convert, zero CRM integration, manual client intake processes, and compliance risks they're not even aware of.
+              Most accounting firms in South Africa suffer from the same digital problems: outdated websites that don't convert, zero CRM integration, manual client intake processes, and compliance risks they're not even aware of.
             </p>
             <div class="space-y-4">
               <div
@@ -255,7 +255,7 @@ const solutions = [
   'Client portals built and managed for accountants—with your firm website kept in the same programme',
   'Automated client intake with e-signatures, document upload, and instant CRM sync',
   'CRM integration for accountants connecting Xero, QuickBooks, and HubSpot',
-  'Compliance-first architecture covering GDPR, POPIA, and financial sector standards',
+  'Compliance-first architecture covering POPIA, FSCA, FAIS, and South African financial sector standards',
   'Premium public-site and portal UX that positions you as the expert in your market',
 ]
 
@@ -326,7 +326,7 @@ const capabilities = [
   },
   {
     title: 'Compliance Architecture',
-    description: 'GDPR, POPIA, WCAG 2.1 AA — every build reviewed against financial sector compliance requirements.',
+    description: 'POPIA, FSCA, and South African web accessibility standards — every build reviewed against South African financial sector compliance requirements.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
   },
   {

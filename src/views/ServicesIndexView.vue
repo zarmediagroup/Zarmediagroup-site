@@ -26,7 +26,7 @@
           <strong class="text-white/90">POPIA-conscious compliance</strong>—built as one programme, not disconnected projects.
         </p>
         <p class="font-sans text-white/50 text-base max-w-3xl leading-relaxed reveal-up" style="transition-delay: 250ms;">
-          Whether you are searching for a <RouterLink to="/services/accounting-portals-crm" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">client portal for your accounting firm</RouterLink>,
+          Whether you are searching for a <RouterLink to="/services/client-portal" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">client portal for your accounting firm</RouterLink>,
           a continuously optimised <RouterLink to="/services/website-as-a-service" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">website for accountants</RouterLink>,
           or <RouterLink to="/services/workflow-integration" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">CRM integration with Xero and HubSpot</RouterLink>,
           each service below is purpose-built for regulated financial work in South Africa.
@@ -137,7 +137,7 @@ useSeoMeta({
       {
         question: 'Do you only work with accountants in South Africa?',
         answer:
-          'We are headquartered in South Africa and specialise in POPIA and local financial sector requirements, while also supporting firms in the UK, US, and Australia with GDPR and international compliance needs.',
+          'We are based in South Africa and specialise exclusively in POPIA, FSCA, FAIS, SAICA, and South African web accessibility requirements for accounting and financial services firms.',
       },
     ]),
   ],

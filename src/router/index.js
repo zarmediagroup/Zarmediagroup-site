@@ -51,9 +51,7 @@ const routes = [
   },
   {
     path: '/services/accounting-portals-crm',
-    name: 'AccountingPortalsCrm',
-    component: () => import('@/views/AccountingPortalsCrmView.vue'),
-    meta: meta('accounting-portals-crm'),
+    redirect: '/services/client-portal',
   },
   {
     path: '/services/client-portal',
@@ -117,7 +115,7 @@ const routes = [
     component: () => import('@/views/PrivacyPolicyView.vue'),
     meta: {
       title: 'Privacy Policy | Zar Media Group',
-      description: 'Read the Zar Media Group Privacy Policy. We are committed to protecting your personal information in compliance with POPIA and GDPR.',
+      description: 'Read the Zar Media Group Privacy Policy. We are committed to protecting your personal information in compliance with POPIA.',
       canonical: '/privacy-policy',
     },
   },

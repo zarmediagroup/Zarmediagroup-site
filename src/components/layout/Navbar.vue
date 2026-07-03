@@ -6,7 +6,7 @@
     :class="[
       appStore.isScrolled
         ? 'bg-navy-900/95 backdrop-blur-md shadow-navy py-0'
-        : 'bg-transparent py-2'
+        : 'bg-transparent py-0'
     ]"
   >
     <nav class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -75,18 +75,11 @@
                     <div class="dropdown-desc">Client portals, websites &amp; integrations</div>
                   </div>
                 </RouterLink>
-                <RouterLink to="/services/accounting-portals-crm" class="dropdown-item" @click="closeDropdownNow">
-                  <span class="dropdown-icon">◆</span>
-                  <div>
-                    <div class="dropdown-title">Client Portals &amp; CRM</div>
-                    <div class="dropdown-desc">Portals, CRM journeys &amp; product tour link inside</div>
-                  </div>
-                </RouterLink>
                 <RouterLink to="/services/client-portal" class="dropdown-item" @click="closeDropdownNow">
                   <span class="dropdown-icon">◆</span>
                   <div>
-                    <div class="dropdown-title">Client Portal Tour</div>
-                    <div class="dropdown-desc">Document vault &amp; admin demo for SA firms</div>
+                    <div class="dropdown-title">Client Portal &amp; CRM</div>
+                    <div class="dropdown-desc">Product tour, document vault &amp; admin console</div>
                   </div>
                 </RouterLink>
                 <RouterLink to="/services/website-as-a-service" class="dropdown-item" @click="closeDropdownNow">
@@ -189,8 +182,7 @@
             <Transition name="accordion">
               <div v-if="mobileSection === 'services'" class="py-2 pl-4">
                 <MobileNavItem to="/services" label="All Services" sub @click="appStore.closeNav()" />
-                <MobileNavItem to="/services/accounting-portals-crm" label="Client Portals & CRM" sub @click="appStore.closeNav()" />
-                <MobileNavItem to="/services/client-portal" label="Client Portal Tour" sub @click="appStore.closeNav()" />
+                <MobileNavItem to="/services/client-portal" label="Client Portal & CRM" sub @click="appStore.closeNav()" />
                 <MobileNavItem to="/services/website-as-a-service" label="Website as a Service" sub @click="appStore.closeNav()" />
                 <MobileNavItem to="/services/workflow-integration" label="Workflow Integration" sub @click="appStore.closeNav()" />
                 <MobileNavItem to="/services/compliance-trust" label="Compliance & Trust" sub @click="appStore.closeNav()" />
@@ -235,7 +227,7 @@ const isAboutActive = computed(() =>
   ['WhatWeDo', 'Team'].includes(route.name)
 )
 const isServicesActive = computed(() =>
-  ['ServicesIndex', 'WebsiteService', 'WorkflowIntegration', 'ComplianceTrust', 'AccountingPortalsCrm', 'ClientPortal'].includes(route.name)
+  ['ServicesIndex', 'WebsiteService', 'WorkflowIntegration', 'ComplianceTrust', 'ClientPortal'].includes(route.name)
 )
 
 function openDropdown(name) {

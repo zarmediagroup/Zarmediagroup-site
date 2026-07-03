@@ -55,7 +55,7 @@
             You may use this Website for lawful purposes only. You agree that you will not:
           </p>
           <ul class="legal-list">
-            <li>Use the Website in any way that violates applicable South African or international law</li>
+            <li>Use the Website in any way that violates applicable South African law</li>
             <li>Attempt to gain unauthorised access to any part of the Website or its underlying systems</li>
             <li>Introduce malware, viruses, or any other malicious code</li>
             <li>Use automated tools (bots, scrapers, crawlers) to extract data from the Website without prior written consent</li>
@@ -73,7 +73,7 @@
           <p class="font-sans text-charcoal-600 leading-relaxed mb-4">
             All content on this Website — including but not limited to text, copy, design, layout, logos, graphics,
             icons, images, and code — is the property of ZARMEDIAGROUP (PTY) LTD or its licensors and is protected
-            by South African copyright law and applicable international intellectual property laws.
+            by South African copyright law and the Copyright Act 98 of 1978.
           </p>
           <ul class="legal-list">
             <li>You may not reproduce, distribute, modify, or create derivative works from any content on this Website without our express written permission.</li>

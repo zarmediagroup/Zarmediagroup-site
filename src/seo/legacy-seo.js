@@ -14,6 +14,7 @@ export const LEGACY_GONE_PREFIXES = [
 /** Exact pathname (no trailing slash) → redirect target */
 export const LEGACY_PATH_REDIRECTS = {
   '/web-development': '/services/website-as-a-service',
+  '/services/accounting-portals-crm': '/services/client-portal',
   '/elementor-193': '/resources/best-client-portal-small-accounting-firms',
   '/elementor-504': '/resources/accounting-firm-website-design-guide',
   '/elementor-261': '/resources',

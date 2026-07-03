@@ -28,6 +28,16 @@
       "permanent": true
     },
     {
+      "source": "/services/accounting-portals-crm",
+      "destination": "/services/client-portal",
+      "permanent": true
+    },
+    {
+      "source": "/services/accounting-portals-crm/",
+      "destination": "/services/client-portal",
+      "permanent": true
+    },
+    {
       "source": "/web-development",
       "destination": "/services/website-as-a-service",
       "permanent": true

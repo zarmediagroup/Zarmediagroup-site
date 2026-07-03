@@ -15,11 +15,12 @@
         <BreadcrumbNav
           :crumbs="[
             { label: 'Home', path: '/' },
-            { label: 'Client portal & document vault', path: '/services/client-portal' },
+            { label: 'Services', path: '/services' },
+            { label: 'Client portal & CRM', path: '/services/client-portal' },
           ]"
         />
 
-        <span class="section-label reveal-up">Product tour</span>
+        <span class="section-label reveal-up">Client portal &amp; CRM for SA accounting firms</span>
         <h1 class="font-serif text-display-lg text-white mt-6 mb-8 max-w-4xl reveal-up" style="transition-delay: 100ms;">
           Stop losing tax packs in<br />
           <span class="text-gradient">WhatsApp and email threads</span>
@@ -46,9 +47,62 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </RouterLink>
-          <RouterLink to="/services/accounting-portals-crm" class="btn-ghost" aria-label="Read about client portals and CRM integration">
-            Portals &amp; CRM overview
+          <RouterLink to="/services/workflow-integration" class="btn-ghost" aria-label="Read about CRM and workflow integration for accountants">
+            CRM &amp; integrations
           </RouterLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portals & CRM positioning -->
+    <section class="section-padding bg-cream border-b border-navy-900/8" aria-labelledby="definitions-heading">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mb-12 reveal-up">
+          <span class="section-label">What you get</span>
+          <h2 id="definitions-heading" class="font-serif text-display-md text-navy-900 mt-4 mb-6">
+            Accounting portal and client-facing CRM—on your domain
+          </h2>
+          <div class="gold-divider"></div>
+          <p class="font-sans text-charcoal-600 text-base leading-relaxed mt-8">
+            We build the secure client-facing layer—uploads, compliance, intake—and connect it to HubSpot, Xero, QuickBooks, and DocuSign. Your team keeps working in the tools you already use.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16">
+          <article
+            v-for="(block, i) in definitionBlocks"
+            :key="block.title"
+            class="reveal-up p-8 bg-white border border-navy-900/8"
+            :style="{ transitionDelay: i * 80 + 'ms' }"
+          >
+            <h3 class="font-serif text-xl text-navy-900 mb-3">{{ block.title }}</h3>
+            <p class="font-sans text-charcoal-600 text-sm leading-relaxed m-0">{{ block.body }}</p>
+          </article>
+        </div>
+
+        <div class="reveal-up grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start p-8 lg:p-10 bg-navy-900 border border-white/10">
+          <div>
+            <span class="section-label">POPIA-conscious by design</span>
+            <p class="font-sans text-white/65 text-sm leading-relaxed mt-4 m-0">
+              Encrypted uploads, access controls, audit-friendly workflows, and clear consent—aligned with our
+              <RouterLink to="/services/compliance-trust" class="text-gold-400 hover:underline">Compliance &amp; Trust</RouterLink>
+              approach for financial services websites.
+            </p>
+            <ul class="font-sans text-white/50 text-sm space-y-2 list-disc pl-5 mt-5 mb-0">
+              <li>Structured document exchange for tax and audit season</li>
+              <li>Engagement letters and KYC via e-signature, synced to your stack</li>
+              <li>Delivered through <RouterLink to="/services/website-as-a-service" class="text-gold-400 hover:underline">Website as a Service</RouterLink>—portal and firm site in one programme</li>
+            </ul>
+          </div>
+          <div class="font-sans text-white/70 text-sm leading-relaxed border-t border-white/10 lg:border-t-0 lg:border-l lg:pl-10 pt-8 lg:pt-0">
+            <p class="mb-4 m-0">
+              <strong class="text-white">Client-facing CRM</strong> in our projects means prospects and clients interact through your website—forms, booking, portal, email automation—while your team works in HubSpot, Salesforce, or Zoho. We connect the edges; CRM stays the source of truth.
+            </p>
+            <p class="m-0">
+              We are not a CRM vendor. We <strong class="text-white">integrate and implement</strong> the client-facing side for SA accounting firms.
+              <RouterLink to="/services/workflow-integration" class="text-gold-400 hover:underline ml-1">See workflow integration →</RouterLink>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -275,6 +329,19 @@ const openFaq = ref(null)
 
 onMounted(() => setTimeout(initReveal, 50))
 
+const definitionBlocks = [
+  {
+    title: 'Accounting portal',
+    body:
+      'The secure, branded area on your site where clients upload PAYE, VAT, and bank statements, track requests, and see status—without email attachments or WhatsApp threads.',
+  },
+  {
+    title: 'Client-facing CRM',
+    body:
+      'Prospects and clients trigger the right automations from your website: enquiry capture, nurture, meeting booking, and handoff to onboarding—visible as one smooth journey on your domain.',
+  },
+]
+
 const adminSteps = [
   {
     title: 'Client dashboard',
@@ -378,6 +445,16 @@ const faqs = [
     answer:
       'Built around how SA practices actually work: PAYE, VAT, EMP501, bank statements, management accounts, AFS. Categories and labels are configured for your firm—not a foreign template with Rand bolted on.',
   },
+  {
+    question: 'Do you sell a standalone CRM system for accountants?',
+    answer:
+      'No. We build the client-facing portal and integrate with the CRM and accounting tools you already use—or help you choose them—so enquiry-to-client workflows run end-to-end without duplicate records.',
+  },
+  {
+    question: 'How is this different from off-the-shelf client portal software?',
+    answer:
+      'Off-the-shelf products solve one piece. We brand the portal on your domain, connect it to your stack, and maintain your firm website in the same programme—so the experience matches how your practice actually works.',
+  },
 ]
 
 const primaryOgImage = '/client-dashboard.png'
@@ -393,12 +470,12 @@ useSeoMeta({
     SCHEMAS.breadcrumb([
       { name: 'Home', url: '/' },
       { name: 'Services', url: '/services' },
-      { name: 'Accounting client portal & document vault', url: '/services/client-portal' },
+      { name: 'Client portal & CRM for accountants', url: '/services/client-portal' },
     ]),
     ...SCHEMAS.servicePage({
-      name: 'Accounting Client Portal & Document Vault — South Africa',
+      name: 'Client Portal & CRM for Accountants — South Africa',
       description:
-        'How SA accounting firms collect tax documents, track SARS deadlines, and run firm-wide review on their own domain—client dashboard, vault, compliance calendar, and admin console.',
+        'Branded client portal and CRM-connected intake for SA accounting firms—document vault, compliance calendar, admin console, and integrations with Xero, HubSpot, and DocuSign.',
       url: '/services/client-portal',
       image: primaryOgImage,
     }),

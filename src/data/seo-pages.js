@@ -4,11 +4,11 @@
  */
 export const PAGE_SEO = {
   home: {
-    title: 'Client Portal for Accountants South Africa | Zar Media Group',
+    title: 'POPIA-Conscious Client Portal for Accountants | Zar Media Group',
     description:
-      'Build & manage client portals and accounting firm websites for SA practices—secure documents, CRM intake, POPIA-aware. Book a strategy call with Zar Media Group.',
+      'POPIA-conscious client portal on your domain + managed firm website for SA accountants. Encrypted uploads, audit trail, less admin. Free compliance audit.',
     keywords:
-      'client portal accountants South Africa, accounting client portal, website for accountants, accounting firm website design, CRM integration accountants, client portals for accounting',
+      'POPIA client portal accountants, compliant client portal South Africa, accounting client portal, POPIA website accountants, CRM integration accountants, client portals for accounting',
     canonical: '/',
     relatedGuides: [
       'best-client-portal-small-accounting-firms',
@@ -46,13 +46,13 @@ export const PAGE_SEO = {
     canonical: '/about/team',
     relatedGuides: [],
   },
-  'accounting-portals-crm': {
-    title: 'Client Portal for Accountants & CRM | South Africa',
+  'client-portal': {
+    title: 'Client Portal & CRM for Accountants | South Africa',
     description:
-      'Client-facing accounting portals & CRM-connected intake for SA firms—secure documents, compliance workflows, HubSpot, Xero & DocuSign. Managed with your firm website.',
+      'Branded client portal on your domain—document vault, compliance calendar, CRM-connected intake, and firm admin console. Product tour with demo screenshots for SA firms.',
     keywords:
-      'client portal for accountants, client portals for accounting, accounting portal, client facing CRM, CRM system accountants South Africa',
-    canonical: '/services/accounting-portals-crm',
+      'client portal for accountants, accounting client portal South Africa, client document portal, client facing CRM, accounting portal, POPIA client portal, tax document portal accountants',
+    canonical: '/services/client-portal',
     relatedGuides: [
       'best-client-portal-small-accounting-firms',
       'how-to-reduce-admin-accounting-firm',
@@ -81,25 +81,12 @@ export const PAGE_SEO = {
     canonical: '/services/workflow-integration',
     relatedGuides: ['how-to-reduce-admin-accounting-firm', 'best-client-portal-small-accounting-firms'],
   },
-  'client-portal': {
-    title: 'Accounting Client Portal & Document Vault | South Africa',
-    description:
-      'See how SA accounting firms collect tax documents, track SARS deadlines, and run firm-wide review—on their own domain. Product tour with demo screenshots.',
-    keywords:
-      'accounting client portal South Africa, client document portal, document vault accounting firm, POPIA client portal, tax document portal accountants',
-    canonical: '/services/client-portal',
-    relatedGuides: [
-      'best-client-portal-small-accounting-firms',
-      'popia-compliance-accounting-websites',
-      'how-to-reduce-admin-accounting-firm',
-    ],
-  },
   'compliance-trust': {
     title: 'POPIA Compliant Website for Accountants | Zar Media Group',
     description:
-      'Compliant websites for financial firms: POPIA, GDPR, WCAG 2.1 AA & FSCA-aware architecture for accountants, tax practitioners & advisors in South Africa.',
+      'Compliant websites for financial firms: POPIA, FSCA, FAIS & South African web accessibility architecture for accountants, tax practitioners & advisors in South Africa.',
     keywords:
-      'POPIA compliant accounting website, compliant website financial services, accounting website compliance South Africa, WCAG financial website',
+      'POPIA compliant accounting website, compliant website financial services, accounting website compliance South Africa, FSCA website requirements',
     canonical: '/services/compliance-trust',
     relatedGuides: ['popia-compliance-accounting-websites', 'fsca-website-requirements'],
   },
@@ -115,7 +102,7 @@ export const PAGE_SEO = {
   contact: {
     title: 'Free Website Audit for Accounting Firms | Contact ZMG',
     description:
-      'Book a free website audit or strategy call for your accounting or bookkeeping firm. Zar Media Group serves practices across South Africa and internationally.',
+      'Book a free website audit or strategy call for your accounting or bookkeeping firm. Zar Media Group serves practices across South Africa.',
     keywords:
       'free website audit accountants, contact Zar Media Group, accounting firm website consultation Cape Town',
     canonical: '/contact',
@@ -126,18 +113,11 @@ export const PAGE_SEO = {
 /** All commercial service pages for hub / ItemList schema */
 export const SERVICE_OFFERINGS = [
   {
-    id: 'accounting-portals-crm',
-    name: 'Client Portals & CRM for Accountants',
-    path: '/services/accounting-portals-crm',
-    summary:
-      'Branded client-facing accounting portals with CRM-connected intake, secure document exchange, and integrations with HubSpot, Xero, and DocuSign.',
-  },
-  {
     id: 'client-portal',
-    name: 'Accounting Client Portal & Document Vault',
+    name: 'Client Portal & CRM for Accountants',
     path: '/services/client-portal',
     summary:
-      'Stop losing tax packs in WhatsApp. Product tour: client dashboard, document vault, compliance calendar, and firm admin console—on your domain.',
+      'Branded portal on your domain—document vault, compliance calendar, CRM-connected intake, and firm admin console. Product tour with demo screenshots.',
   },
   {
     id: 'website-as-a-service',
@@ -158,7 +138,7 @@ export const SERVICE_OFFERINGS = [
     name: 'Compliance & Trust for Financial Websites',
     path: '/services/compliance-trust',
     summary:
-      'POPIA, GDPR, WCAG 2.1 AA, and FSCA-aware compliant digital presence for regulated financial and accounting practices.',
+      'POPIA, FSCA, FAIS, and South African web accessibility standards for compliant digital presence in regulated financial and accounting practices.',
   },
 ]
 
