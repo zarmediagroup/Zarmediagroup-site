@@ -377,6 +377,12 @@ export const resources = [
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>',
     gradientFrom: '#0f172a',
     gradientTo: '#1e293b',
+    contentLocation: {
+      name: 'Cape Town, Western Cape, South Africa',
+      locality: 'Cape Town',
+      region: 'Western Cape',
+      country: 'ZA',
+    },
     content: [
       {
         type: 'intro',
@@ -399,8 +405,48 @@ export const resources = [
         text: 'We implemented a structured information architecture: hero positioning and proof points, scannable service modules (annual financial statements, bookkeeping, tax, CIPC, advisory), a transparent “how we work” narrative, illustrative engagement scenarios (clearly labelled as anonymised illustrations — not performance claims), testimonials, and a bookkeeping cost illustration with honest framing as an estimate — not a quote.',
       },
       {
+        type: 'image',
+        src: '/a-level-business-consultants-Media/website-home-hero.png',
+        alt: 'ABC INC (A Level Business Consultants) chartered accountants homepage hero designed by Zar Media Group — Cape Town, South Africa',
+        caption: 'Homepage hero for the ABC INC / A Level Business Consultants website — chartered accountant positioning and a clear consultation path for South African clients.',
+        width: 2880,
+        height: 1800,
+      },
+      {
         type: 'paragraph',
         text: 'Lead capture is intentional: consultation scheduling, service exploration, and a visible path to the client portal — so logged-in client work and public marketing feel like one brand. Technical delivery prioritises fast load, accessible typography, and mobile-first layouts so Google and users see the same quality the firm delivers offline.',
+      },
+      {
+        type: 'heading',
+        text: 'A secure client portal experience',
+      },
+      {
+        type: 'paragraph',
+        text: 'Beyond the public marketing site, we delivered a branded, POPIA-conscious client portal so the Cape Town practice can exchange documents and updates with clients securely — no scattered email attachments or unsecured file links. The login is on-brand, so clients move from the public site into their portal without a jarring hand-off.',
+      },
+      {
+        type: 'image',
+        src: '/a-level-business-consultants-Media/website-login.png',
+        alt: 'Branded secure client login for ABC INC chartered accountants (A Level Business Consultants) client portal — South Africa',
+        caption: 'On-brand, secure client login — a seamless transition from the public accounting firm website into the private client portal.',
+        width: 2880,
+        height: 1800,
+      },
+      {
+        type: 'image',
+        src: '/a-level-business-consultants-Media/portal-client-dashboard.png',
+        alt: 'ABC INC accounting client portal dashboard — document status, tasks and firm communication for South African clients',
+        caption: 'Client portal dashboard — a clear, at-a-glance view of documents, requests and communication between the firm and its clients.',
+        width: 2880,
+        height: 1846,
+      },
+      {
+        type: 'image',
+        src: '/a-level-business-consultants-Media/portal-client-documents.png',
+        alt: 'Secure document vault in the ABC INC accounting client portal — POPIA-conscious file sharing for a Cape Town chartered accounting practice',
+        caption: 'Secure document vault — POPIA-conscious upload and retrieval of financial documents, replacing insecure email attachments.',
+        width: 2880,
+        height: 1800,
       },
       {
         type: 'heading',
@@ -421,6 +467,28 @@ export const resources = [
         text: 'Building or refreshing your accounting firm website? Ask us about Website as a Service and portal-ready launches.',
         link: '/services/website-as-a-service',
         linkLabel: 'Explore Website as a Service',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Who is ABC INC / A Level Business Consultants?',
+        answer: 'ABC INC is a SAICA-registered chartered accounting practice based in Cape Town, South Africa, serving businesses with annual financial statements, bookkeeping, tax, CIPC and advisory services. Its production website runs on alevelbusinessconsultants.co.za and was designed and built by Zar Media Group.',
+      },
+      {
+        question: 'What did Zar Media Group build for the practice?',
+        answer: 'Zar Media Group delivered a full public marketing website plus a secure, branded client portal. The site includes chartered accountant positioning, scannable service modules, a transparent “how we work” narrative, testimonials, consultation scheduling, and a document vault for POPIA-conscious file sharing between the firm and its clients.',
+      },
+      {
+        question: 'Is the client portal POPIA compliant?',
+        answer: 'The portal is built to be POPIA-conscious: client documents are exchanged through a secure, access-controlled vault rather than unsecured email attachments, with an on-brand login that carries trust signals from the public site into the private client area.',
+      },
+      {
+        question: 'How much does an accounting firm website and client portal cost in South Africa?',
+        answer: 'Cost depends on scope — number of pages, whether a client portal and document vault are included, and integrations. Zar Media Group typically delivers accounting firm sites through a Website as a Service subscription that bundles design, hosting, updates and the portal, so firms pay a predictable monthly fee instead of a large once-off build cost. Book a consultation for a tailored estimate.',
+      },
+      {
+        question: 'Can Zar Media Group build a similar website for my accounting firm?',
+        answer: 'Yes. Zar Media Group specialises in websites and client portals for accountants, bookkeepers and financial service providers across South Africa. The same approach used for ABC INC — chartered-quality positioning, a secure client portal, and compliance-aware content — can be applied to your practice through our Website as a Service offering.',
       },
     ],
   },
@@ -648,6 +716,142 @@ export const resources = [
         text: 'Want an SEO-optimised website for your accounting firm, built and managed for you? Explore our Website as a Service plans.',
         link: '/services/website-as-a-service',
         linkLabel: 'Explore Website as a Service',
+      },
+    ],
+  },
+  {
+    slug: 'cipc-beneficial-ownership-companies-house-id-verification-2026',
+    type: 'Compliance',
+    category: 'compliance',
+    title: 'CIPC Beneficial Ownership and UK Companies House ID Verification: What Accountants Must Do in 2026',
+    seoTitle: 'CIPC Beneficial Ownership & Companies House ID Rules 2026',
+    excerpt:
+      'CIPC will reject annual returns without a current beneficial ownership declaration, and UK firms filing for clients need ACSP status by November 2026 — what SA and UK practices must do now.',
+    keywords: 'CIPC beneficial ownership deadline, CIPC annual return rejected, beneficial ownership declaration South Africa, Companies House identity verification, ACSP registration accountants, ECCTA identity verification deadline, Companies House ID verification 2026, CIPC compliance South Africa, UK accountant compliance 2026',
+    author: 'Zubayr Abdullatief',
+    authorInitials: 'ZA',
+    authorRole: 'Founder & Chief Executive Officer',
+    authorPhoto: '/zubayr-abdullatief-zar-media-group.png',
+    image: '/financial-services-trust-compliance.jpg',
+    imageAlt: 'South African and UK accounting practice reviewing CIPC beneficial ownership and Companies House identity verification compliance requirements',
+    readTime: '9 min',
+    date: 'Jul 2026',
+    dateISO: '2026-07-14',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
+    gradientFrom: '#0d0d0d',
+    gradientTo: '#1a1a1a',
+    content: [
+      {
+        type: 'intro',
+        text: 'CIPC will not accept a South African annual return without a current beneficial ownership declaration, and UK firms filing at Companies House on a client\'s behalf will need to be a registered Authorised Corporate Service Provider (ACSP) before the identity verification rollout completes. Both rules are already in force or on a fixed timeline — here is exactly what South African and UK practices need to check this month.',
+      },
+      {
+        type: 'heading',
+        text: 'South Africa: When is the CIPC beneficial ownership deadline?',
+      },
+      {
+        type: 'paragraph',
+        text: 'There is no single calendar deadline — it is tied to each company\'s own anniversary date. Every company and close corporation registered with CIPC must file its annual return, including an updated beneficial ownership declaration, within 30 business days of its incorporation anniversary. Miss that window and the return is late; file it without a current beneficial ownership record and CIPC will not accept it at all.',
+      },
+      {
+        type: 'heading',
+        text: 'Why does CIPC reject annual returns without beneficial ownership information?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Since 1 July 2024, CIPC has run a hard-stop on its filing system: the annual return submission is blocked until a beneficial ownership declaration is on record for that entity. This followed amendments to the Companies Act requiring every company and close corporation — private companies, non-profit companies, public companies and CCs alike — to disclose the natural persons who ultimately own or control them. It is not optional and it is not new, but practices still get caught by it every filing cycle, particularly on entities where directors assumed the requirement did not apply to them.',
+      },
+      {
+        type: 'heading',
+        text: 'What should accounting firms do about beneficial ownership this month?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pull a list of every client entity with a CIPC anniversary date in the next 60 days. For each one, confirm the beneficial ownership register reflects the current ownership structure — not just what was filed at incorporation. Ownership changes, new shareholders, and changes in control all require an updated declaration before the next annual return is due. Building this check into your monthly compliance calendar avoids a last-minute scramble when a return bounces.',
+      },
+      {
+        type: 'heading',
+        text: 'UK: When must directors complete Companies House identity verification?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Identity verification became mandatory for new directors, LLP members and persons with significant control (PSCs) — and for anyone forming a new company — from 18 November 2025. That date also opened a 12-month transition window for everyone already on the register: existing directors and PSCs must complete verification by 18 November 2026. This is part of the phased rollout of the Economic Crime and Corporate Transparency Act (ECCTA).',
+      },
+      {
+        type: 'heading',
+        text: 'Do accountants need to register as an Authorised Corporate Service Provider?',
+      },
+      {
+        type: 'paragraph',
+        text: 'If your firm files documents at Companies House on behalf of clients — annual accounts, confirmation statements, incorporations — you will need to be registered as an Authorised Corporate Service Provider (ACSP). ACSP status requires your firm to be supervised by a recognised UK anti-money laundering (AML) body. Companies House has said the requirement for third-party filers to hold ACSP status will apply no earlier than November 2026, after an earlier spring 2026 target was pushed back. Firms that want to offer identity verification services to clients directly can register for the ACSP scheme now.',
+      },
+      {
+        type: 'heading',
+        text: 'What should UK practices do about ACSP registration this month?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Two separate actions, on two different clocks. First, register your practice as an ACSP if you intend to keep filing on behalf of clients — do not wait for the requirement to become mandatory, since AML supervision checks and onboarding take time. Second, start working through your director and PSC clients now so their personal identity verification is complete well before the 18 November 2026 deadline, rather than trying to process your entire client base in the final weeks.',
+      },
+      {
+        type: 'heading',
+        text: 'Why do these two rules matter for the same client base?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Accountants and bookkeepers sit at the centre of both requirements because they are the ones filing on their clients\' behalf. A missed beneficial ownership update in South Africa or an unverified director in the UK does not just delay a filing — it stops it outright. Treating these as recurring compliance checks, not one-off admin tasks, is what keeps a practice\'s filings moving without last-minute client fire drills.',
+      },
+      {
+        type: 'external',
+        text: 'CIPC\'s own guidance on incorporating beneficial ownership into annual return filings.',
+        href: 'https://www.cipc.co.za/?p=20728',
+        label: 'Read the CIPC beneficial ownership guidance',
+      },
+      {
+        type: 'external',
+        text: 'The UK government\'s official overview of the Companies House identity verification rollout under ECCTA.',
+        href: 'https://changestoukcompanylaw.campaign.gov.uk/identity-verification/',
+        label: 'Read the Companies House identity verification guidance',
+      },
+      {
+        type: 'external',
+        text: 'ICAEW\'s guidance for accounting firms on Authorised Corporate Service Provider registration.',
+        href: 'https://www.icaew.com/insights/viewpoints-on-the-news/2025/aug-2025/companies-house-who-needs-to-be-an-acsp-and-when-should-they-register',
+        label: 'Read ICAEW\'s ACSP registration guidance',
+      },
+      {
+        type: 'external',
+        text: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+        href: 'https://www.linkedin.com/company/zarmediagroup/',
+        label: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+      },
+      {
+        type: 'cta',
+        text: 'Want compliance-aware content and a client portal that keeps your practice\'s filings and client records organised? Talk to our team.',
+        link: '/services/compliance-trust',
+        linkLabel: 'See Compliance & Trust',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What happens if a CIPC annual return is filed without a beneficial ownership declaration?',
+        answer: 'CIPC\'s system will not accept the submission. Since 1 July 2024, a current beneficial ownership declaration must already be on record before an annual return can be filed, so the return is rejected outright rather than merely flagged.',
+      },
+      {
+        question: 'Which South African entities must file beneficial ownership information?',
+        answer: 'All companies and close corporations registered with CIPC, including private companies, non-profit companies, public companies and CCs. Ownership changes must be reflected before the next annual return, which is due within 30 business days of the entity\'s incorporation anniversary.',
+      },
+      {
+        question: 'By when must existing UK directors complete Companies House identity verification?',
+        answer: 'Existing directors, LLP members and persons with significant control (PSCs) have until 18 November 2026 to complete identity verification, the end of a 12-month transition window that began on 18 November 2025.',
+      },
+      {
+        question: 'Do accountants need ACSP status to file at Companies House for clients?',
+        answer: 'If a firm files documents — accounts, confirmation statements, incorporations — on behalf of clients, it will need to be registered as an Authorised Corporate Service Provider (ACSP), which requires UK AML supervision. Companies House has indicated this requirement applies no earlier than November 2026.',
+      },
+      {
+        question: 'How can accounting practices stay ahead of both requirements?',
+        answer: 'Build a recurring monthly check rather than a one-off task: track each SA client\'s CIPC anniversary date and beneficial ownership currency, and work through UK director and PSC identity verification ahead of the 18 November 2026 deadline instead of leaving it to the final weeks.',
       },
     ],
   },

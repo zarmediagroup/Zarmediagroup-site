@@ -344,18 +344,43 @@ export const SCHEMAS = {
    * BlogPosting / Article schema — used on every resource detail page.
    * Google uses this to understand, index, and display rich results for articles.
    */
-  article({ headline, description, image, datePublished, dateModified, author, authorRole, url, keywords }) {
+  article({ headline, description, image, images, datePublished, dateModified, author, authorRole, url, keywords, contentLocation }) {
+    const abs = (u) => (u && u.startsWith('http') ? u : `${BASE_URL}${u}`)
+    const imageField = Array.isArray(images) && images.length
+      ? images.map((img) => ({
+          '@type': 'ImageObject',
+          url: abs(typeof img === 'string' ? img : img.url),
+          ...(typeof img === 'object' && img.width ? { width: img.width } : {}),
+          ...(typeof img === 'object' && img.height ? { height: img.height } : {}),
+          ...(typeof img === 'object' && img.caption ? { caption: img.caption } : {}),
+        }))
+      : {
+          '@type': 'ImageObject',
+          url: abs(image),
+          width: 1200,
+          height: 630,
+        }
+
     return {
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
       headline,
       description,
-      image: {
-        '@type': 'ImageObject',
-        url: image.startsWith('http') ? image : `${BASE_URL}${image}`,
-        width: 1200,
-        height: 630,
-      },
+      image: imageField,
+      ...(contentLocation
+        ? {
+            contentLocation: {
+              '@type': 'Place',
+              name: contentLocation.name,
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: contentLocation.locality,
+                addressRegion: contentLocation.region,
+                addressCountry: contentLocation.country || 'ZA',
+              },
+            },
+          }
+        : {}),
       datePublished,
       dateModified: dateModified || datePublished,
       author: {

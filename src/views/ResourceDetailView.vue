@@ -92,6 +92,23 @@
               {{ block.text }}
             </p>
 
+            <!-- Inline image / figure (screenshots, portfolio proof) -->
+            <figure v-else-if="block.type === 'image'" class="my-10 reveal-up">
+              <img
+                :src="block.src"
+                :alt="block.alt"
+                :width="block.width || 1600"
+                :height="block.height || 1000"
+                class="w-full h-auto border border-navy-900/10 shadow-sm bg-white"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption v-if="block.caption"
+                          class="mt-3 font-sans text-charcoal-400 text-sm leading-relaxed text-center">
+                {{ block.caption }}
+              </figcaption>
+            </figure>
+
             <!-- External project link (case studies) -->
             <div
               v-else-if="block.type === 'external'"
@@ -125,6 +142,34 @@
 
           </template>
         </article>
+
+        <!-- ── FAQ (Answer Engine Optimisation) ── -->
+        <section
+          v-if="resource.faqs && resource.faqs.length"
+          class="mt-16 pt-10 border-t border-navy-900/10"
+          aria-labelledby="resource-faq-heading"
+        >
+          <h2 id="resource-faq-heading" class="font-serif text-navy-900 text-2xl mb-6 reveal-up">
+            Frequently asked questions
+          </h2>
+          <div class="divide-y divide-navy-900/10">
+            <details
+              v-for="(faq, i) in resource.faqs"
+              :key="i"
+              class="group py-5 reveal-up"
+              :open="i === 0"
+            >
+              <summary class="flex items-start justify-between gap-4 cursor-pointer list-none font-sans text-navy-900 font-semibold text-base leading-snug">
+                <span>{{ faq.question }}</span>
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-navy-900/50 transition-transform duration-300 group-open:rotate-45"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </summary>
+              <p class="font-sans text-charcoal-500 text-base leading-relaxed mt-3">{{ faq.answer }}</p>
+            </details>
+          </div>
+        </section>
 
         <!-- ── Author card ── -->
         <div class="mt-16 pt-8 border-t border-navy-900/10 flex items-start gap-5 reveal-up">
@@ -283,7 +328,13 @@ const seoOgImageAlt = computed(() =>
 
 const seoSchemas = computed(() => {
   if (!resource.value) return []
-  return [
+
+  // Collect all inline article images so answer/generative engines see the full media set
+  const inlineImages = (resource.value.content || [])
+    .filter((b) => b.type === 'image' && b.src)
+    .map((b) => ({ url: b.src, width: b.width, height: b.height, caption: b.caption || b.alt }))
+
+  const schemas = [
     // 1. BreadcrumbList — helps Google understand page hierarchy
     SCHEMAS.breadcrumb([
       { name: 'Home', url: '/' },
@@ -295,14 +346,25 @@ const seoSchemas = computed(() => {
       headline: resource.value.title,
       description: resource.value.excerpt,
       image: resource.value.image,
+      images: inlineImages.length
+        ? [{ url: resource.value.image, width: 1200, height: 630 }, ...inlineImages]
+        : undefined,
       datePublished: resource.value.dateISO,
       dateModified: resource.value.dateISO,
       author: resource.value.author,
       authorRole: resource.value.authorRole,
       url: `/resources/${resource.value.slug}`,
       keywords: resource.value.keywords ?? '',
+      contentLocation: resource.value.contentLocation,
     }),
   ]
+
+  // 3. FAQPage — Answer Engine Optimisation (Google FAQ rich results + AI answers)
+  if (resource.value.faqs && resource.value.faqs.length) {
+    schemas.push(SCHEMAS.faqPage(resource.value.faqs))
+  }
+
+  return schemas
 })
 
 useSeoMeta({
