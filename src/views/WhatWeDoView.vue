@@ -18,7 +18,7 @@
           for <span class="text-gradient">Accounting Firms</span>
         </h1>
         <p class="font-sans text-white/60 text-lg max-w-2xl leading-relaxed reveal-up" style="transition-delay: 200ms;">
-          We start with <strong class="text-white/80">client portals and intake workflows</strong> your team runs every day—then design, automate, and optimise the firm website and integrations around them so you cut admin by up to 70% and win more qualified clients.
+          We start with the <strong class="text-white/80">portal and intake workflows</strong> your team runs daily, then build the website and integrations around them—cutting admin by up to 70%.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
         <div class="flex flex-col sm:flex-row gap-4 mt-10 reveal-up" style="transition-delay: 300ms;">
@@ -52,7 +52,7 @@
             </h2>
             <div class="gold-divider mb-8"></div>
             <p class="font-sans text-charcoal-600 text-base leading-relaxed mb-8">
-              Most accounting firms in South Africa suffer from the same digital problems: outdated websites that don't convert, zero CRM integration, manual client intake processes, and compliance risks they're not even aware of.
+              The problems don't announce themselves. They show up as partners answering "did you get my file?" at 8pm, mornings lost to re-typing data, and enquiries that go quiet because a competitor replied first. Each feels manageable. Together, they cap how big your practice can grow.
             </p>
             <div class="space-y-4">
               <div
@@ -243,20 +243,21 @@ useSeoMeta({
   ],
 })
 
+// Kept as mirrored pairs: problems[i] is answered by solutions[i]
 const problems = [
-  'Outdated accounting firm website that doesn\'t generate leads or build trust',
-  'Manual client intake — chasing documents, signatures, and payments by email',
-  'No CRM integration — data lives in spreadsheets instead of your accounting software',
-  'Compliance risks from unregulated data collection forms',
-  'Competing with larger firms that have sophisticated digital presences',
+  'A website "finished" years ago that quietly loses enquiries',
+  'Documents chased over WhatsApp; signatures printed and scanned',
+  'Client data re-keyed between systems—every copy a chance for error',
+  'Forms nobody has reviewed for POPIA—liability accumulating in silence',
+  'Larger firms winning the clients your expertise deserves',
 ]
 
 const solutions = [
-  'Client portals built and managed for accountants—with your firm website kept in the same programme',
-  'Automated client intake with e-signatures, document upload, and instant CRM sync',
-  'CRM integration for accountants connecting Xero, QuickBooks, and HubSpot',
-  'Compliance-first architecture covering POPIA, FSCA, FAIS, and South African financial sector standards',
-  'Premium public-site and portal UX that positions you as the expert in your market',
+  'A managed site, optimised monthly to win "accountant near me" searches',
+  'A branded portal clients complete without being chased',
+  'One intake that syncs to Xero and HubSpot—entered once, correct everywhere',
+  'POPIA, FSCA, FAIS and accessibility reviewed before launch and monthly after',
+  'A five-person practice that feels like the most organised firm clients have used',
 ]
 
 const process = [

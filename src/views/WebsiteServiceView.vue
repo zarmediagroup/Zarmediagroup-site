@@ -15,13 +15,13 @@
           { label: 'Website as a Service', path: '/services/website-as-a-service' }
         ]" />
 
-        <span class="section-label reveal-up">Service — For Accountants, Financial Advisors &amp; Bookkeepers</span>
+        <span class="section-label reveal-up">Website as a Service — for Accountants, Advisors &amp; Bookkeepers</span>
         <h1 class="font-serif text-display-lg text-white mt-4 mb-6 max-w-3xl reveal-up" style="transition-delay: 100ms;">
-          Website as a Service<br/>
-          <span class="text-gradient">for Accountants</span>
+          Your Firm Website Was Finished<br/>
+          <span class="text-gradient">the Day It Started Decaying</span>
         </h1>
         <p class="font-sans text-white/60 text-lg max-w-2xl leading-relaxed reveal-up" style="transition-delay: 200ms;">
-          Your <strong class="text-white/80">firm website on a monthly subscription</strong>, continuously optimised—managed alongside the <strong class="text-white/80">client portal and intake stack</strong> so marketing, compliance, and day-to-day client work stay aligned. No one-off builds that quietly rot.
+          You paid R40,000 for a website three years ago. Today it ranks nowhere and collects client data through forms nobody has reviewed for POPIA. <strong class="text-white/80">Website as a Service</strong> replaces the one-off project with a <strong class="text-white/80">managed site on a monthly subscription</strong>—designed, hosted, optimised, and compliance-reviewed continuously.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
 
@@ -44,6 +44,66 @@
       </div>
     </section>
 
+    <!-- ══ PAS NARRATIVE ══ -->
+    <section class="section-padding bg-white border-b border-navy-900/8" aria-labelledby="pas-heading">
+      <div class="max-w-3xl mx-auto px-6 lg:px-8">
+        <div class="reveal-up">
+          <span class="section-label">Why one-off websites fail accounting firms</span>
+          <h2 id="pas-heading" class="font-serif text-display-md text-navy-900 mt-4 mb-6">
+            The most expensive website is the one<br class="hidden lg:inline"/> <em>you already paid for</em>
+          </h2>
+          <div class="gold-divider mb-8"></div>
+        </div>
+
+        <div class="reveal-up space-y-6 font-sans text-charcoal-600 text-base lg:text-lg leading-relaxed">
+          <p>
+            After a traditional project, the agency invoices and moves on. Nobody updates the content, re-tests the forms, or re-checks POPIA. Every month your site slips further down Google for <em>"accountant in Cape Town"</em>—and a competitor takes the enquiry that should have been yours.
+          </p>
+          <p>
+            One subscription ends the decay: design, hosting, SEO, and a standing POPIA review, run by the same team as your client portal. <strong class="text-navy-900">You stop owning a depreciating asset and start subscribing to an appreciating one.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTRAST: PROJECT VS PROGRAMME ══ -->
+    <section class="section-padding bg-navy-950 border-b border-white/5" aria-labelledby="contrast-heading">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16 reveal-up">
+          <span class="section-label">Side by side</span>
+          <h2 id="contrast-heading" class="font-serif text-display-md text-white mt-4 mb-4">
+            One-off project vs <em class="text-gold-400">managed programme</em>
+          </h2>
+          <div class="gold-divider-center"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div class="reveal-up bg-white/[0.03] border border-white/10 p-6 lg:p-10">
+            <h3 class="font-sans font-bold text-white/50 text-xs uppercase tracking-widest mb-6">The one-off website project</h3>
+            <ul class="space-y-4">
+              <li v-for="item in contrastProject" :key="item" class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-red-400/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+                <span class="font-sans text-white/55 text-sm leading-relaxed">{{ item }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="reveal-up bg-gold-500/[0.06] border border-gold-500/30 p-6 lg:p-10" style="transition-delay: 120ms;">
+            <h3 class="font-sans font-bold text-gold-400 text-xs uppercase tracking-widest mb-6">Website as a Service</h3>
+            <ul class="space-y-4">
+              <li v-for="item in contrastWaas" :key="item" class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="font-sans text-white/70 text-sm leading-relaxed">{{ item }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ══ KEY BENEFITS ══ -->
     <section class="section-padding bg-cream" aria-labelledby="benefits-heading">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -54,7 +114,7 @@
           </h2>
           <div class="gold-divider"></div>
           <p class="font-sans text-charcoal-600 text-lg leading-relaxed mt-6">
-            Traditional website projects fail accounting firms because they're disconnected from how clients actually work with you. Our <strong>Website as a Service for the financial sector</strong> keeps your public site current and converting—while we maintain it as part of the same managed programme as your <strong>client portal and workflows</strong>.
+            Your public site stays current, compliant, and converting—maintained in the same programme as your <strong>client portal and workflows</strong>.
           </p>
         </div>
 
@@ -251,6 +311,52 @@
       </div>
     </section>
 
+    <!-- ══ FAQ ══ -->
+    <section class="section-padding bg-cream" aria-labelledby="faq-heading">
+      <div class="max-w-2xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-16 reveal-up">
+          <span class="section-label">FAQ</span>
+          <h2 id="faq-heading" class="font-serif text-display-md text-navy-900 mt-4 mb-6">
+            What firm principals ask before subscribing
+          </h2>
+          <div class="gold-divider-center"></div>
+        </div>
+
+        <dl class="space-y-3">
+          <div
+            v-for="(faq, i) in faqs"
+            :key="i"
+            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-sm"
+            :style="{ transitionDelay: i * 60 + 'ms' }"
+          >
+            <dt>
+              <button
+                type="button"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                :aria-expanded="openFaq === i"
+                :aria-controls="`waas-faq-${i}`"
+                @click="openFaq = openFaq === i ? null : i"
+              >
+                <span class="pr-2">{{ faq.question }}</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 text-navy-400 transition-transform duration-300"
+                  :class="{ 'rotate-180': openFaq === i }"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </dt>
+            <Transition name="accordion">
+              <dd v-if="openFaq === i" :id="`waas-faq-${i}`" class="px-6 pb-6 pt-0 font-sans text-charcoal-600 text-sm leading-relaxed">
+                {{ faq.answer }}
+              </dd>
+            </Transition>
+          </div>
+        </dl>
+      </div>
+    </section>
+
     <!-- ══ RELATED SERVICES ══ -->
     <SeoRelatedGuides :slugs="pageSeo.relatedGuides" />
     <RelatedServices :exclude="['waas']" />
@@ -275,6 +381,7 @@ onMounted(() => setTimeout(initReveal, 50))
 
 const activeTab = ref('features')
 const tabSectionRef = ref(null)
+const openFaq = ref(null)
 
 // Re-run reveal whenever a new tab panel is rendered into the DOM
 watch(activeTab, () => {
@@ -296,6 +403,39 @@ const currentRevenue = computed(() =>
 const projectedRevenue = computed(() => Math.round(currentRevenue.value * 2.27))
 const roiUplift = computed(() => projectedRevenue.value - currentRevenue.value)
 
+const faqs = [
+  {
+    question: 'What is Website as a Service (WaaS) for accounting firms?',
+    answer:
+      'Website as a Service is a monthly subscription where Zar Media Group designs, builds, hosts, maintains, and continuously optimises your firm website. It is structured to stay aligned with your client portal and intake automations so prospects and logged-in clients see one coherent, compliant experience.',
+  },
+  {
+    question: 'How much does a managed website for accountants cost?',
+    answer:
+      'Our Website as a Service plans for accounting firms in South Africa start from R2,999/month for the Essentials plan, with Professional at R5,999/month and Enterprise from R9,999/month. All plans include hosting, maintenance, monthly updates, and compliance monitoring.',
+  },
+  {
+    question: 'Why not just pay once for a website and be done with it?',
+    answer:
+      'Because a firm website is never done. Google\'s ranking factors, POPIA guidance, browser security requirements, and your own service lines all change—usually within months of launch. A one-off site starts decaying the day it goes live; a managed site is re-tested, re-optimised, and compliance-reviewed every month. Most firms spend more rescuing a dead project site than a year of WaaS costs.',
+  },
+  {
+    question: 'How long does it take to launch a managed accounting firm website?',
+    answer:
+      'Most firm websites launch within 4–6 weeks of the free audit: week one for compliance review and architecture, weeks two to four for design and build, then integration testing and go-live. Portal integration and CRM wiring run in parallel, so the programme starts delivering before the full stack is finished.',
+  },
+  {
+    question: 'Do we own our domain and content if we cancel?',
+    answer:
+      'Yes. Your domain stays registered to your firm, and your content, brand assets, and client data are yours. WaaS is month to month after the initial term—we keep your business by performing, not by locking you in.',
+  },
+  {
+    question: 'Do you work with firms outside Cape Town?',
+    answer:
+      'Yes. We are Cape Town-based and run the full programme remotely for accounting, tax, and bookkeeping firms across South Africa—including Johannesburg, Pretoria, Durban, and Gqeberha. Audits, design reviews, and monthly reporting all happen over video.',
+  },
+]
+
 useSeoMeta({
   title: pageSeo.title,
   description: pageSeo.description,
@@ -315,20 +455,23 @@ useSeoMeta({
         'Managed accounting firm website on a monthly subscription—design, hosting, compliance, SEO, and CRO—delivered as part of the same programme as your client portal and connected workflows.',
       url: '/services/website-as-a-service',
     }),
-    SCHEMAS.faqPage([
-      {
-        question: 'What is Website as a Service (WaaS) for accounting firms?',
-        answer:
-          'Website as a Service is a monthly subscription where Zar Media Group designs, builds, hosts, maintains, and continuously optimises your firm website. It is structured to stay aligned with your client portal and intake automations so prospects and logged-in clients see one coherent, compliant experience.',
-      },
-      {
-        question: 'How much does a managed website for accountants cost?',
-        answer:
-          'Our Website as a Service plans for accounting firms in South Africa start from R2,999/month for the Essentials plan, with Professional at R5,999/month and Enterprise from R9,999/month. All plans include hosting, maintenance, monthly updates, and compliance monitoring.',
-      },
-    ]),
+    SCHEMAS.faqPage(faqs),
   ],
 })
+
+const contrastProject = [
+  'R30,000–R80,000 upfront, before a single enquiry',
+  'Content frozen on launch day',
+  'POPIA reviewed once—if at all',
+  'Something breaks: log a ticket, wait, pay hourly',
+]
+
+const contrastWaas = [
+  'From R2,999/month—no capital outlay',
+  'Content and SEO updated every month',
+  'Standing POPIA and accessibility review',
+  'We fix things before you notice them',
+]
 
 const tabs = [
   { id: 'features', label: 'What\'s Included' },

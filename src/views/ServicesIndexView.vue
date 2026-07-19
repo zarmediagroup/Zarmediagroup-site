@@ -18,18 +18,11 @@
         <h1 class="font-serif text-display-lg text-white mt-6 mb-8 max-w-4xl reveal-up" style="transition-delay: 100ms;">
           Digital services for <span class="text-gradient">accounting firms</span>
         </h1>
-        <p class="font-sans text-white/65 text-lg max-w-3xl leading-relaxed reveal-up mb-6" style="transition-delay: 200ms;">
-          Zar Media Group helps practices win more clients and cut admin with
-          <strong class="text-white/90">client portals for accountants</strong>,
+        <p class="font-sans text-white/65 text-lg max-w-3xl leading-relaxed reveal-up" style="transition-delay: 200ms;">
+          <strong class="text-white/90">Client portals</strong>,
           <strong class="text-white/90">managed firm websites</strong>,
           <strong class="text-white/90">CRM integration</strong>, and
-          <strong class="text-white/90">POPIA-conscious compliance</strong>—built as one programme, not disconnected projects.
-        </p>
-        <p class="font-sans text-white/50 text-base max-w-3xl leading-relaxed reveal-up" style="transition-delay: 250ms;">
-          Whether you are searching for a <RouterLink to="/services/client-portal" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">client portal for your accounting firm</RouterLink>,
-          a continuously optimised <RouterLink to="/services/website-as-a-service" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">website for accountants</RouterLink>,
-          or <RouterLink to="/services/workflow-integration" class="text-gold-500/90 hover:text-gold-400 underline-offset-2 hover:underline">CRM integration with Xero and HubSpot</RouterLink>,
-          each service below is purpose-built for regulated financial work in South Africa.
+          <strong class="text-white/90">POPIA-conscious compliance</strong>—one programme, purpose-built for regulated financial work in South Africa.
         </p>
         <div class="gold-divider mt-10 reveal-up" style="transition-delay: 300ms;"></div>
         <div class="flex flex-col sm:flex-row gap-4 mt-10 reveal-up" style="transition-delay: 350ms;">
@@ -45,8 +38,9 @@
           Our services for financial professionals
         </h2>
         <p class="font-sans text-charcoal-600 text-lg max-w-3xl leading-relaxed mb-14">
-          Choose the capability that matches your firm today. Most practices combine a
-          <strong>client-facing portal</strong> with a <strong>managed public website</strong> so prospects and logged-in clients see one brand.
+          Your firm loses hours and takes on POPIA risk wherever client information moves by hand.
+          Each service below closes one of those gaps—and together they run as
+          <strong>one managed programme</strong> with one audit trail.
         </p>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -73,12 +67,58 @@
       </div>
     </section>
 
+    <!-- ══ FAQ ══ -->
+    <section class="section-padding bg-white border-t border-navy-900/8" aria-labelledby="faq-heading">
+      <div class="max-w-2xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-16 reveal-up">
+          <span class="section-label">FAQ</span>
+          <h2 id="faq-heading" class="font-serif text-display-md text-navy-900 mt-4 mb-6">
+            Before you pick a service
+          </h2>
+          <div class="gold-divider-center"></div>
+        </div>
+
+        <dl class="space-y-3">
+          <div
+            v-for="(faq, i) in faqs"
+            :key="i"
+            class="reveal-up border border-navy-900/10 bg-cream overflow-hidden rounded-sm"
+            :style="{ transitionDelay: i * 60 + 'ms' }"
+          >
+            <dt>
+              <button
+                type="button"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                :aria-expanded="openFaq === i"
+                :aria-controls="`svc-faq-${i}`"
+                @click="openFaq = openFaq === i ? null : i"
+              >
+                <span class="pr-2">{{ faq.question }}</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 text-navy-400 transition-transform duration-300"
+                  :class="{ 'rotate-180': openFaq === i }"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </dt>
+            <Transition name="accordion">
+              <dd v-if="openFaq === i" :id="`svc-faq-${i}`" class="px-6 pb-6 pt-0 font-sans text-charcoal-600 text-sm leading-relaxed">
+                {{ faq.answer }}
+              </dd>
+            </Transition>
+          </div>
+        </dl>
+      </div>
+    </section>
+
     <SeoRelatedGuides :slugs="relatedGuides" />
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS, BASE_URL } from '@/composables/useSeoMeta'
 import { getPageSeo, SERVICE_OFFERINGS } from '@/data/seo-pages'
@@ -95,7 +135,31 @@ const offerings = SERVICE_OFFERINGS.map((s) => ({
 }))
 
 const { initReveal } = useScrollReveal()
+const openFaq = ref(null)
 onMounted(() => setTimeout(initReveal, 50))
+
+const faqs = [
+  {
+    question: 'What services does Zar Media Group offer accounting firms?',
+    answer:
+      'We offer client portals and CRM integration, Website as a Service for firm sites, workflow integration with Xero and HubSpot, compliance-first website architecture, and a dedicated accounting client portal product tour for South African practices.',
+  },
+  {
+    question: 'Do you only work with accountants in South Africa?',
+    answer:
+      'We are based in South Africa and specialise exclusively in POPIA, FSCA, FAIS, SAICA, and South African web accessibility requirements for accounting and financial services firms.',
+  },
+  {
+    question: 'Which service should our firm start with?',
+    answer:
+      'Start where the pain is loudest. If your team spends hours chasing documents on WhatsApp and email, start with the client portal. If your website is outdated or not producing enquiries, start with Website as a Service. If data is re-keyed between systems, start with workflow integration. The free audit tells you which gap costs you most—then we sequence the rest.',
+  },
+  {
+    question: 'Can we combine services into one monthly programme?',
+    answer:
+      'Yes—that is how most firms run it. Portal, firm website, integrations, and compliance review are delivered and billed as one managed programme, so there is one team, one roadmap, and one compliant stack instead of three vendors pointing at each other.',
+  },
+]
 
 useSeoMeta({
   title: seo.title,
@@ -128,18 +192,7 @@ useSeoMeta({
         })),
       },
     },
-    SCHEMAS.faqPage([
-      {
-        question: 'What services does Zar Media Group offer accounting firms?',
-        answer:
-          'We offer client portals and CRM integration, Website as a Service for firm sites, workflow integration with Xero and HubSpot, compliance-first website architecture, and a dedicated accounting client portal product tour for South African practices.',
-      },
-      {
-        question: 'Do you only work with accountants in South Africa?',
-        answer:
-          'We are based in South Africa and specialise exclusively in POPIA, FSCA, FAIS, SAICA, and South African web accessibility requirements for accounting and financial services firms.',
-      },
-    ]),
+    SCHEMAS.faqPage(faqs),
   ],
 })
 </script>

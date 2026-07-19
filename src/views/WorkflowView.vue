@@ -21,7 +21,7 @@
           <span class="text-gradient">for Accounting Firms</span>
         </h1>
         <p class="font-sans text-white/60 text-lg max-w-2xl leading-relaxed reveal-up" style="transition-delay: 200ms;">
-          Eliminate manual admin by connecting your accounting website to Xero, QuickBooks, HubSpot, and your client portal. Automate client onboarding, document collection, and appointment booking — saving 8–15 hours per week for your accounting team.
+          Re-typing the same client details into Xero, your CRM, and an engagement letter means paying three times for one piece of information. We connect your stack so <strong class="text-white/80">data flows once, traceably</strong>—and firms get 8–15 admin hours back per week.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
 
@@ -53,7 +53,7 @@
           </h2>
           <div class="gold-divider-center"></div>
           <p class="font-sans text-charcoal-600 text-lg leading-relaxed mt-6">
-            The average accounting firm in South Africa spends <strong>12+ hours per week</strong> on administrative tasks that should be automated: chasing client documents, manually entering data, following up on unsigned agreements, and re-keying information from emails into accounting software.
+            The average SA accounting firm spends <strong>12+ hours per week</strong> on admin that should be automated. At a modest charge-out rate, that's over <strong>R500,000 a year</strong> in copy-paste work—and every re-keyed entry is a fresh chance for the error that costs a client.
           </p>
         </div>
 
@@ -68,6 +68,43 @@
             <div class="font-sans text-navy-900 text-sm font-semibold mb-1">{{ stat.label }}</div>
             <div class="font-sans text-charcoal-400 text-xs">{{ stat.detail }}</div>
           </div>
+        </div>
+
+        <!-- Contrast: the same client, two onboardings -->
+        <div class="max-w-5xl mx-auto">
+          <h3 class="font-serif text-display-sm text-navy-900 text-center mb-3 reveal-up">
+            The same new client, onboarded two ways
+          </h3>
+          <p class="font-sans text-charcoal-500 text-sm text-center max-w-2xl mx-auto mb-10 reveal-up">
+            One new client, through both versions of your firm.
+          </p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            <div class="reveal-up bg-white border border-navy-900/10 p-6 lg:p-8">
+              <h4 class="font-sans font-bold text-charcoal-400 text-xs uppercase tracking-widest mb-6">Manual intake — 2 to 3 weeks</h4>
+              <ul class="space-y-4">
+                <li v-for="item in manualJourney" :key="item" class="flex items-start gap-3">
+                  <svg class="w-4 h-4 text-red-500/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                  </svg>
+                  <span class="font-sans text-charcoal-600 text-sm leading-relaxed">{{ item }}</span>
+                </li>
+              </ul>
+            </div>
+            <div class="reveal-up bg-white border border-gold-500/40 p-6 lg:p-8 shadow-card-hover" style="transition-delay: 120ms;">
+              <h4 class="font-sans font-bold text-gold-600 text-xs uppercase tracking-widest mb-6">Integrated intake — 2 to 3 days</h4>
+              <ul class="space-y-4">
+                <li v-for="item in automatedJourney" :key="item" class="flex items-start gap-3">
+                  <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="font-sans text-charcoal-600 text-sm leading-relaxed">{{ item }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="font-sans text-charcoal-500 text-sm text-center max-w-2xl mx-auto mt-8 reveal-up">
+            Same client. Same engagement letter. A fortnight of chasing—or none.
+          </p>
         </div>
       </div>
     </section>
@@ -106,15 +143,20 @@
                   :key="tool.name"
                   class="inline-flex items-center gap-2 font-sans text-xs text-white/70 bg-white/5 border border-white/10 px-2.5 py-1.5 group-hover:border-white/20 transition-colors"
                 >
-                  <img
+                  <span
                     v-if="tool.logo"
-                    :src="tool.logo"
-                    :alt="tool.alt"
-                    class="h-4 w-4 flex-shrink-0 object-contain brightness-0 invert opacity-90"
-                    width="16"
-                    height="16"
-                    loading="lazy"
-                  />
+                    class="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-[3px] bg-white"
+                    aria-hidden="true"
+                  >
+                    <img
+                      :src="tool.logo"
+                      :alt="tool.alt"
+                      class="h-3.5 w-3.5 object-contain"
+                      width="14"
+                      height="14"
+                      loading="lazy"
+                    />
+                  </span>
                   {{ tool.name }}
                 </span>
               </div>
@@ -192,6 +234,52 @@
       </div>
     </section>
 
+    <!-- ══ FAQ ══ -->
+    <section class="section-padding bg-cream" aria-labelledby="faq-heading">
+      <div class="max-w-2xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-16 reveal-up">
+          <span class="section-label">FAQ</span>
+          <h2 id="faq-heading" class="font-serif text-display-md text-navy-900 mt-4 mb-6">
+            Integration questions, answered straight
+          </h2>
+          <div class="gold-divider-center"></div>
+        </div>
+
+        <dl class="space-y-3">
+          <div
+            v-for="(faq, i) in faqs"
+            :key="i"
+            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-sm"
+            :style="{ transitionDelay: i * 60 + 'ms' }"
+          >
+            <dt>
+              <button
+                type="button"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                :aria-expanded="openFaq === i"
+                :aria-controls="`wf-faq-${i}`"
+                @click="openFaq = openFaq === i ? null : i"
+              >
+                <span class="pr-2">{{ faq.question }}</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 text-navy-400 transition-transform duration-300"
+                  :class="{ 'rotate-180': openFaq === i }"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </dt>
+            <Transition name="accordion">
+              <dd v-if="openFaq === i" :id="`wf-faq-${i}`" class="px-6 pb-6 pt-0 font-sans text-charcoal-600 text-sm leading-relaxed">
+                {{ faq.answer }}
+              </dd>
+            </Transition>
+          </div>
+        </dl>
+      </div>
+    </section>
+
     <!-- ══ RELATED SERVICES ══ -->
     <SeoRelatedGuides :slugs="pageSeo.relatedGuides" />
     <RelatedServices :exclude="['workflow']" />
@@ -200,7 +288,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS } from '@/composables/useSeoMeta'
 import { getPageSeo } from '@/data/seo-pages'
@@ -213,7 +301,36 @@ import { WORKFLOW_INTEGRATIONS } from '@/data/integration-tools'
 const pageSeo = getPageSeo('workflow-integration')
 
 const { initReveal } = useScrollReveal()
+const openFaq = ref(null)
 onMounted(() => setTimeout(initReveal, 50))
+
+const faqs = [
+  {
+    question: 'What is the best client portal for small accounting firms?',
+    answer:
+      'The best client portal for small accounting firms is one that integrates with your existing tools. Zar Media Group builds custom branded client portals that connect to Xero, QuickBooks, and DocuSign — allowing clients to upload documents, sign agreements, and communicate securely, all from your own website.',
+  },
+  {
+    question: 'How does CRM integration help accountants reduce admin?',
+    answer:
+      'CRM integration for accountants means that when a prospect fills in your contact form, their details automatically flow into HubSpot or Salesforce, trigger a welcome sequence, book an appointment, and create a new client record in your accounting software — without any manual steps.',
+  },
+  {
+    question: 'Which accounting tools do you integrate with?',
+    answer:
+      'Accounting and practice: Xero, QuickBooks, Sage. CRM: HubSpot, Salesforce, Pipedrive, Zoho. Signatures and onboarding: DocuSign, HelloSign. Scheduling: Calendly, Microsoft Bookings. If your firm runs something else, we scope the connection during the free audit—simple routing is quick; deep two-way sync gets proper mapping and testing before go-live.',
+  },
+  {
+    question: 'Will automation break our existing processes during rollout?',
+    answer:
+      'No—we never switch everything at once. Integrations go live one workflow at a time, starting with the highest-pain handoff (usually enquiry-to-CRM or document intake). Your team keeps working in the tools they know while each connection is tested with real data, and every automated handoff keeps a traceable log so you can verify it before trusting it.',
+  },
+  {
+    question: 'Is automated client data handling POPIA-compliant?',
+    answer:
+      'Automation done properly improves POPIA compliance: data is captured once with consent, moved over encrypted connections, and every handoff is logged—unlike email forwarding, where copies of personal information multiply across inboxes. Every integration we build is reviewed for POPIA-conscious data handling before launch.',
+  },
+]
 
 useSeoMeta({
   title: pageSeo.title,
@@ -234,18 +351,7 @@ useSeoMeta({
         'Zar Media Group connects accounting websites to CRM systems, accounting software (Xero, QuickBooks), and client portals — automating admin and reducing manual data entry for financial professionals.',
       url: '/services/workflow-integration',
     }),
-    SCHEMAS.faqPage([
-      {
-        question: 'What is the best client portal for small accounting firms?',
-        answer:
-          'The best client portal for small accounting firms is one that integrates with your existing tools. Zar Media Group builds custom branded client portals that connect to Xero, QuickBooks, and DocuSign — allowing clients to upload documents, sign agreements, and communicate securely, all from your own website.',
-      },
-      {
-        question: 'How does CRM integration help accountants reduce admin?',
-        answer:
-          'CRM integration for accountants means that when a prospect fills in your contact form, their details automatically flow into HubSpot or Salesforce, trigger a welcome sequence, book an appointment, and create a new client record in your accounting software — without any manual steps.',
-      },
-    ]),
+    SCHEMAS.faqPage(faqs),
   ],
 })
 
@@ -257,6 +363,22 @@ const adminStats = [
 ]
 
 const integrations = WORKFLOW_INTEGRATIONS
+
+const manualJourney = [
+  'Enquiry sits in a partner\'s inbox until Friday',
+  'Details typed into a spreadsheet, re-typed into the CRM',
+  'Engagement letter printed, scanned, emailed—wrong version signed first',
+  'FICA documents trickle in over WhatsApp, half unusable',
+  'First impression of your firm: chaos',
+]
+
+const automatedJourney = [
+  'Enquiry fires straight into HubSpot; booking goes out in minutes',
+  'Engagement letter and FICA pack via DocuSign the same day',
+  'Documents uploaded to the portal—encrypted, logged',
+  'Everything syncs to Xero automatically',
+  'First impression of your firm: precision',
+]
 
 const automationSteps = [
   { title: 'Prospect fills in enquiry form', description: 'Smart forms on your accounting website capture name, services needed, and preferred contact time.' },

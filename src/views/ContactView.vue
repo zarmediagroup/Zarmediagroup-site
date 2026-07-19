@@ -18,7 +18,7 @@
           <span class="text-gradient">Accounting Practice</span>
         </h1>
         <p class="font-sans text-white/60 text-lg max-w-2xl leading-relaxed reveal-up" style="transition-delay: 200ms;">
-          Tell us about your accounting firm or financial services practice. We'll conduct a free website audit and show you exactly how to reduce admin, attract more clients, and build a compliant digital presence.
+          Three minutes to fill in. Within one working day you get a <strong class="text-white/80">free audit of your firm</strong>: where documents enter, which POPIA gaps exist, and what the admin drain costs. No hard sell—you keep the findings either way.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
       </div>

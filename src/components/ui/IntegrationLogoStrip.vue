@@ -26,16 +26,21 @@
           : 'border-navy-900/10 bg-white hover:border-gold-500/40 hover:shadow-sm'"
         :title="tool.name"
       >
-        <img
+        <span
           v-if="tool.logo"
-          :src="tool.logo"
-          :alt="tool.alt"
-          class="h-5 w-5 flex-shrink-0 object-contain opacity-80 transition-opacity duration-300 group-hover:opacity-100"
-          :class="variant === 'dark' ? 'brightness-0 invert' : ''"
-          width="20"
-          height="20"
-          loading="lazy"
-        />
+          class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-[4px]"
+          :class="variant === 'dark' ? 'bg-white' : ''"
+          aria-hidden="true"
+        >
+          <img
+            :src="tool.logo"
+            :alt="tool.alt"
+            class="h-4 w-4 object-contain opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+            width="16"
+            height="16"
+            loading="lazy"
+          />
+        </span>
         <span
           class="font-sans text-xs font-medium whitespace-nowrap transition-colors"
           :class="variant === 'dark'

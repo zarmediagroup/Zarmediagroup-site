@@ -21,7 +21,7 @@
           <span class="text-gradient">for Financial Services</span>
         </h1>
         <p class="font-sans text-white/60 text-lg max-w-2xl leading-relaxed reveal-up" style="transition-delay: 200ms;">
-          Every accounting firm website and financial services website we build is reviewed against POPIA, FSCA, FAIS, SAICA standards, and South African web accessibility requirements — protecting your firm and building trust with clients across South Africa.
+          Your website collects names, ID numbers, and financial records right now. If you can't say where that data goes, <strong class="text-white/80">the liability already exists</strong>. Every build is reviewed against POPIA, FSCA, FAIS, SAICA, and SA accessibility standards—before launch and as the rules evolve.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
 
@@ -54,6 +54,9 @@
           <div class="gold-divider mb-8"></div>
           <p class="font-sans text-charcoal-600 text-lg leading-relaxed">
             Regulated industries like accounting, financial advisory, and tax services cannot afford compliance gaps online. A poorly built accounting firm website can create POPIA violations, Information Regulator complaints, accessibility failures, and FSCA sanctions — before you've served a single client through it.
+          </p>
+          <p class="font-sans text-charcoal-600 text-base leading-relaxed mt-4">
+            POPIA fines reach R10 million, but the real cost is the review you can't recover from: <em>"they mishandled my data."</em> The fix isn't a footer disclaimer—it's architecture. <strong>We design compliance in before the first page is styled, then review it monthly.</strong>
           </p>
         </div>
 
@@ -168,6 +171,90 @@
       </div>
     </section>
 
+    <!-- ══ CONTRAST: BOLT-ON VS BUILT-IN ══ -->
+    <section class="section-padding bg-navy-950 border-y border-white/5" aria-labelledby="contrast-heading">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16 reveal-up">
+          <span class="section-label">Two ways firms handle compliance</span>
+          <h2 id="contrast-heading" class="font-serif text-display-md text-white mt-4 mb-4">
+            Bolted on after launch vs <em class="text-gold-400">built in from day one</em>
+          </h2>
+          <div class="gold-divider-center"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div class="reveal-up bg-white/[0.03] border border-white/10 p-6 lg:p-10">
+            <h3 class="font-sans font-bold text-white/50 text-xs uppercase tracking-widest mb-6">Compliance as an afterthought</h3>
+            <ul class="space-y-4">
+              <li v-for="item in contrastBoltOn" :key="item" class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-red-400/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+                <span class="font-sans text-white/55 text-sm leading-relaxed">{{ item }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="reveal-up bg-gold-500/[0.06] border border-gold-500/30 p-6 lg:p-10" style="transition-delay: 120ms;">
+            <h3 class="font-sans font-bold text-gold-400 text-xs uppercase tracking-widest mb-6">Compliance-first architecture</h3>
+            <ul class="space-y-4">
+              <li v-for="item in contrastBuiltIn" :key="item" class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="font-sans text-white/70 text-sm leading-relaxed">{{ item }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FAQ ══ -->
+    <section class="section-padding bg-cream" aria-labelledby="faq-heading">
+      <div class="max-w-2xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-16 reveal-up">
+          <span class="section-label">FAQ</span>
+          <h2 id="faq-heading" class="font-serif text-display-md text-navy-900 mt-4 mb-6">
+            Compliance questions firms ask us
+          </h2>
+          <div class="gold-divider-center"></div>
+        </div>
+
+        <dl class="space-y-3">
+          <div
+            v-for="(faq, i) in faqs"
+            :key="i"
+            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-sm"
+            :style="{ transitionDelay: i * 60 + 'ms' }"
+          >
+            <dt>
+              <button
+                type="button"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                :aria-expanded="openFaq === i"
+                :aria-controls="`ct-faq-${i}`"
+                @click="openFaq = openFaq === i ? null : i"
+              >
+                <span class="pr-2">{{ faq.question }}</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 text-navy-400 transition-transform duration-300"
+                  :class="{ 'rotate-180': openFaq === i }"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </dt>
+            <Transition name="accordion">
+              <dd v-if="openFaq === i" :id="`ct-faq-${i}`" class="px-6 pb-6 pt-0 font-sans text-charcoal-600 text-sm leading-relaxed">
+                {{ faq.answer }}
+              </dd>
+            </Transition>
+          </div>
+        </dl>
+      </div>
+    </section>
+
     <!-- ══ RELATED SERVICES ══ -->
     <SeoRelatedGuides :slugs="pageSeo.relatedGuides" />
     <RelatedServices :exclude="['compliance']" />
@@ -176,7 +263,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS } from '@/composables/useSeoMeta'
 import { getPageSeo } from '@/data/seo-pages'
@@ -188,7 +275,36 @@ import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
 const pageSeo = getPageSeo('compliance-trust')
 
 const { initReveal } = useScrollReveal()
+const openFaq = ref(null)
 onMounted(() => setTimeout(initReveal, 50))
+
+const faqs = [
+  {
+    question: 'What compliance regulations apply to accounting firm websites in South Africa?',
+    answer:
+      'Accounting firm websites in South Africa must comply with POPIA (Protection of Personal Information Act) for data collection, PAIA for information access requests, South African web accessibility standards for inclusive access, and relevant FSCA (Financial Sector Conduct Authority) and FAIS Act requirements for firms that provide financial advice.',
+  },
+  {
+    question: 'What does a compliant digital presence mean for regulated industries?',
+    answer:
+      'A compliant digital presence for South African regulated industries means your website handles client data according to POPIA, is accessible under South African web accessibility standards, displays required FSCA and FAIS disclosures, uses secure data collection forms, and has appropriate POPIA-compliant cookie consent mechanisms.',
+  },
+  {
+    question: 'What can happen if our firm website is not POPIA-compliant?',
+    answer:
+      'POPIA provides for administrative fines of up to R10 million for serious contraventions, and the Information Regulator can investigate complaints from any client. In practice the earlier costs are reputational: a complaint means producing records of how personal information was collected and handled—records most firms relying on email and WhatsApp intake cannot produce.',
+  },
+  {
+    question: 'Is a privacy policy and cookie banner enough to make our website compliant?',
+    answer:
+      'No. A policy describes what you do—compliance is what the site actually does. If your forms over-collect, your uploads are unencrypted, or third-party scripts fire before consent, a well-written policy just documents the gap. We fix the architecture first (encryption, access controls, minimal data collection, audit logging), then make sure the disclosures match reality.',
+  },
+  {
+    question: 'Do you provide legal advice on POPIA and FSCA compliance?',
+    answer:
+      'No—we implement the technical and structural side: secure data handling, consent mechanisms, disclosures, accessibility, and audit trails. Your legal and compliance advisers sign off on policy content; we make sure the website behaves the way the policy says it does. Where a firm has no adviser, we work from published regulator guidance and flag anything that needs a legal opinion.',
+  },
+]
 
 useSeoMeta({
   title: pageSeo.title,
@@ -209,20 +325,23 @@ useSeoMeta({
         'Purpose-built compliant digital presence for South African regulated industries. Every website reviewed against POPIA, FSCA, FAIS, SAICA standards, and South African web accessibility requirements.',
       url: '/services/compliance-trust',
     }),
-    SCHEMAS.faqPage([
-      {
-        question: 'What compliance regulations apply to accounting firm websites in South Africa?',
-        answer:
-          'Accounting firm websites in South Africa must comply with POPIA (Protection of Personal Information Act) for data collection, South African web accessibility standards for inclusive access, and relevant FSCA (Financial Sector Conduct Authority) and FAIS Act requirements for firms that provide financial advice.',
-      },
-      {
-        question: 'What does a compliant digital presence mean for regulated industries?',
-        answer:
-          'A compliant digital presence for South African regulated industries means your website handles client data according to POPIA, is accessible under South African web accessibility standards, displays required FSCA and FAIS disclosures, uses secure data collection forms, and has appropriate POPIA-compliant cookie consent mechanisms.',
-      },
-    ]),
+    SCHEMAS.faqPage(faqs),
   ],
 })
+
+const contrastBoltOn = [
+  'Privacy policy copied from someone else\'s template',
+  'Scripts fire before anyone consents',
+  'Forms collect ID numbers "just in case"',
+  'When the Regulator asks, history is reconstructed from memory',
+]
+
+const contrastBuiltIn = [
+  'Data flows mapped before design starts',
+  'Consent captured before non-essential scripts load',
+  'Forms collect only what the engagement needs',
+  'When anyone asks, the answer is an audit-trail export',
+]
 
 const regulations = [
   {

@@ -246,6 +246,21 @@ export const SCHEMAS = {
       currenciesAccepted: 'ZAR',
       areaServed: [
         { '@type': 'Country', name: 'South Africa' },
+        { '@type': 'City', name: 'Cape Town' },
+        { '@type': 'City', name: 'Johannesburg' },
+        { '@type': 'City', name: 'Pretoria' },
+        { '@type': 'City', name: 'Durban' },
+        { '@type': 'AdministrativeArea', name: 'Western Cape' },
+        { '@type': 'AdministrativeArea', name: 'Gauteng' },
+        { '@type': 'AdministrativeArea', name: 'KwaZulu-Natal' },
+      ],
+      knowsAbout: [
+        'POPIA compliance for accounting firms',
+        'Client portals for accountants',
+        'Website as a Service for accounting firms',
+        'CRM integration for accountants (Xero, QuickBooks, HubSpot)',
+        'FSCA and FAIS website requirements',
+        'South African web accessibility standards',
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',

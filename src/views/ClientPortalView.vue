@@ -25,19 +25,15 @@
           Stop losing tax packs in<br />
           <span class="text-gradient">WhatsApp and email threads</span>
         </h1>
-        <p class="font-sans text-white/65 text-base sm:text-lg max-w-2xl leading-relaxed reveal-up mb-6" style="transition-delay: 200ms;">
-          Every season, the same drain: attachments in three inboxes, clients asking “did you get it?”, and your team chasing files instead of doing the work.
-          This portal puts uploads, compliance deadlines, and document status on <strong class="text-white/90">your domain, under your brand</strong>.
-        </p>
-        <p class="font-sans text-white/55 text-sm sm:text-base max-w-2xl leading-relaxed reveal-up mb-8" style="transition-delay: 210ms;">
-          Clients know exactly where to send PAYE, VAT, and bank statements. Your staff work one queue—with a clear audit trail.
+        <p class="font-sans text-white/65 text-base sm:text-lg max-w-2xl leading-relaxed reveal-up mb-8" style="transition-delay: 200ms;">
+          Attachments in three inboxes, clients asking “did you get it?”, your team chasing files instead of doing the work. This portal puts uploads, deadlines, and status on <strong class="text-white/90">your domain, under your brand</strong>—one queue, full audit trail.
         </p>
         <p
           class="font-sans text-white/50 text-xs sm:text-sm max-w-2xl leading-relaxed mb-10 pl-4 border-l-2 border-gold-500/60 reveal-up"
           style="transition-delay: 220ms;"
           role="note"
         >
-          <strong class="text-white/80">Demo screenshots below.</strong> Every firm, client, and file shown is fictional—we use demo data so you can judge the workflow without exposing real matters.
+          <strong class="text-white/80">Demo screenshots below</strong>—all firms, clients, and files shown are fictional.
         </p>
         <div class="gold-divider reveal-up" style="transition-delay: 250ms;"></div>
         <div class="flex flex-col sm:flex-row gap-4 mt-12 reveal-up" style="transition-delay: 300ms;">
@@ -454,6 +450,16 @@ const faqs = [
     question: 'How is this different from off-the-shelf client portal software?',
     answer:
       'Off-the-shelf products solve one piece. We brand the portal on your domain, connect it to your stack, and maintain your firm website in the same programme—so the experience matches how your practice actually works.',
+  },
+  {
+    question: 'How much does a client portal for an accounting firm cost?',
+    answer:
+      'Portal builds are scoped to your firm\'s workflow, client volume, and integrations—so the number is fixed before you commit, not discovered during development. Most firms run the portal inside a managed programme alongside their firm website (plans from R2,999/month). The free audit ends with a scoped quote for your practice.',
+  },
+  {
+    question: 'Can firms outside Cape Town use the portal?',
+    answer:
+      'Yes. The portal is cloud-hosted on your domain, and we deliver the whole programme remotely—accounting, tax, and bookkeeping practices in Johannesburg, Pretoria, Durban, Gqeberha, and smaller centres run it exactly the same way Cape Town firms do. Walkthroughs, configuration, and monthly reviews happen over video.',
   },
 ]
 

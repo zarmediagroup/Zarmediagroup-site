@@ -39,7 +39,7 @@
             POPIA-conscious portal on your domain—encrypted uploads, audit trail, less admin chasing.
           </p>
           <p class="hidden lg:block font-sans text-white/60 text-base leading-relaxed mb-4 max-w-lg reveal-up" style="transition-delay: 200ms;">
-            WhatsApp and email are an admin drain—and a compliance liability. We build and run a <strong class="text-white/80">POPIA-conscious client portal on your domain</strong>: encrypted uploads, access controls, and a full audit trail. Your <strong class="text-white/80">firm website is managed in the same compliant programme</strong>. Less chasing. Defensible records. One stack.
+            We build and run a <strong class="text-white/80">POPIA-conscious client portal on your domain</strong>—encrypted uploads, full audit trail, firm website managed in the same programme. Less chasing. Defensible records.
           </p>
 
           <ul class="hidden lg:block font-sans text-white/55 text-xs space-y-1.5 mb-5 max-w-lg reveal-up" style="transition-delay: 250ms;" aria-label="What you get">
@@ -264,7 +264,7 @@
               POPIA-conscious portal on your domain—8–15 admin hours back per week, with records you can defend.
             </p>
             <p class="hidden lg:block font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
-              You cannot defend a tax file built from WhatsApp forwards. We move documents, signatures, and client status into a <strong class="text-white/80">POPIA-conscious portal on your domain</strong>—encrypted storage, role-based access, full audit log—wired to Xero, HubSpot, and DocuSign. Typical result: <strong class="text-white/80">8–15 admin hours back per week</strong>, with records you can stand behind.
+              You cannot defend a tax file built from WhatsApp forwards. We move documents, signatures, and status into an encrypted portal on your domain—wired to Xero, HubSpot, and DocuSign. Typical result: <strong class="text-white/80">8–15 admin hours back per week</strong>.
             </p>
 
             <div class="space-y-4 lg:space-y-6 stagger-children">
@@ -317,6 +317,64 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTRAST: BEFORE / AFTER ==================== -->
+    <section class="py-10 md:py-20 lg:py-28 bg-navy-950 border-y border-white/5" aria-labelledby="contrast-heading">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14">
+          <span class="section-label reveal-up hidden lg:inline">The difference</span>
+          <h2 id="contrast-heading" class="font-serif text-display-md text-white mb-4 reveal-up max-lg:text-[clamp(1.5rem,6vw,2rem)]">
+            Tax season without a portal.<br/><em class="text-gold-400">Tax season with one.</em>
+          </h2>
+          <div class="gold-divider-center reveal-up"></div>
+          <p class="hidden lg:block font-sans text-white/60 text-base leading-relaxed mt-6 reveal-up">
+            Same firm, same clients, same deadlines. What changes is what you can prove.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div class="reveal-up bg-white/[0.03] border border-white/10 p-6 lg:p-10">
+            <h3 class="font-sans font-bold text-white/50 text-xs uppercase tracking-widest mb-6">
+              Your firm today
+            </h3>
+            <ul class="space-y-4">
+              <li v-for="item in contrastBefore" :key="item" class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-red-400/70 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+                <span class="font-sans text-white/55 text-sm leading-relaxed">{{ item }}</span>
+              </li>
+            </ul>
+            <p class="font-sans text-red-400/80 text-sm font-semibold mt-8 pt-6 border-t border-white/10">
+              The bill: 8–15 admin hours a week.
+            </p>
+          </div>
+
+          <div class="reveal-up bg-gold-500/[0.06] border border-gold-500/30 p-6 lg:p-10" style="transition-delay: 120ms;">
+            <h3 class="font-sans font-bold text-gold-400 text-xs uppercase tracking-widest mb-6">
+              Your firm 30 days after launch
+            </h3>
+            <ul class="space-y-4">
+              <li v-for="item in contrastAfter" :key="item" class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="font-sans text-white/70 text-sm leading-relaxed">{{ item }}</span>
+              </li>
+            </ul>
+            <p class="font-sans text-gold-400 text-sm font-semibold mt-8 pt-6 border-t border-gold-500/20">
+              The result: senior staff back on billable work.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-10 lg:mt-12 reveal-up">
+          <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit to see which column your firm is in">
+            Find out which column you're in—free audit
+          </RouterLink>
         </div>
       </div>
     </section>
@@ -471,7 +529,7 @@
           30-minute call—map your intake gaps and outline a POPIA-conscious portal. No obligation.
         </p>
         <p class="hidden lg:block font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
-          In 30 minutes we map where client documents enter your firm today (email, WhatsApp, shared drives), flag the compliance gaps, estimate the admin cost, and outline a POPIA-conscious portal on your domain. <strong class="text-white/80">127+ regulated practices</strong> trust us with their client intake. No obligation.
+          30 minutes. We map where documents enter your firm, flag the POPIA gaps, and cost the admin drain. <strong class="text-white/80">127+ regulated practices</strong> trust us with their intake. No obligation.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center reveal-up" style="transition-delay: 300ms;">
           <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit">
@@ -553,6 +611,21 @@ const faqs = [
     answer:
       'In 30 minutes we walk through where documents enter your firm today, flag POPIA and intake compliance gaps, estimate admin hours lost, and outline what a portal on your domain would look like—including security, access controls, and timeline. No obligation.',
   },
+  {
+    question: 'What is a POPIA-conscious client portal?',
+    answer:
+      'A POPIA-conscious client portal is a secure, branded area on an accounting firm\'s own domain where clients upload documents into encrypted storage with role-based access controls and a full audit trail—so the firm can show who uploaded, accessed, or changed any file. It replaces WhatsApp forwards and email attachments, which leave personal information scattered across devices with no defensible record.',
+  },
+  {
+    question: 'How much does a client portal and managed website cost in South Africa?',
+    answer:
+      'Managed firm website plans start from R2,999 per month, with the Professional plan (portal integration, CRM sync, monthly SEO and compliance monitoring) at R5,999 per month. Portal builds are scoped to your firm\'s workflow and client volume during the free audit—so you get a fixed number before committing, not an open-ended dev project.',
+  },
+  {
+    question: 'Where in South Africa do you work—and do you work remotely?',
+    answer:
+      'Zar Media Group is based in Cape Town and serves accounting, tax, bookkeeping, and advisory practices across South Africa—including Johannesburg, Pretoria, Durban, and Gqeberha. Audits, builds, and monthly reviews run remotely over video, so your location never delays a launch.',
+  },
 ]
 
 const homeSeo = getPageSeo('home')
@@ -582,9 +655,9 @@ const homeFeaturedTools = HOME_FEATURED_TOOLS
 const trustBadges = ['POPIA-Conscious', 'SA Accessibility', 'Encrypted Storage', 'Full Audit Trail']
 
 const heroQuickWins = [
-  'POPIA-conscious hosting, access controls, and document audit trail—built in, not bolted on',
-  'Branded portal on your domain; clients upload once, your team works one compliant queue',
-  'Integrations to Xero, HubSpot, and DocuSign—we host, secure, and review monthly',
+  'Encrypted uploads with a full audit trail—compliance built in',
+  'Clients upload once; your team works one queue',
+  'Wired to Xero, HubSpot, and DocuSign—managed monthly',
 ]
 
 const offerFeatures = [
@@ -663,6 +736,20 @@ const valuePoints = [
     desc: 'We track documents collected without chasing, intake completed without re-keying, and hours returned to billable work—all with a full audit trail.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>',
   },
+]
+
+const contrastBefore = [
+  'Tax packs arrive in three inboxes—zero audit trail',
+  'Senior staff spend afternoons on "did you get my file?" calls',
+  'Every SARS deadline is a fire drill',
+  'A POPIA question means digging through inboxes',
+]
+
+const contrastAfter = [
+  'Every document in one encrypted vault—logged automatically',
+  'Clients see what\'s outstanding; your team stops chasing',
+  'A shared calendar gets packs in before the panic',
+  'Any POPIA question answered from the audit trail in minutes',
 ]
 
 const processSteps = [
