@@ -19,11 +19,16 @@ const props = defineProps({
 })
 
 const counterRef = ref(null)
-const displayValue = ref(0)
+// Initialise at the REAL value: prerendered HTML (what crawlers and no-JS
+// visitors read) must never show 0. The count-up is progressive enhancement —
+// we reset to 0 only at the moment the animation actually starts.
+const displayValue = ref(props.value)
 let animFrame = null
 let observer = null
 
 function startAnimation() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  displayValue.value = 0
   const start = performance.now()
 
   function update(currentTime) {

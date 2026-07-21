@@ -144,7 +144,7 @@
               <div class="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-white/10">
                 <IntegrationLogoStrip
                   :tools="homeFeaturedTools"
-                  label="Connects to the tools you already run"
+                  label="Runs alongside the tools you already use—no integration project required"
                   variant="dark"
                   compact
                   show-link
@@ -261,10 +261,10 @@
             </h2>
             <div class="gold-divider reveal-up hidden lg:block" style="transition-delay: 150ms;"></div>
             <p class="lg:hidden font-sans text-white/60 text-base leading-relaxed mb-6 reveal-up" style="transition-delay: 200ms;">
-              POPIA-conscious portal on your domain—8–15 admin hours back per week, with records you can defend.
+              POPIA-conscious portal on your domain—built to win back the hours lost to chasing, with records you can defend.
             </p>
             <p class="hidden lg:block font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
-              You cannot defend a tax file built from WhatsApp forwards. We move documents, signatures, and status into an encrypted portal on your domain—wired to Xero, HubSpot, and DocuSign. Typical result: <strong class="text-white/80">8–15 admin hours back per week</strong>.
+              You cannot defend a tax file built from WhatsApp forwards. We move documents and status into an encrypted portal on your own domain, running alongside the stack you already use. Most firms we speak to are losing <strong class="text-white/80">8–15 admin hours a week</strong> to the chase—the free audit counts yours.
             </p>
 
             <div class="space-y-4 lg:space-y-6 stagger-children">
@@ -385,40 +385,31 @@
         <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-16">
           <span class="section-label reveal-up hidden lg:inline">Proof</span>
           <h2 id="testimonials-heading" class="font-serif text-display-md text-navy-900 mb-4 reveal-up max-lg:text-[clamp(1.5rem,6vw,2rem)]" style="transition-delay: 100ms;">
-            <span class="lg:hidden">Partners who made the switch</span>
-            <span class="hidden lg:inline">Compliant intake. Less admin. Partners who made the switch.</span>
+            <span class="lg:hidden">Proof — the honest version</span>
+            <span class="hidden lg:inline">Proof — the honest version. One live practice, a guarantee, a pilot.</span>
           </h2>
           <div class="gold-divider-center reveal-up" style="transition-delay: 150ms;"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <article
-            v-for="(testimonial, i) in testimonials"
-            :key="testimonial.author"
+            v-for="(point, i) in proofPoints"
+            :key="point.title"
             class="reveal-up"
             :style="{ transitionDelay: (i * 100) + 'ms' }"
           >
-            <div class="h-full bg-white border border-navy-900/8 p-6 lg:p-8 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
-              <div class="flex gap-1 mb-6" aria-label="5 out of 5 stars" role="img">
-                <svg v-for="n in 5" :key="n" class="w-4 h-4 text-gold-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-              </div>
-              <blockquote>
-                <p class="font-sans text-charcoal-600 text-sm leading-relaxed mb-8 italic">"{{ testimonial.quote }}"</p>
-              </blockquote>
-              <footer class="flex items-center gap-4 pt-6 border-t border-navy-900/8">
-                <div class="w-12 h-12 rounded-full bg-navy-900 flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                  <span class="font-serif text-gold-500 font-bold text-sm">{{ testimonial.initials }}</span>
-                </div>
-                <div>
-                  <cite class="font-sans font-semibold text-navy-900 text-sm not-italic">{{ testimonial.author }}</cite>
-                  <div class="font-sans text-charcoal-400 text-xs mt-0.5">{{ testimonial.role }}</div>
-                </div>
-              </footer>
+            <div class="h-full bg-white border border-navy-900/8 p-6 lg:p-8 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <h3 class="font-serif text-lg text-navy-900 mb-4">{{ point.title }}</h3>
+              <p class="font-sans text-charcoal-600 text-sm leading-relaxed mb-6 flex-1">{{ point.body }}</p>
+              <RouterLink :to="point.link" class="btn-text text-xs self-start" :aria-label="`${point.title} — learn more`">
+                {{ point.footnote }}
+              </RouterLink>
             </div>
           </article>
         </div>
+        <p class="text-center font-sans text-charcoal-400 text-xs mt-8 reveal-up">
+          We're early, and we'd rather show you exactly where we are than invent a logo wall. Our buyers audit claims for a living — so do we.
+        </p>
       </div>
     </section>
 
@@ -454,10 +445,10 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-8 reveal-up">
         <IntegrationLogoStrip
           :tools="homeFeaturedTools"
-          label="Compliant integrations—Xero, HubSpot, DocuSign, and your existing stack"
+          label="Built to sit alongside your existing stack—accounting, CRM, e-sign and more"
           variant="dark"
           show-link
-          aria-label="Accounting software, CRM, and practice management integrations"
+          aria-label="Accounting software, CRM, and practice management tools the portal runs alongside"
         />
       </div>
     </section>
@@ -529,7 +520,7 @@
           30-minute call—map your intake gaps and outline a POPIA-conscious portal. No obligation.
         </p>
         <p class="hidden lg:block font-sans text-white/60 text-lg leading-relaxed mb-10 reveal-up" style="transition-delay: 200ms;">
-          30 minutes. We map where documents enter your firm, flag the POPIA gaps, and cost the admin drain. <strong class="text-white/80">127+ regulated practices</strong> trust us with their intake. No obligation.
+          30 minutes. We map where documents enter your firm, flag the POPIA gaps, and cost the admin drain. And if email intake is genuinely fine for your firm, <strong class="text-white/80">we'll tell you that too</strong>. No obligation.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center reveal-up" style="transition-delay: 300ms;">
           <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit">
@@ -538,8 +529,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
           </RouterLink>
-          <RouterLink to="/resources" class="btn-ghost" aria-label="View case studies of accounting firms we've helped">
-            View Case Studies
+          <RouterLink to="/resources/abc-inc-chartered-accountants-website-case-study" class="btn-ghost" aria-label="See the live client build for a SAICA-registered Cape Town practice">
+            See a live build
           </RouterLink>
         </div>
       </div>
@@ -594,17 +585,17 @@ const faqs = [
   {
     question: 'What exactly do I get when I work with Zar Media Group?',
     answer:
-      'A POPIA-conscious client portal on your domain (encrypted uploads, compliance calendar, document audit trail), your firm website managed in the same programme, and integrations to Xero, QuickBooks, HubSpot, DocuSign, and your practice stack. We host it, secure it, review it for compliance, and improve it monthly. You don\'t hire a dev team.',
+      'A POPIA-conscious client portal on your domain (encrypted uploads, compliance calendar, document audit trail), your firm website managed in the same programme, and client intake mapped to the tools you already run—no rip-and-replace. We host it, secure it, review it for compliance, and improve it monthly. You don\'t hire a dev team.',
   },
   {
     question: 'How much admin can a compliant portal save my firm?',
     answer:
-      'Firms we work with typically reclaim 8–15 hours per week previously lost to chasing documents, re-keying data, and answering "did you get my file?" calls—while keeping a defensible record of every upload. We map the exact number in your free audit.',
+      'Most practices we audit are losing 8–15 hours a week to chasing documents, re-keying data, and answering "did you get my file?" calls. The portal is built to hand those hours back while keeping a defensible record of every upload—and the free audit maps your firm\'s exact number before you commit to anything.',
   },
   {
     question: 'Why not just use Karbon, TaxDome, or another off-the-shelf portal?',
     answer:
-      'Off-the-shelf tools work—but clients log into their platform, not yours, and compliance configuration varies. We build on your domain with POPIA-conscious architecture from day one, wired to your CRM and accounting software. You own the asset with records you can stand behind.',
+      'Off-the-shelf tools work—but clients log into their platform, not yours, and compliance configuration varies. We build on your domain with POPIA-conscious architecture from day one, designed around your CRM and accounting workflow. You own the asset with records you can stand behind.',
   },
   {
     question: 'What happens on the free audit call?',
@@ -657,7 +648,7 @@ const trustBadges = ['POPIA-Conscious', 'SA Accessibility', 'Encrypted Storage',
 const heroQuickWins = [
   'Encrypted uploads with a full audit trail—compliance built in',
   'Clients upload once; your team works one queue',
-  'Wired to Xero, HubSpot, and DocuSign—managed monthly',
+  'Runs alongside Xero, Sage or QuickBooks—no rip-and-replace',
 ]
 
 const offerFeatures = [
@@ -679,10 +670,10 @@ const offerFeatures = [
 ]
 
 const stats = [
-  { value: 127, label: 'Regulated Practices Served', prefix: '', suffix: '+' },
-  { value: 100, label: 'Compliance Review Before Launch', prefix: '', suffix: '%' },
-  { value: 15, label: 'Admin Hours Saved Per Week', prefix: 'Up to ', suffix: '' },
-  { value: 8, label: 'Years in Financial Sector Digital', prefix: '', suffix: '+' },
+  { value: 14, label: 'Days from kickoff to live — or the setup fee back', prefix: '', suffix: '' },
+  { value: 100, label: 'Builds POPIA-reviewed before launch', prefix: '', suffix: '%' },
+  { value: 15, label: 'Admin hours a week firms lose to document chasing', prefix: 'Up to ', suffix: '' },
+  { value: 5, label: 'Pilot seats open for 2026 — setup fee waived', prefix: '', suffix: '' },
 ]
 
 const services = [
@@ -703,19 +694,19 @@ const services = [
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>',
   },
   {
-    title: 'Workflow Integration',
+    title: 'Workflow & Intake',
     description:
-      'Connect compliant portal intake to Xero, QuickBooks, HubSpot, and DocuSign—data flows once, with a traceable handoff. From enquiry to signed engagement letter, auditable.',
+      'Client intake mapped to how your practice already works—SARS document categories, structured requests, and clean handoffs to the tools you run. Deeper integrations are scoped per firm, never promised off a logo wall.',
     link: '/services/workflow-integration',
-    tags: ['Traceable Handoffs', 'CRM Sync', 'Zero Re-keying'],
+    tags: ['Structured Intake', 'Traceable Handoffs', 'Your Stack'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>',
   },
   {
     title: 'Compliance & Trust',
     description:
-      'POPIA review, South African web accessibility standards, encrypted storage, and FSCA sign-off on every build. Because a compliance failure costs more than any website ever will.',
+      'POPIA review, South African web accessibility standards, encrypted storage, and build reviews aligned to FSCA record-keeping expectations. Because a compliance failure costs more than any website ever will.',
     link: '/services/compliance-trust',
-    tags: ['POPIA Review', 'SA Accessibility', 'FSCA Sign-off'],
+    tags: ['POPIA Review', 'SA Accessibility', 'FSCA-Aware'],
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
   },
 ]
@@ -755,29 +746,32 @@ const contrastAfter = [
 const processSteps = [
   { title: 'Free audit — intake & compliance gaps', desc: 'We trace where documents enter your firm today and flag POPIA, accessibility, and admin risks before proposing anything.' },
   { title: 'Compliance review & architecture', desc: 'POPIA-conscious data handling, role-based access, encryption, and South African web accessibility standards scoped before a single page is designed.' },
-  { title: 'Portal & site build', desc: 'Your compliant portal on your domain, firm website in sync, integrations wired to your existing stack.' },
+  { title: 'Portal & site build', desc: 'Your compliant portal on your domain, firm website in sync, intake mapped to the stack you already run.' },
   { title: 'Launch with audit trail', desc: 'Clients get one secure place to upload. Your team gets one queue—with who, what, when, logged.' },
   { title: 'Managed, secured & reviewed monthly', desc: 'We host, patch, speed-test, and re-check compliance as regulations and your practice evolve.' },
 ]
 
-const testimonials = [
+// Honest proof: one real deployment, one guarantee with teeth, one pilot
+// offer that puts the risk on us. No invented logos, no invented quotes —
+// our buyers verify claims for a living.
+const proofPoints = [
   {
-    quote: 'We came for the admin relief—half a day a week lost to chasing tax packs by email. We stayed because the POPIA audit trail finally gave us defensible records. Document collection is now a checklist clients follow, not a compliance gamble.',
-    author: 'Michael Chen, CA(SA)',
-    role: 'Managing Partner, Chen & Associates',
-    initials: 'MC',
+    title: 'Live in production',
+    body: 'A-Level Business Consultants — a SAICA-registered Cape Town practice — runs its public site and secure client portal on our stack today. The full case study, with their numbers, is being written with them now.',
+    footnote: 'See the build →',
+    link: '/resources/abc-inc-chartered-accountants-website-case-study',
   },
   {
-    quote: 'They flagged our WhatsApp intake as a POPIA risk in the first call—then showed us exactly what a compliant portal on our domain would fix. No jargon, no hard sell. Our clients upload securely; we have records we can stand behind.',
-    author: 'Sarah Johnson',
-    role: 'CEO, Pinnacle Tax Advisory',
-    initials: 'SJ',
+    title: 'A guarantee with teeth',
+    body: 'Live on your domain within 14 days of kickoff, or your setup fee back. We control every step of delivery, so we can put money on it — most IT projects can\'t.',
+    footnote: 'How we deliver →',
+    link: '/what-we-do',
   },
   {
-    quote: 'The admin reduction paid for the service before onboarding finished. Enquiry to signed engagement letter—automated and auditable. I wish we\'d moved off email intake two seasons ago.',
-    author: 'David Martinez',
-    role: 'Partner, Martinez Financial Group',
-    initials: 'DM',
+    title: 'The 2026 pilot cohort',
+    body: 'Five firms get the setup fee waived in exchange for a written case study. After day 60, cancel with 30 days\' notice and pay nothing further. If it isn\'t working, the risk was ours.',
+    footnote: 'Claim a seat →',
+    link: '/contact',
   },
 ]
 

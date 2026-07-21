@@ -489,11 +489,11 @@ const serviceOptions = [
 ]
 
 const whyUs = [
-  'Free, no-obligation website audit within 24 hours',
+  'Free, no-obligation audit — response within 24 hours',
   'No long-term contracts — month-to-month flexibility',
-  'Sector specialists — not generalist web designers',
-  'SA-based team with deep financial sector knowledge',
-  '127+ accounting firms and financial practices served',
-  '98% client retention rate — our results speak',
+  'Sector specialists — we only work with regulated firms',
+  'SA-based founders, POPIA-conscious builds by default',
+  'Live on your domain in 14 days, or the setup fee back',
+  '5 pilot seats for 2026 — setup fee waived for case-study firms',
 ]
 </script>

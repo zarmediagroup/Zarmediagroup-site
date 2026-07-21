@@ -194,7 +194,7 @@
           Ready to Reduce Admin at<br/><em class="text-gold-400">Your Accounting Firm?</em>
         </h2>
         <p class="font-sans text-white/60 mb-8">
-          See how we've helped 127+ accounting firms, bookkeepers, and financial advisors across South Africa transform their digital presence and save 8–15 hours of admin per week.
+          A 30-minute call: we map where documents enter your firm, cost the 8–15 admin hours a week most practices lose to chasing, and show you the portal live — on a real SAICA-registered practice's stack.
         </p>
         <RouterLink to="/contact" class="btn-primary" aria-label="Book a strategy call to discuss your client portal and firm website">
           Book a Strategy Call
@@ -343,9 +343,9 @@ const capabilities = [
 ]
 
 const results = [
-  { value: '127+', label: 'Accounting Firms Served' },
-  { value: '218%', label: 'Peak YoY enquiries' },
-  { value: '70%', label: 'Admin Reduction' },
-  { value: '98%', label: 'Client Retention' },
+  { value: '14 days', label: 'Kickoff to live — guaranteed' },
+  { value: '100%', label: 'Builds POPIA-reviewed pre-launch' },
+  { value: '8–15 hrs', label: 'Weekly admin drain we audit for' },
+  { value: '5 seats', label: '2026 pilot cohort — setup waived' },
 ]
 </script>

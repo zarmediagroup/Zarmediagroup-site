@@ -295,7 +295,7 @@
                 <span class="font-sans text-white text-sm">R{{ currentRevenue.toLocaleString() }}</span>
               </div>
               <div class="flex justify-between items-center">
-                <span class="font-sans text-white/60 text-sm">Projected revenue with WaaS (+127%)</span>
+                <span class="font-sans text-white/60 text-sm">Illustrative scenario with WaaS (+127%)</span>
                 <span class="font-sans text-gold-400 text-sm font-semibold">R{{ projectedRevenue.toLocaleString() }}</span>
               </div>
               <div class="border-t border-white/10 pt-4 flex justify-between items-center">
@@ -304,7 +304,7 @@
               </div>
             </div>
             <p class="font-sans text-white/30 text-xs text-center mt-4">
-              Based on average 127% lead increase across Zar Media Group accounting firm clients in South Africa.
+              Illustrative scenario only — not a performance claim. Your result depends on your baseline, market, and how much of the playbook we run together.
             </p>
           </div>
         </div>
