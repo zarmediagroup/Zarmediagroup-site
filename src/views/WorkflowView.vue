@@ -2,13 +2,11 @@
   <div class="workflow-page">
 
     <!-- ══ HERO ══ -->
-    <section class="relative min-h-screen flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Workflow integration service hero">
-      <HeroBackground
-        src="/hero-workflow-integration.png"
-        overlay-class="bg-gradient-to-r from-navy-900/94 via-navy-900/82 to-navy-900/55"
-        image-opacity="opacity-50"
-        image-position="object-center"
-      />
+    <section class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Workflow integration service hero">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav :crumbs="[
           { label: 'Services', path: '/services' },
@@ -37,10 +35,6 @@
           </RouterLink>
         </div>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
-      </div>
     </section>
 
     <!-- ══ ADMIN PROBLEM ══ -->
@@ -61,7 +55,7 @@
           <div
             v-for="(stat, i) in adminStats"
             :key="stat.label"
-            class="reveal-up p-6 bg-white border border-navy-900/8 text-center"
+            class="reveal-up p-6 bg-white rounded-2xl border border-navy-900/8 text-center"
             :style="{ transitionDelay: (i * 80) + 'ms' }"
           >
             <div class="font-serif text-3xl font-bold text-gold-500 mb-2">{{ stat.value }}</div>
@@ -79,7 +73,7 @@
             One new client, through both versions of your firm.
           </p>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-            <div class="reveal-up bg-white border border-navy-900/10 p-6 lg:p-8">
+            <div class="reveal-up bg-white rounded-2xl border border-navy-900/10 p-6 lg:p-8">
               <h4 class="font-sans font-bold text-charcoal-400 text-xs uppercase tracking-widest mb-6">Manual intake — 2 to 3 weeks</h4>
               <ul class="space-y-4">
                 <li v-for="item in manualJourney" :key="item" class="flex items-start gap-3">
@@ -90,8 +84,8 @@
                 </li>
               </ul>
             </div>
-            <div class="reveal-up bg-white border border-gold-500/40 p-6 lg:p-8 shadow-card-hover" style="transition-delay: 120ms;">
-              <h4 class="font-sans font-bold text-gold-600 text-xs uppercase tracking-widest mb-6">Integrated intake — 2 to 3 days</h4>
+            <div class="reveal-up bg-white rounded-2xl border border-gold-500/40 p-6 lg:p-8 shadow-soft-lg" style="transition-delay: 120ms;">
+              <h4 class="font-sans font-bold text-charcoal-500 text-xs uppercase tracking-widest mb-6">Integrated intake — 2 to 3 days</h4>
               <ul class="space-y-4">
                 <li v-for="item in automatedJourney" :key="item" class="flex items-start gap-3">
                   <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -130,9 +124,9 @@
             class="reveal-up group"
             :style="{ transitionDelay: (i * 80) + 'ms' }"
           >
-            <div class="p-6 border border-white/10 hover:border-gold-500/50 hover:bg-white/5 transition-all duration-300 h-full">
+            <div class="p-6 rounded-2xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all duration-300 h-full">
               <div class="flex items-center gap-3 mb-5">
-                <div class="w-8 h-8 flex items-center justify-center bg-gold-500/10 border border-gold-500/30" aria-hidden="true">
+                <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-gold-500/10 border border-gold-500/30" aria-hidden="true">
                   <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="integration.icon"></svg>
                 </div>
                 <h3 class="font-sans font-semibold text-gold-400 text-xs uppercase tracking-wider">{{ integration.category }}</h3>
@@ -188,13 +182,13 @@
             <div
               v-for="(step, i) in automationSteps"
               :key="step.title"
-              class="group flex items-start gap-5 p-5 bg-white border border-navy-900/8 hover:border-gold-500/50 hover:shadow-card-hover transition-all duration-300"
+              class="group flex items-start gap-5 p-5 bg-white rounded-2xl border border-navy-900/8 hover:border-gold-500/50 hover:shadow-soft-lg transition-all duration-300"
             >
-              <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center bg-gold-500 text-navy-900" aria-hidden="true">
+              <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg bg-gold-500 text-navy-900" aria-hidden="true">
                 <span class="font-serif font-bold text-sm">{{ i + 1 }}</span>
               </div>
               <div>
-                <h3 class="font-sans font-semibold text-navy-900 text-sm mb-1 group-hover:text-gold-600 transition-colors">{{ step.title }}</h3>
+                <h3 class="font-sans font-semibold text-navy-900 text-sm mb-1 group-hover:text-charcoal-500 transition-colors">{{ step.title }}</h3>
                 <p class="font-sans text-charcoal-400 text-sm leading-relaxed">{{ step.description }}</p>
               </div>
             </div>
@@ -221,10 +215,10 @@
           <article
             v-for="(feature, i) in portalFeatures"
             :key="feature.title"
-            class="reveal-up p-6 border border-white/10 hover:border-gold-500/50 hover:bg-white/5 transition-all duration-300"
+            class="reveal-up p-6 rounded-2xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all duration-300"
             :style="{ transitionDelay: (i * 80) + 'ms' }"
           >
-            <div class="w-10 h-10 flex items-center justify-center border border-gold-500/30 bg-gold-500/10 mb-5" aria-hidden="true">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg border border-gold-500/30 bg-gold-500/10 mb-5" aria-hidden="true">
               <svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="feature.icon"></svg>
             </div>
             <h3 class="font-sans font-semibold text-white text-sm mb-2">{{ feature.title }}</h3>
@@ -249,13 +243,13 @@
           <div
             v-for="(faq, i) in faqs"
             :key="i"
-            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-sm"
+            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-xl"
             :style="{ transitionDelay: i * 60 + 'ms' }"
           >
             <dt>
               <button
                 type="button"
-                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-charcoal-500 transition-colors"
                 :aria-expanded="openFaq === i"
                 :aria-controls="`wf-faq-${i}`"
                 @click="openFaq = openFaq === i ? null : i"
@@ -293,7 +287,6 @@ import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS } from '@/composables/useSeoMeta'
 import { getPageSeo } from '@/data/seo-pages'
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 import RelatedServices from '@/components/ui/RelatedServices.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
 import { WORKFLOW_INTEGRATIONS } from '@/data/integration-tools'

@@ -1,4 +1,4 @@
-/* Poppins loaded non-blocking from index.html — avoid duplicate @import (blocks CSS/LCP) */
+/* Inter Variable self-hosted via @fontsource-variable/inter (imported in main.js) */
 
 @tailwind base;
 @tailwind components;
@@ -91,60 +91,92 @@
    ===================================================== */
 @layer components {
 
-  /* ── Buttons ─────────────────────────────────────── */
+  /* ── Buttons — compact startup pills ─────────────── */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2
-           px-6 py-3 sm:px-8 sm:py-4
+           px-5 py-2.5 sm:px-6 sm:py-3
            bg-navy-900 text-white
-           font-sans font-semibold text-xs sm:text-sm tracking-wider uppercase
-           rounded-none
+           font-sans font-medium text-sm
+           rounded-full
            border border-navy-900
-           transition-all duration-300 ease-smooth
-           hover:bg-white hover:text-navy-900
-           focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2
-           active:scale-[0.98]
+           shadow-soft
+           transition-all duration-200 ease-smooth
+           hover:bg-navy-700 hover:border-navy-700 hover:shadow-soft-lg hover:-translate-y-px
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-900 focus-visible:ring-offset-2
+           active:scale-[0.98] active:translate-y-0
            cursor-pointer select-none;
-    letter-spacing: 0.08em;
+    letter-spacing: -0.01em;
   }
 
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2
-           px-6 py-3 sm:px-8 sm:py-4
-           bg-transparent text-navy-900
-           font-sans font-semibold text-xs sm:text-sm tracking-wider uppercase
-           rounded-none
-           border border-navy-900
-           transition-all duration-300 ease-smooth
-           hover:bg-navy-900 hover:text-white
-           focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2
-           active:scale-[0.98]
+           px-5 py-2.5 sm:px-6 sm:py-3
+           bg-white text-navy-900
+           font-sans font-medium text-sm
+           rounded-full
+           border border-navy-900/15
+           transition-all duration-200 ease-smooth
+           hover:border-navy-900/40 hover:shadow-soft hover:-translate-y-px
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-900 focus-visible:ring-offset-2
+           active:scale-[0.98] active:translate-y-0
            cursor-pointer select-none;
-    letter-spacing: 0.08em;
+    letter-spacing: -0.01em;
   }
 
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2
-           px-6 py-3 sm:px-8 sm:py-4
-           bg-transparent text-white
-           font-sans font-semibold text-xs sm:text-sm tracking-wider uppercase
-           rounded-none
-           border border-white
-           transition-all duration-300 ease-smooth
-           hover:bg-white hover:text-navy-900
-           focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2
-           active:scale-[0.98]
+           px-5 py-2.5 sm:px-6 sm:py-3
+           bg-white/5 text-white
+           font-sans font-medium text-sm
+           rounded-full
+           border border-white/20
+           backdrop-blur-sm
+           transition-all duration-200 ease-smooth
+           hover:bg-white/10 hover:border-white/40 hover:-translate-y-px
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900
+           active:scale-[0.98] active:translate-y-0
            cursor-pointer select-none;
-    letter-spacing: 0.08em;
+    letter-spacing: -0.01em;
+  }
+
+  /* On dark surfaces the primary CTA inverts to a white pill, secondary goes glass.
+     Attribute selectors (not literal utility class names) avoid Tailwind's
+     circular-@apply detection while matching bg-navy-900 / bg-navy-950 sections. */
+  [class*="bg-navy-9"] .btn-primary,
+  .home-hero .btn-primary {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #111111;
+  }
+
+  [class*="bg-navy-9"] .btn-primary:hover,
+  .home-hero .btn-primary:hover {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8;
+    color: #111111;
+  }
+
+  [class*="bg-navy-9"] .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  [class*="bg-navy-9"] .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
   }
 
   .btn-text {
-    @apply inline-flex items-center gap-2
-           text-navy-900 font-sans font-semibold text-xs sm:text-sm tracking-wider uppercase
+    @apply inline-flex items-center gap-1.5
+           text-navy-900 font-sans font-medium text-sm
            bg-transparent border-none
-           transition-all duration-300
-           hover:gap-3
+           transition-all duration-200
+           hover:gap-2.5
            cursor-pointer select-none;
-    letter-spacing: 0.08em;
+    letter-spacing: -0.01em;
   }
 
   /* ── Dividers ────────────────────────────────────── */
@@ -156,9 +188,19 @@
     @apply block w-16 h-px bg-navy-900 my-6 mx-auto;
   }
 
-  /* ── Section Labels ──────────────────────────────── */
+  /* ── Section Labels — pill badges ────────────────── */
   .section-label {
-    @apply text-navy-500 font-sans font-semibold text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] uppercase mb-3 sm:mb-4 block;
+    @apply inline-flex items-center gap-2
+           px-3 py-1 rounded-full
+           text-navy-500 font-sans font-semibold text-[10px] sm:text-[11px] tracking-[0.08em] uppercase
+           mb-3 sm:mb-4;
+    border: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+    background: color-mix(in srgb, currentColor 6%, transparent);
+  }
+
+  .section-label::before {
+    content: '';
+    @apply w-1.5 h-1.5 rounded-full bg-current opacity-70;
   }
 
   /* ── Container ───────────────────────────────────── */
@@ -168,14 +210,14 @@
 
   /* ── Cards ───────────────────────────────────────── */
   .card {
-    @apply bg-white shadow-card
+    @apply bg-white rounded-2xl shadow-soft
            transition-all duration-300 ease-smooth
-           hover:shadow-card-hover hover:-translate-y-1;
+           hover:shadow-soft-lg hover:-translate-y-1;
     border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
   .card-dark {
-    @apply backdrop-blur-sm
+    @apply backdrop-blur-sm rounded-2xl
            transition-all duration-300 ease-smooth;
     background: rgba(17, 17, 17, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -188,7 +230,7 @@
 
   /* ── Inputs ──────────────────────────────────────── */
   .input-field {
-    @apply w-full px-4 py-4
+    @apply w-full px-4 py-3.5 rounded-xl
            bg-white text-navy-900
            font-sans text-base
            transition-all duration-200
@@ -209,7 +251,7 @@
   }
 
   .input-field-dark {
-    @apply w-full px-4 py-4 text-white font-sans text-base
+    @apply w-full px-4 py-3.5 rounded-xl text-white font-sans text-base
            transition-all duration-200
            focus:outline-none focus:ring-1 focus:ring-white;
     background: rgba(26, 26, 26, 0.6);
@@ -278,10 +320,41 @@
 
   /* ── Tags / Badges ───────────────────────────────── */
   .tag {
-    @apply inline-flex items-center px-3 py-1
-           font-sans text-xs font-semibold tracking-wider uppercase
+    @apply inline-flex items-center px-3 py-1 rounded-full
+           font-sans text-xs font-medium
            border border-navy-300 text-navy-700
            bg-navy-100;
+  }
+
+  /* ── Logo Marquee ────────────────────────────────── */
+  .marquee-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    @apply flex w-max items-center gap-3 sm:gap-4 animate-marquee;
+  }
+
+  .marquee-mask:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  /* ── Hero Glow (dark sections) ───────────────────── */
+  .hero-glow {
+    @apply pointer-events-none absolute;
+    background: radial-gradient(closest-side, rgba(255,255,255,0.14), rgba(255,255,255,0.04) 55%, transparent 100%);
+    filter: blur(40px);
   }
 
   /* ── Gradient text ───────────────────────────────── */
@@ -516,7 +589,7 @@ input[type="range"] {
   appearance: none;
   height: 4px;
   background: rgba(0, 0, 0, 0.15);
-  border-radius: 0;
+  border-radius: 9999px;
   outline: none;
 }
 
@@ -527,8 +600,9 @@ input[type="range"]::-webkit-slider-thumb {
   height: 20px;
   background: #111111;
   cursor: pointer;
-  border-radius: 0;
+  border-radius: 9999px;
   border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -536,6 +610,7 @@ input[type="range"]::-moz-range-thumb {
   height: 20px;
   background: #111111;
   cursor: pointer;
-  border-radius: 0;
+  border-radius: 9999px;
   border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }

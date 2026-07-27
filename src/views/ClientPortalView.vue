@@ -1,16 +1,13 @@
 <template>
   <div class="client-portal-page">
     <section
-      class="relative min-h-[72vh] flex items-center bg-navy-900 overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20"
+      class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20"
       aria-label="Client document portal for accountants"
     >
-      <HeroBackground
-        src="/client-dashboard.png"
-        overlay-class="bg-gradient-to-r from-navy-900/95 via-navy-900/88 to-navy-900/70"
-        image-opacity="opacity-35"
-        image-position="object-right object-center"
-        :corners="false"
-      />
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav
           :crumbs="[
@@ -68,7 +65,7 @@
           <article
             v-for="(block, i) in definitionBlocks"
             :key="block.title"
-            class="reveal-up p-8 bg-white border border-navy-900/8"
+            class="reveal-up p-8 bg-white rounded-2xl border border-navy-900/8"
             :style="{ transitionDelay: i * 80 + 'ms' }"
           >
             <h3 class="font-serif text-xl text-navy-900 mb-3">{{ block.title }}</h3>
@@ -76,7 +73,7 @@
           </article>
         </div>
 
-        <div class="reveal-up grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start p-8 lg:p-10 bg-navy-900 border border-white/10">
+        <div class="reveal-up grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start p-8 lg:p-10 bg-navy-900 rounded-3xl border border-white/10">
           <div>
             <span class="section-label">POPIA-conscious by design</span>
             <p class="font-sans text-white/65 text-sm leading-relaxed mt-4 m-0">
@@ -119,7 +116,7 @@
 
         <div class="space-y-16 lg:space-y-20">
           <div>
-            <h3 class="font-sans text-[11px] font-bold uppercase tracking-widest text-gold-600 mb-8 lg:mb-10 text-center">
+            <h3 class="font-sans text-[11px] font-bold uppercase tracking-widest text-charcoal-500 mb-8 lg:mb-10 text-center">
               Client experience
             </h3>
             <div class="space-y-20 lg:space-y-28">
@@ -135,24 +132,26 @@
                   <h4 class="font-sans font-semibold text-navy-900 text-base m-0">{{ shot.title }}</h4>
                   <p class="font-sans text-charcoal-500 text-sm m-0 max-w-2xl">{{ shot.caption }}</p>
                 </figcaption>
-                <div class="rounded-none border border-navy-900/15 bg-navy-950/5 shadow-card-hover overflow-hidden max-w-6xl mx-auto">
-                  <img
-                    :src="shot.src"
-                    :alt="shot.alt"
-                    class="w-full h-auto block object-top object-contain bg-[#f5f2eb]"
-                    :loading="i === 0 ? 'eager' : 'lazy'"
-                    :fetchpriority="i === 0 ? 'high' : undefined"
-                    decoding="async"
-                    width="1400"
-                    height="900"
-                  />
+                <div class="max-w-6xl mx-auto">
+                  <BrowserFrame :url="`portal.yourfirm.co.za/${shot.anchor.replace('client-', '')}`">
+                    <img
+                      :src="shot.src"
+                      :alt="shot.alt"
+                      class="w-full h-auto block object-top object-contain bg-[#f5f2eb]"
+                      :loading="i === 0 ? 'eager' : 'lazy'"
+                      :fetchpriority="i === 0 ? 'high' : undefined"
+                      decoding="async"
+                      width="1400"
+                      height="900"
+                    />
+                  </BrowserFrame>
                 </div>
               </figure>
             </div>
           </div>
 
           <div>
-            <h3 class="font-sans text-[11px] font-bold uppercase tracking-widest text-gold-600 mb-8 lg:mb-10 text-center">
+            <h3 class="font-sans text-[11px] font-bold uppercase tracking-widest text-charcoal-500 mb-8 lg:mb-10 text-center">
               Admin experience
             </h3>
             <div class="space-y-20 lg:space-y-28">
@@ -168,16 +167,18 @@
                   <h4 class="font-sans font-semibold text-navy-900 text-base m-0">{{ shot.title }}</h4>
                   <p class="font-sans text-charcoal-500 text-sm m-0 max-w-2xl">{{ shot.caption }}</p>
                 </figcaption>
-                <div class="rounded-none border border-navy-900/15 bg-navy-950/5 shadow-card-hover overflow-hidden max-w-6xl mx-auto">
-                  <img
-                    :src="shot.src"
-                    :alt="shot.alt"
-                    class="w-full h-auto block object-top object-contain bg-[#f5f2eb]"
-                    loading="lazy"
-                    decoding="async"
-                    width="1400"
-                    height="900"
-                  />
+                <div class="max-w-6xl mx-auto">
+                  <BrowserFrame :url="`portal.yourfirm.co.za/${shot.anchor.replace('admin-', 'admin/')}`">
+                    <img
+                      :src="shot.src"
+                      :alt="shot.alt"
+                      class="w-full h-auto block object-top object-contain bg-[#f5f2eb]"
+                      loading="lazy"
+                      decoding="async"
+                      width="1400"
+                      height="900"
+                    />
+                  </BrowserFrame>
                 </div>
               </figure>
             </div>
@@ -204,10 +205,10 @@
           <li
             v-for="(step, i) in adminSteps"
             :key="step.title"
-            class="reveal-up bg-white border border-navy-900/10 p-8 lg:p-10 flex flex-col gap-3"
+            class="reveal-up bg-white rounded-2xl border border-navy-900/10 p-8 lg:p-10 flex flex-col gap-3"
             :style="{ transitionDelay: i * 80 + 'ms' }"
           >
-            <span class="font-serif text-gold-600 text-base font-bold">{{ String(i + 1).padStart(2, '0') }}</span>
+            <span class="font-serif text-charcoal-500 text-base font-bold">{{ String(i + 1).padStart(2, '0') }}</span>
             <h3 class="font-sans font-semibold text-navy-900 text-base m-0">{{ step.title }}</h3>
             <p class="font-sans text-charcoal-600 text-sm leading-relaxed m-0 flex-1">{{ step.body }}</p>
           </li>
@@ -252,13 +253,13 @@
           <div
             v-for="(faq, i) in faqs"
             :key="i"
-            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-sm"
+            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-xl"
             :style="{ transitionDelay: i * 60 + 'ms' }"
           >
             <dt>
               <button
                 type="button"
-                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-charcoal-500 transition-colors"
                 :aria-expanded="openFaq === i"
                 :aria-controls="`cp-faq-${i}`"
                 @click="openFaq = openFaq === i ? null : i"
@@ -314,7 +315,7 @@ import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS } from '@/composables/useSeoMeta'
 import { getPageSeo } from '@/data/seo-pages'
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
+import BrowserFrame from '@/components/ui/BrowserFrame.vue'
 import RelatedServices from '@/components/ui/RelatedServices.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
 

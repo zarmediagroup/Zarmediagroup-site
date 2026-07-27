@@ -20,7 +20,7 @@
       <div class="max-w-4xl mx-auto px-6 lg:px-8">
         <div class="prose-legal">
 
-          <div class="bg-white border border-navy-900/8 p-6 mb-10">
+          <div class="bg-white rounded-2xl border border-navy-900/8 p-6 mb-10">
             <p class="font-sans text-charcoal-600 text-sm leading-relaxed">
               These Terms of Service ("Terms") govern your access to and use of the website located at
               <a href="https://zarmediagroup.com" class="text-navy-900 font-semibold hover:underline">zarmediagroup.com</a>

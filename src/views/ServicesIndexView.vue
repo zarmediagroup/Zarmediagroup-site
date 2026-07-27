@@ -1,16 +1,13 @@
 <template>
   <div class="services-index-page">
     <section
-      class="relative min-h-[70vh] flex items-center bg-navy-900 overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20"
+      class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20"
       aria-label="Services for accounting firms"
     >
-      <HeroBackground
-        src="/hero-services-index.png"
-        overlay-class="bg-gradient-to-r from-navy-900/94 via-navy-900/82 to-navy-900/50"
-        image-opacity="opacity-42"
-        image-position="object-right object-center"
-        :corners="false"
-      />
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav :crumbs="[{ label: 'Home', path: '/' }, { label: 'Services', path: '/services' }]" />
 
@@ -47,11 +44,11 @@
           <article
             v-for="(service, i) in offerings"
             :key="service.path"
-            class="reveal-up bg-white border border-navy-900/8 p-8 lg:p-10 hover:border-gold-500/40 hover:shadow-card-hover transition-all duration-300"
+            class="reveal-up bg-white rounded-2xl border border-navy-900/8 p-8 lg:p-10 hover:border-gold-500/40 hover:shadow-soft-lg transition-all duration-300"
             :style="{ transitionDelay: i * 60 + 'ms' }"
           >
             <h3 class="font-serif text-2xl text-navy-900 mb-4">
-              <RouterLink :to="service.path" class="hover:text-gold-600 transition-colors">
+              <RouterLink :to="service.path" class="hover:text-charcoal-500 transition-colors">
                 {{ service.name }}
               </RouterLink>
             </h3>
@@ -82,13 +79,13 @@
           <div
             v-for="(faq, i) in faqs"
             :key="i"
-            class="reveal-up border border-navy-900/10 bg-cream overflow-hidden rounded-sm"
+            class="reveal-up border border-navy-900/10 bg-cream overflow-hidden rounded-xl"
             :style="{ transitionDelay: i * 60 + 'ms' }"
           >
             <dt>
               <button
                 type="button"
-                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-charcoal-500 transition-colors"
                 :aria-expanded="openFaq === i"
                 :aria-controls="`svc-faq-${i}`"
                 @click="openFaq = openFaq === i ? null : i"
@@ -123,7 +120,6 @@ import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS, BASE_URL } from '@/composables/useSeoMeta'
 import { getPageSeo, SERVICE_OFFERINGS } from '@/data/seo-pages'
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
 
 const seo = getPageSeo('services-index')

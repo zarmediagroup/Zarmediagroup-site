@@ -2,13 +2,11 @@
   <div class="team-page">
 
     <!-- ══ HERO ══ -->
-    <section class="relative min-h-screen flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Team page hero">
-      <HeroBackground
-        src="/hero-team-collaboration.png"
-        overlay-class="bg-gradient-to-r from-navy-900/93 via-navy-900/78 to-navy-900/45"
-        image-opacity="opacity-45"
-        image-position="object-right object-center"
-      />
+    <section class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Team page hero">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav :crumbs="[{ label: 'What We Do', path: '/what-we-do' }, { label: 'Our Team', path: '/about/team' }]" />
 
@@ -21,10 +19,6 @@
           We are strategists, designers, compliance experts, and engineers who work exclusively with accountants, financial advisors, bookkeepers, and financial service providers. Deep sector specialisation is why our clients stay for years.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
-      </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
       </div>
     </section>
 
@@ -50,8 +44,8 @@
           </div>
 
           <div class="grid grid-cols-2 gap-5 reveal-up" style="transition-delay: 150ms;">
-            <div v-for="value in teamValues" :key="value.title" class="p-6 bg-white border border-navy-900/8 hover:border-gold-500/50 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
-              <div class="w-10 h-10 flex items-center justify-center border border-gold-500/20 bg-gold-500/5 mb-4" aria-hidden="true">
+            <div v-for="value in teamValues" :key="value.title" class="p-6 bg-white rounded-2xl border border-navy-900/8 hover:border-gold-500/50 hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="w-10 h-10 flex items-center justify-center rounded-lg border border-gold-500/20 bg-gold-500/5 mb-4" aria-hidden="true">
                 <svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="value.icon"></svg>
               </div>
               <h3 class="font-sans font-semibold text-navy-900 text-sm mb-2">{{ value.title }}</h3>
@@ -81,7 +75,7 @@
             :style="{ transitionDelay: (i * 80) + 'ms' }"
             @click="selectedMember = member"
           >
-            <div class="relative overflow-hidden border border-white/10 group-hover:border-gold-500/50 transition-all duration-300 hover:shadow-card-hover">
+            <div class="relative overflow-hidden border border-white/10 group-hover:border-gold-500/50 transition-all duration-300 hover:shadow-soft-lg">
               <!-- Photo -->
               <div class="relative w-full aspect-[4/5] overflow-hidden bg-navy-800">
                 <img
@@ -144,7 +138,7 @@
           :aria-label="`Bio for ${selectedMember?.name}`"
           aria-modal="true"
         >
-          <div class="bg-navy-800 border border-white/10 max-w-lg w-full p-5 sm:p-8 relative max-h-[90vh] overflow-y-auto">
+          <div class="bg-navy-800 rounded-2xl border border-white/10 max-w-lg w-full p-5 sm:p-8 relative max-h-[90vh] overflow-y-auto">
             <button
               class="absolute top-4 right-4 text-white/40 hover:text-white transition-colors p-2"
               @click="selectedMember = null"
@@ -236,7 +230,6 @@ import { getPageSeo } from '@/data/seo-pages'
 
 const pageSeo = getPageSeo('team')
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 
 const { initReveal } = useScrollReveal()
 onMounted(() => setTimeout(initReveal, 50))

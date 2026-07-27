@@ -5,18 +5,18 @@
     style="z-index: 100;"
     :class="[
       appStore.isScrolled
-        ? 'bg-navy-900/95 backdrop-blur-md shadow-navy py-0'
-        : 'bg-transparent py-0'
+        ? 'bg-navy-950/70 backdrop-blur-xl border-b border-white/10 py-0'
+        : 'bg-transparent border-b border-transparent py-0'
     ]"
   >
     <nav class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <RouterLink to="/" class="flex items-center gap-3" @click="appStore.closeNav()">
           <img
             src="/logo.png"
             alt="Zar Media Group logo"
-            class="h-20 w-auto object-contain"
+            class="h-14 w-auto object-contain"
             width="120"
             height="40"
             loading="eager"
@@ -113,8 +113,14 @@
           </RouterLink>
 
           <!-- Primary conversion — single obvious action -->
-          <RouterLink to="/contact" class="btn-primary text-xs py-3 px-6 ml-4">
+          <RouterLink
+            to="/contact"
+            class="ml-4 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-sans text-sm font-medium text-navy-900 transition-all duration-200 hover:bg-charcoal-100 hover:-translate-y-px active:scale-[0.98]"
+          >
             Book a call
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
           </RouterLink>
         </div>
 
@@ -145,7 +151,7 @@
   <!-- Mobile Menu Overlay — Teleported to body so backdrop-filter on header doesn't break fixed positioning -->
   <Teleport to="body">
     <Transition name="mobile-menu">
-      <div v-if="appStore.isNavOpen" class="lg:hidden fixed inset-0 top-[5rem] bg-navy-900/98 backdrop-blur-lg overflow-y-auto" style="z-index: 99;">
+      <div v-if="appStore.isNavOpen" class="lg:hidden fixed inset-0 top-16 bg-navy-950/95 backdrop-blur-xl overflow-y-auto" style="z-index: 99;">
         <div class="flex flex-col px-6 py-8 gap-2">
           <MobileNavItem to="/" label="Home" @click="appStore.closeNav()" />
 
@@ -259,8 +265,10 @@ function toggleMobileSection(section) {
 
 .dropdown-menu {
   @apply absolute top-full left-1/2 -translate-x-1/2 w-64
-         bg-navy-900 border border-white/10
-         shadow-navy-lg py-2;
+         rounded-2xl overflow-hidden
+         border border-white/10
+         shadow-navy-lg py-2 backdrop-blur-xl;
+  background: rgba(10, 10, 10, 0.85);
   z-index: 60;
 }
 

@@ -24,15 +24,15 @@
           <!-- Newsletter -->
           <div class="mb-8">
             <p class="font-sans text-white/70 text-xs font-semibold tracking-wider uppercase mb-3">Industry Insights</p>
-            <form class="flex gap-0" @submit.prevent="subscribeNewsletter">
+            <form class="flex gap-2" @submit.prevent="subscribeNewsletter">
               <input
                 v-model="email"
                 type="email"
                 placeholder="your@email.com"
                 autocomplete="email"
-                class="flex-1 px-4 py-3 bg-navy-900 border border-white/10 text-white text-sm placeholder-white/30 focus:outline-none focus:border-white transition-colors"
+                class="flex-1 px-4 py-2.5 rounded-full bg-navy-900 border border-white/10 text-white text-sm placeholder-white/30 focus:outline-none focus:border-white/50 transition-colors"
               />
-              <button type="submit" class="px-5 py-3 bg-white text-navy-900 font-semibold text-xs hover:bg-navy-200 transition-colors">
+              <button type="submit" aria-label="Subscribe" class="px-5 py-2.5 rounded-full bg-white text-navy-900 font-semibold text-sm hover:bg-charcoal-100 transition-colors">
                 →
               </button>
             </form>
@@ -61,7 +61,7 @@
               target="_blank"
               rel="noopener noreferrer"
               :aria-label="social.name"
-              class="w-9 h-9 flex items-center justify-center border border-white/10 text-white/40 hover:text-white hover:border-white/40 transition-all duration-300"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 text-white/40 hover:text-white hover:border-white/40 transition-all duration-300"
             >
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" v-html="social.icon"></svg>
             </a>

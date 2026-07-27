@@ -432,11 +432,11 @@ useSeoMeta({
 }
 
 .lp-eyebrow-dark {
-  @apply font-sans text-gold-600 text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase;
+  @apply font-sans text-charcoal-500 text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase;
 }
 
 .lp-objection-card {
-  @apply bg-white border border-navy-900/10 p-6 sm:p-7;
+  @apply bg-white rounded-2xl border border-navy-900/10 p-6 sm:p-7;
 }
 
 /* Footer */

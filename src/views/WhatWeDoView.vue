@@ -2,13 +2,11 @@
   <div class="what-we-do-page">
 
     <!-- ══ HERO ══ -->
-    <section class="relative min-h-screen flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Page hero">
-      <HeroBackground
-        src="/hero-what-we-do-strategy.png"
-        overlay-class="bg-gradient-to-r from-navy-900/93 via-navy-900/80 to-navy-900/50"
-        image-opacity="opacity-40"
-        image-position="object-right object-center"
-      />
+    <section class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Page hero">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav :crumbs="[{ label: 'How We Work', path: '/what-we-do' }]" />
 
@@ -33,10 +31,6 @@
           </RouterLink>
         </div>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
-      </div>
     </section>
 
     <!-- ══ PROBLEM / SOLUTION ══ -->
@@ -58,7 +52,7 @@
               <div
                 v-for="problem in problems"
                 :key="problem"
-                class="flex items-start gap-4 p-4 bg-red-50 border border-red-100"
+                class="flex items-start gap-4 p-4 rounded-xl bg-red-50 border border-red-100"
               >
                 <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -82,7 +76,7 @@
               <div
                 v-for="solution in solutions"
                 :key="solution"
-                class="flex items-start gap-4 p-4 bg-green-50 border border-green-100"
+                class="flex items-start gap-4 p-4 rounded-xl bg-green-50 border border-green-100"
               >
                 <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
@@ -98,7 +92,7 @@
     <!-- ══ PROCESS TIMELINE ══ -->
     <section class="section-padding bg-navy-900 relative overflow-hidden" aria-labelledby="process-heading">
       <div class="absolute inset-0 opacity-[0.02] pointer-events-none" aria-hidden="true"
-           style="background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px); background-size: 80px 80px;">
+           style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 80px 80px;">
       </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-16">
@@ -116,7 +110,7 @@
             class="reveal-up group"
             :style="{ transitionDelay: (i * 100) + 'ms' }"
           >
-            <div class="relative p-8 border border-white/10 hover:border-gold-500/50 transition-all duration-300 hover:bg-white/5 h-full">
+            <div class="relative p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-300 hover:bg-white/5 h-full">
               <div class="absolute top-4 right-4 font-serif text-5xl font-bold text-white/5 group-hover:text-gold-500/10 transition-colors" aria-hidden="true">
                 {{ String(i + 1).padStart(2, '0') }}
               </div>
@@ -158,13 +152,13 @@
           <article
             v-for="(cap, i) in capabilities"
             :key="cap.title"
-            class="reveal-up group p-6 bg-white border border-navy-900/8 hover:border-gold-500/50 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+            class="reveal-up group p-6 bg-white rounded-2xl border border-navy-900/8 hover:border-gold-500/50 hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-1"
             :style="{ transitionDelay: (i * 60) + 'ms' }"
           >
-            <div class="w-10 h-10 flex items-center justify-center border border-gold-500/20 bg-gold-500/5 group-hover:bg-gold-500 group-hover:border-gold-500 transition-all duration-300 mb-5" aria-hidden="true">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg border border-gold-500/20 bg-gold-500/5 group-hover:bg-gold-500 group-hover:border-gold-500 transition-all duration-300 mb-5" aria-hidden="true">
               <svg class="w-5 h-5 text-gold-500 group-hover:text-navy-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="cap.icon"></svg>
             </div>
-            <h3 class="font-sans font-semibold text-navy-900 text-sm mb-2 group-hover:text-gold-600 transition-colors">{{ cap.title }}</h3>
+            <h3 class="font-sans font-semibold text-navy-900 text-sm mb-2 group-hover:text-charcoal-500 transition-colors">{{ cap.title }}</h3>
             <p class="font-sans text-charcoal-400 text-xs leading-relaxed">{{ cap.description }}</p>
           </article>
         </div>
@@ -216,7 +210,6 @@ import { getPageSeo } from '@/data/seo-pages'
 
 const pageSeo = getPageSeo('what-we-do')
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 import RelatedServices from '@/components/ui/RelatedServices.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
 

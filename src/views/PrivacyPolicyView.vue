@@ -20,7 +20,7 @@
       <div class="max-w-4xl mx-auto px-6 lg:px-8">
         <div class="prose-legal">
 
-          <div class="bg-white border border-navy-900/8 p-6 mb-10">
+          <div class="bg-white rounded-2xl border border-navy-900/8 p-6 mb-10">
             <p class="font-sans text-charcoal-600 text-sm leading-relaxed">
               This Privacy Policy describes how <strong>ZARMEDIAGROUP (PTY) LTD</strong> (Registration No: 2026/166396/07),
               trading as <strong>Zar Media Group</strong>, collects, uses, stores, and protects personal information in

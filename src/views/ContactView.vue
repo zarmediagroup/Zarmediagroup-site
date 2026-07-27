@@ -2,13 +2,11 @@
   <div class="contact-page">
 
     <!-- ══ HERO ══ -->
-    <section class="relative min-h-screen flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Contact page hero">
-      <HeroBackground
-        src="/hero-contact-connection.png"
-        overlay-class="bg-gradient-to-r from-navy-900/94 via-navy-900/82 to-navy-900/55"
-        image-opacity="opacity-45"
-        image-position="object-center"
-      />
+    <section class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Contact page hero">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav :crumbs="[{ label: 'Contact', path: '/contact' }]" />
 
@@ -22,10 +20,6 @@
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
-      </div>
     </section>
 
     <!-- ══ CONTACT LAYOUT ══ -->
@@ -35,7 +29,7 @@
 
           <!-- ── Left: Form ── -->
           <div class="lg:col-span-3 reveal-up">
-            <div class="bg-white border border-navy-900/8 p-5 sm:p-8 lg:p-10">
+            <div class="bg-white rounded-2xl border border-navy-900/8 p-5 sm:p-8 lg:p-10">
               <div class="mb-8">
                 <h2 class="font-serif text-display-sm text-navy-900 mb-2">Request a Free Audit</h2>
                 <p class="font-sans text-charcoal-500 text-sm">
@@ -258,7 +252,7 @@
                     />
                     <label for="consent" class="font-sans text-charcoal-500 text-xs leading-relaxed cursor-pointer">
                       I agree to Zar Media Group processing my information as described in the
-                      <a href="/privacy-policy" class="text-gold-600 hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                      <a href="/privacy-policy" class="text-charcoal-500 hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
                       This form is POPIA compliant.
                     </label>
                   </div>
@@ -320,39 +314,39 @@
             </div>
 
             <!-- Contact Details -->
-            <div class="bg-white border border-navy-900/8 p-8">
+            <div class="bg-white rounded-2xl border border-navy-900/8 p-8">
               <h2 class="font-serif text-navy-900 text-xl mb-6">Contact Details</h2>
               <address class="not-italic space-y-4">
                 <div class="flex items-start gap-4">
-                  <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center border border-gold-500/30 bg-gold-500/5" aria-hidden="true">
+                  <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg border border-gold-500/30 bg-gold-500/5" aria-hidden="true">
                     <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                   </div>
                   <div>
                     <div class="font-sans text-navy-900/50 text-xs uppercase tracking-wider mb-1">Email</div>
-                    <a href="mailto:info@zarmediagroup.com" class="font-sans text-navy-900 text-sm hover:text-gold-600 transition-colors">
+                    <a href="mailto:info@zarmediagroup.com" class="font-sans text-navy-900 text-sm hover:text-charcoal-500 transition-colors">
                       info@zarmediagroup.com
                     </a>
                   </div>
                 </div>
 
                 <div class="flex items-start gap-4">
-                  <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center border border-gold-500/30 bg-gold-500/5" aria-hidden="true">
+                  <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg border border-gold-500/30 bg-gold-500/5" aria-hidden="true">
                     <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
                   </div>
                   <div>
                     <div class="font-sans text-navy-900/50 text-xs uppercase tracking-wider mb-1">Phone (SA)</div>
-                    <a href="tel:+27685070088" class="font-sans text-navy-900 text-sm hover:text-gold-600 transition-colors">
+                    <a href="tel:+27685070088" class="font-sans text-navy-900 text-sm hover:text-charcoal-500 transition-colors">
                       +27 68 507 0088
                     </a>
                   </div>
                 </div>
 
                 <div class="flex items-start gap-4">
-                  <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center border border-gold-500/30 bg-gold-500/5" aria-hidden="true">
+                  <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg border border-gold-500/30 bg-gold-500/5" aria-hidden="true">
                     <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                     </svg>
@@ -393,7 +387,6 @@ import { getPageSeo } from '@/data/seo-pages'
 
 const pageSeo = getPageSeo('contact')
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
 
 const { initReveal } = useScrollReveal()

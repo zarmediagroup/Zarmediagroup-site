@@ -3,55 +3,44 @@
 
     <!-- ==================== HERO ==================== -->
     <section
-      class="home-hero relative overflow-hidden bg-navy-900 pt-28 pb-8 lg:min-h-svh lg:max-h-svh lg:flex lg:flex-col lg:justify-center lg:pt-32 lg:pb-6"
+      class="home-hero relative overflow-hidden bg-navy-950 pt-28 pb-10 lg:pt-36 lg:pb-14"
       aria-label="Hero"
     >
-      <HeroBackground
-        src="/hero-home-video-poster.png"
-        overlay-class="bg-gradient-to-r from-navy-900/93 via-navy-900/78 to-navy-900/30"
-        image-opacity="opacity-50"
-        image-position="object-center"
-        priority="high"
-        :corners="false"
-      >
-        <div class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-gold-500/5 blur-3xl"></div>
-        <div class="absolute top-1/3 left-[12%] w-48 h-48 rounded-full bg-gold-500/5 blur-3xl animate-float hidden lg:block"></div>
-      </HeroBackground>
+      <!-- Backdrop: faint grid + glow -->
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[46rem] h-[30rem] -top-52 left-1/2 -translate-x-1/2"></div>
+      </div>
 
-      <div class="relative w-full max-w-7xl mx-auto px-6 lg:px-8 py-6 lg:py-6">
-        <div class="grid grid-cols-1 lg:grid-cols-12 lg:items-center gap-6 lg:gap-8">
-          <div class="hero-content lg:col-span-12 xl:col-span-7 max-w-xl relative z-10 lg:pr-4">
-          <div class="reveal-up hidden lg:block">
-            <span class="section-label lg:text-[0.65rem] lg:tracking-[0.18em]">POPIA-conscious client portals · Built for regulated SA firms</span>
-            <div class="gold-divider lg:mt-3 lg:mb-3"></div>
-          </div>
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <!-- Announcement pill -->
+          <RouterLink
+            to="/services/client-portal"
+            class="reveal-up inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-sans text-xs font-medium text-white/70 backdrop-blur-sm transition-colors hover:border-white/30 hover:text-white"
+          >
+            <span class="h-1.5 w-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>
+            POPIA-conscious client portals for regulated SA firms
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </RouterLink>
 
           <!--
             SEO H1: Primary focus client portals for accountants; firm website managed in the same programme.
             One H1 per page — never duplicated.
           -->
-          <h1 class="font-serif text-display-lg text-white mb-3 lg:mb-3 leading-tight max-lg:text-[clamp(1.75rem,7.5vw,2.35rem)] lg:text-[clamp(2rem,3.1vw,3.15rem)] reveal-up" style="transition-delay: 100ms;">
-            Stop Paying Senior Staff<br class="hidden sm:inline"/>
-            <span class="text-gradient">to Chase Documents in WhatsApp</span>
+          <h1 class="font-serif text-display-xl text-white mt-6 mb-5 text-balance reveal-up" style="transition-delay: 100ms;">
+            Stop paying senior staff<br class="hidden sm:inline"/>
+            <span class="text-gradient">to chase documents in WhatsApp</span>
           </h1>
 
-          <p class="lg:hidden font-sans text-white/60 text-base leading-relaxed mb-5 max-w-lg reveal-up" style="transition-delay: 200ms;">
-            POPIA-conscious portal on your domain—encrypted uploads, audit trail, less admin chasing.
-          </p>
-          <p class="hidden lg:block font-sans text-white/60 text-base leading-relaxed mb-4 max-w-lg reveal-up" style="transition-delay: 200ms;">
-            We build and run a <strong class="text-white/80">POPIA-conscious client portal on your domain</strong>—encrypted uploads, full audit trail, firm website managed in the same programme. Less chasing. Defensible records.
+          <p class="font-sans text-white/60 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto reveal-up" style="transition-delay: 200ms;">
+            A <strong class="text-white/85">POPIA-conscious client portal on your domain</strong>—encrypted uploads,
+            full audit trail, firm website managed in the same programme. Less chasing. Defensible records.
           </p>
 
-          <ul class="hidden lg:block font-sans text-white/55 text-xs space-y-1.5 mb-5 max-w-lg reveal-up" style="transition-delay: 250ms;" aria-label="What you get">
-            <li v-for="line in heroQuickWins" :key="line" class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              <span>{{ line }}</span>
-            </li>
-          </ul>
-
-          <div class="flex flex-col sm:flex-row gap-4 reveal-up" style="transition-delay: 300ms;">
+          <div class="flex flex-col sm:flex-row gap-3 justify-center reveal-up" style="transition-delay: 300ms;">
             <RouterLink to="/contact" class="btn-primary" aria-label="Book a free compliance and intake audit for your accounting firm">
               Get a free compliance audit
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -63,32 +52,54 @@
             </RouterLink>
           </div>
 
-          <div class="hidden lg:block mt-8 pt-8 border-t border-white/10 reveal-up" style="transition-delay: 350ms;">
-            <p class="font-sans text-white/30 text-xs tracking-wider uppercase mb-4">Every build reviewed for POPIA, SA web accessibility &amp; FSCA requirements</p>
-            <div class="flex items-center gap-4 sm:gap-6 flex-wrap">
-              <div v-for="badge in trustBadges" :key="badge" class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-gold-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                </svg>
-                <span class="font-sans text-white/50 text-xs">{{ badge }}</span>
-              </div>
+          <div class="mt-7 flex items-center justify-center gap-x-5 gap-y-2 flex-wrap reveal-up" style="transition-delay: 350ms;">
+            <div v-for="badge in trustBadges" :key="badge" class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-gold-500/80 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="font-sans text-white/45 text-xs">{{ badge }}</span>
             </div>
           </div>
-
-          </div>
         </div>
-      </div>
 
-      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
+        <!-- Product screenshot in browser frame -->
+        <div class="relative mt-12 lg:mt-16 max-w-5xl mx-auto reveal-up" style="transition-delay: 400ms;">
+          <div class="hero-glow w-3/4 h-44 -top-16 left-1/2 -translate-x-1/2" aria-hidden="true"></div>
+          <BrowserFrame url="portal.yourfirm.co.za" dark>
+            <div class="relative aspect-video bg-navy-900">
+              <video
+                ref="platformVideo"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                poster="/hero-home-video-poster.png"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Overview of Zar Media Group POPIA-conscious client portal for accounting firms"
+              >
+                <source src="/hero-home-cinematic.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </BrowserFrame>
+        </div>
+
+        <!-- Integration marquee -->
+        <div class="relative mt-12 lg:mt-16">
+          <LogoMarquee
+            :tools="homeFeaturedTools"
+            label="Connects to the tools you already run"
+            variant="dark"
+            aria-label="Accounting software, CRM, and practice management integrations"
+          />
+        </div>
       </div>
     </section>
 
     <!-- ==================== THE OFFER ==================== -->
     <section aria-labelledby="offer-heading">
       <div class="relative py-12 md:py-20 lg:py-24 bg-navy-950 border-y border-white/5 overflow-hidden">
-        <div class="absolute inset-0 pointer-events-none opacity-[0.02]" aria-hidden="true" style="background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px); background-size: 80px 80px;"></div>
+        <div class="absolute inset-0 pointer-events-none opacity-[0.02]" aria-hidden="true" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 80px 80px;"></div>
 
         <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 lg:items-start mb-10 lg:mb-14">
@@ -119,36 +130,19 @@
             </div>
 
             <div class="order-1 lg:order-2 w-full max-w-lg mx-auto lg:max-w-none lg:ml-auto reveal-right">
-              <figure class="relative">
-                <div class="absolute -top-3 -right-3 w-full h-full border border-gold-500/25 pointer-events-none hidden lg:block" aria-hidden="true"></div>
-                <div class="relative border border-white/10 bg-navy-900 shadow-card-hover overflow-hidden aspect-video">
-                  <video
-                    ref="platformVideo"
-                    class="absolute inset-0 w-full h-full object-cover object-center"
-                    poster="/hero-home-video-poster.png"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    preload="metadata"
-                    aria-label="Overview of Zar Media Group POPIA-conscious client portal for accounting firms"
-                  >
-                    <source src="/hero-home-cinematic.mp4" type="video/mp4" />
-                  </video>
-                  <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" aria-hidden="true"></div>
-                  <div class="absolute top-0 right-0 w-5 h-5 bg-gold-500" aria-hidden="true"></div>
-                  <div class="absolute bottom-0 left-0 w-5 h-5 border-2 border-gold-500" aria-hidden="true"></div>
-                </div>
-              </figure>
-
-              <div class="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-white/10">
-                <IntegrationLogoStrip
-                  :tools="homeFeaturedTools"
-                  label="Runs alongside the tools you already use—no integration project required"
-                  variant="dark"
-                  compact
-                  show-link
-                />
+              <div class="relative">
+                <div class="hero-glow w-2/3 h-32 -top-10 left-1/2 -translate-x-1/2" aria-hidden="true"></div>
+                <BrowserFrame url="portal.yourfirm.co.za/documents" dark>
+                  <img
+                    src="/client-documents.png"
+                    alt="Client document vault with categories and status badges"
+                    class="w-full h-auto block"
+                    width="1400"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </BrowserFrame>
               </div>
             </div>
           </div>
@@ -157,11 +151,11 @@
             <article
               v-for="(feature, i) in offerFeatures"
               :key="feature.title"
-              class="reveal-up group p-5 lg:p-6 border border-white/10 bg-white/[0.03] hover:border-gold-500/40 hover:bg-white/[0.05] transition-all duration-300"
+              class="reveal-up group p-5 lg:p-6 rounded-2xl border border-white/10 bg-white/[0.03] hover:border-white/25 hover:bg-white/[0.05] transition-all duration-300"
               :style="{ transitionDelay: (i * 80) + 'ms' }"
             >
               <div class="flex items-center gap-3 mb-3">
-                <div class="w-9 h-9 flex-shrink-0 flex items-center justify-center border border-gold-500/30 bg-gold-500/10 group-hover:bg-gold-500/20 transition-colors" aria-hidden="true">
+                <div class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg border border-gold-500/30 bg-gold-500/10 group-hover:bg-gold-500/20 transition-colors" aria-hidden="true">
                   <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="feature.icon"></svg>
                 </div>
                 <h3 class="font-sans font-semibold text-white text-sm tracking-wide">{{ feature.title }}</h3>
@@ -198,17 +192,17 @@
               :style="{ transitionDelay: (i * 100) + 'ms' }"
             >
               <RouterLink :to="service.link" class="block h-full" :aria-label="`${service.title} — ${service.description}`">
-                <article class="relative h-full bg-white border border-navy-900/8 p-6 lg:p-8 transition-all duration-500 hover:border-gold-500/50 hover:shadow-card-hover group-hover:-translate-y-2 overflow-hidden">
+                <article class="relative h-full bg-white rounded-2xl border border-navy-900/8 p-6 lg:p-8 transition-all duration-500 hover:border-navy-900/20 hover:shadow-soft-lg group-hover:-translate-y-2 overflow-hidden">
                   <div class="absolute top-6 right-6 font-serif text-6xl font-bold text-navy-900/10 group-hover:text-gold-500/10 transition-colors" aria-hidden="true">
                     {{ String(i + 1).padStart(2, '0') }}
                   </div>
-                  <div class="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center border border-gold-500/20 bg-gold-500/5 mb-4 lg:mb-8 group-hover:bg-gold-500 group-hover:border-gold-500 transition-all duration-300" aria-hidden="true">
-                    <svg class="w-6 h-6 text-gold-900 group-hover:text-navy-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="service.icon"></svg>
+                  <div class="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center rounded-xl border border-gold-500/20 bg-gold-500/5 mb-4 lg:mb-8 group-hover:bg-navy-900 group-hover:border-navy-900 transition-all duration-300" aria-hidden="true">
+                    <svg class="w-6 h-6 text-navy-900 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="service.icon"></svg>
                   </div>
                   <h3 class="font-serif text-lg lg:text-xl text-navy-900 mb-2 lg:mb-4 group-hover:text-navy-900 transition-colors">{{ service.title }}</h3>
                   <p class="hidden lg:block font-sans text-charcoal-500 text-sm leading-relaxed mb-6">{{ service.description }}</p>
                   <div class="hidden lg:flex flex-wrap gap-2 mb-6">
-                    <span v-for="tag in service.tags" :key="tag" class="font-sans text-xs text-gold-700 bg-gold-500/10 px-2.5 py-1 border border-gold-500/20">
+                    <span v-for="tag in service.tags" :key="tag" class="font-sans text-xs text-charcoal-600 bg-charcoal-100 px-2.5 py-1 rounded-full border border-navy-900/8">
                       {{ tag }}
                     </span>
                   </div>
@@ -249,7 +243,7 @@
     <!-- ==================== VALUE PROPOSITION ==================== -->
     <section class="py-10 md:py-20 lg:py-32 bg-navy-900 relative overflow-hidden" aria-labelledby="outcomes-heading">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px); background-size: 80px 80px;"></div>
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 80px 80px;"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
@@ -274,7 +268,7 @@
                 class="flex items-start gap-4 lg:gap-5 reveal-up"
                 :style="{ transitionDelay: (300 + i * 100) + 'ms' }"
               >
-                <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center border border-gold-500/40 bg-gold-500/10" aria-hidden="true">
+                <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-lg border border-gold-500/40 bg-gold-500/10" aria-hidden="true">
                   <svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="point.icon"></svg>
                 </div>
                 <div>
@@ -301,9 +295,9 @@
               class="group reveal-right"
               :style="{ transitionDelay: (i * 100) + 'ms' }"
             >
-              <div class="flex items-start gap-6 p-6 border border-white/10 hover:border-gold-500/40 transition-all duration-300 hover:bg-white/5">
+              <div class="flex items-start gap-6 p-6 rounded-2xl border border-white/10 hover:border-white/25 transition-all duration-300 hover:bg-white/5">
                 <div class="flex-shrink-0">
-                  <div class="w-10 h-10 bg-gold-500/10 border border-gold-500/30 flex items-center justify-center" aria-hidden="true">
+                  <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center" aria-hidden="true">
                     <span class="font-serif text-gold-500 font-bold text-sm">{{ String(i + 1).padStart(2, '0') }}</span>
                   </div>
                 </div>
@@ -336,7 +330,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-          <div class="reveal-up bg-white/[0.03] border border-white/10 p-6 lg:p-10">
+          <div class="reveal-up rounded-3xl rounded-3xl bg-white/[0.03] border border-white/10 p-6 lg:p-10">
             <h3 class="font-sans font-bold text-white/50 text-xs uppercase tracking-widest mb-6">
               Your firm today
             </h3>
@@ -353,7 +347,7 @@
             </p>
           </div>
 
-          <div class="reveal-up bg-gold-500/[0.06] border border-gold-500/30 p-6 lg:p-10" style="transition-delay: 120ms;">
+          <div class="reveal-up rounded-3xl rounded-3xl bg-gold-500/[0.06] border border-gold-500/30 p-6 lg:p-10" style="transition-delay: 120ms;">
             <h3 class="font-sans font-bold text-gold-400 text-xs uppercase tracking-widest mb-6">
               Your firm 30 days after launch
             </h3>
@@ -398,7 +392,7 @@
             class="reveal-up"
             :style="{ transitionDelay: (i * 100) + 'ms' }"
           >
-            <div class="h-full bg-white border border-navy-900/8 p-6 lg:p-8 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <div class="h-full bg-white rounded-2xl border border-navy-900/8 p-6 lg:p-8 shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <h3 class="font-serif text-lg text-navy-900 mb-4">{{ point.title }}</h3>
               <p class="font-sans text-charcoal-600 text-sm leading-relaxed mb-6 flex-1">{{ point.body }}</p>
               <RouterLink :to="point.link" class="btn-text text-xs self-start" :aria-label="`${point.title} — learn more`">
@@ -427,29 +421,16 @@
             <div
               v-for="sector in sectors"
               :key="sector.name"
-              class="reveal-up group p-4 sm:p-6 border border-white/10 hover:border-gold-500/50 transition-all duration-300 text-center"
+              class="reveal-up group p-4 sm:p-6 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-300 text-center"
               :style="{ transitionDelay: sector.delay }"
             >
-              <div class="w-10 h-10 mx-auto mb-4 flex items-center justify-center border border-gold-500/30 bg-gold-500/10 group-hover:bg-gold-500 group-hover:border-gold-500 transition-all" aria-hidden="true">
+              <div class="w-10 h-10 mx-auto mb-4 flex items-center justify-center rounded-lg border border-gold-500/30 bg-gold-500/10 group-hover:bg-gold-500 group-hover:border-gold-500 transition-all" aria-hidden="true">
                 <svg class="w-5 h-5 text-gold-500 group-hover:text-navy-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="sector.icon"></svg>
               </div>
               <div class="font-sans text-white/70 text-xs font-semibold uppercase tracking-wide group-hover:text-white transition-colors">{{ sector.name }}</div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ==================== INTEGRATIONS ==================== -->
-    <section class="py-10 lg:py-16 bg-navy-950 border-y border-white/5" aria-label="Accounting software and CRM integrations">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8 reveal-up">
-        <IntegrationLogoStrip
-          :tools="homeFeaturedTools"
-          label="Built to sit alongside your existing stack—accounting, CRM, e-sign and more"
-          variant="dark"
-          show-link
-          aria-label="Accounting software, CRM, and practice management tools the portal runs alongside"
-        />
       </div>
     </section>
 
@@ -468,12 +449,12 @@
           <div
             v-for="(faq, i) in faqs"
             :key="i"
-            class="reveal-up border border-navy-900/10 bg-white overflow-hidden"
+            class="reveal-up rounded-xl border border-navy-900/10 bg-white overflow-hidden"
             :style="{ transitionDelay: (i * 60) + 'ms' }"
           >
             <dt>
               <button
-                class="w-full flex items-center justify-between gap-4 p-6 text-left font-sans font-semibold text-navy-900 text-sm hover:text-gold-600 transition-colors"
+                class="w-full flex items-center justify-between gap-4 p-6 text-left font-sans font-semibold text-navy-900 text-sm hover:text-charcoal-500 transition-colors"
                 :aria-expanded="openFaq === i"
                 :aria-controls="`faq-answer-${i}`"
                 @click="openFaq = openFaq === i ? null : i"
@@ -545,9 +526,9 @@ import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS } from '@/composables/useSeoMeta'
 import { getPageSeo } from '@/data/seo-pages'
 import StatCounter from '@/components/ui/StatCounter.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
-import IntegrationLogoStrip from '@/components/ui/IntegrationLogoStrip.vue'
+import BrowserFrame from '@/components/ui/BrowserFrame.vue'
+import LogoMarquee from '@/components/ui/LogoMarquee.vue'
 import { HOME_FEATURED_TOOLS } from '@/data/integration-tools'
 
 const { initReveal } = useScrollReveal()
@@ -644,12 +625,6 @@ useSeoMeta({
 const homeFeaturedTools = HOME_FEATURED_TOOLS
 
 const trustBadges = ['POPIA-Conscious', 'SA Accessibility', 'Encrypted Storage', 'Full Audit Trail']
-
-const heroQuickWins = [
-  'Encrypted uploads with a full audit trail—compliance built in',
-  'Clients upload once; your team works one queue',
-  'Runs alongside Xero, Sage or QuickBooks—no rip-and-replace',
-]
 
 const offerFeatures = [
   {

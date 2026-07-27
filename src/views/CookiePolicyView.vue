@@ -20,7 +20,7 @@
       <div class="max-w-4xl mx-auto px-6 lg:px-8">
         <div class="prose-legal">
 
-          <div class="bg-white border border-navy-900/8 p-6 mb-10">
+          <div class="bg-white rounded-2xl border border-navy-900/8 p-6 mb-10">
             <p class="font-sans text-charcoal-600 text-sm leading-relaxed">
               This Cookie Policy explains how <strong>ZARMEDIAGROUP (PTY) LTD</strong> (Reg No: 2026/166396/07),
               trading as <strong>Zar Media Group</strong>, uses cookies and similar tracking technologies on
@@ -165,7 +165,7 @@
             </li>
           </ul>
 
-          <div class="bg-white border border-navy-900/8 p-5 mt-2 mb-6">
+          <div class="bg-white rounded-2xl border border-navy-900/8 p-5 mt-2 mb-6">
             <p class="font-sans text-charcoal-600 text-sm leading-relaxed">
               <strong>Note:</strong> Analytics cookies and the Google Analytics script are only enabled after you click
               <strong>Accept</strong> on our cookie banner. If you click <strong>Decline</strong>, non-essential analytics

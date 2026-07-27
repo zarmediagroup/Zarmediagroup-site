@@ -3,7 +3,7 @@
 
     <!-- ══ HERO ══ -->
     <section
-      class="relative min-h-screen flex items-center overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24"
+      class="relative flex items-center overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24"
       aria-label="Resource article hero"
     >
       <!-- Background photo -->
@@ -62,10 +62,6 @@
 
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
-      </div>
     </section>
 
     <!-- ══ ARTICLE BODY ══ -->
@@ -112,7 +108,7 @@
             <!-- External project link (case studies) -->
             <div
               v-else-if="block.type === 'external'"
-              class="my-8 p-6 bg-white border border-navy-900/10 reveal-up"
+              class="my-8 p-6 bg-white rounded-2xl border border-navy-900/10 reveal-up"
             >
               <p v-if="block.text" class="font-sans text-charcoal-600 text-sm mb-4 leading-relaxed">{{ block.text }}</p>
               <a

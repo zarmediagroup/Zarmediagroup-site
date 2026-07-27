@@ -2,13 +2,11 @@
   <div class="compliance-page">
 
     <!-- ══ HERO ══ -->
-    <section class="relative min-h-screen flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Compliance service hero">
-      <HeroBackground
-        src="/compliance-data-protection-financial-services.png"
-        overlay-class="bg-gradient-to-r from-navy-900/93 via-navy-900/80 to-navy-900/50"
-        image-opacity="opacity-40"
-        image-position="object-right object-center"
-      />
+    <section class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Compliance service hero">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav :crumbs="[
           { label: 'Services', path: '/services' },
@@ -37,10 +35,6 @@
           </RouterLink>
         </div>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
-      </div>
     </section>
 
     <!-- ══ REGULATIONS OVERVIEW ══ -->
@@ -64,16 +58,16 @@
           <article
             v-for="(regulation, i) in regulations"
             :key="regulation.name"
-            class="reveal-up p-7 bg-white border border-navy-900/8 hover:border-gold-500/50 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300"
+            class="reveal-up p-7 bg-white rounded-2xl border border-navy-900/8 hover:border-gold-500/50 hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300"
             :style="{ transitionDelay: (i * 80) + 'ms' }"
           >
             <div class="flex items-center gap-3 mb-5">
-              <div class="w-10 h-10 flex items-center justify-center border border-gold-500/20 bg-gold-500/5 flex-shrink-0" aria-hidden="true">
+              <div class="w-10 h-10 flex items-center justify-center rounded-lg border border-gold-500/20 bg-gold-500/5 flex-shrink-0" aria-hidden="true">
                 <svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="regulation.icon"></svg>
               </div>
               <div>
                 <div class="font-sans font-bold text-navy-900 text-sm">{{ regulation.name }}</div>
-                <div class="font-sans text-gold-700 text-xs">{{ regulation.scope }}</div>
+                <div class="font-sans text-charcoal-600 text-xs">{{ regulation.scope }}</div>
               </div>
             </div>
             <p class="font-sans text-charcoal-500 text-sm leading-relaxed mb-4">{{ regulation.description }}</p>
@@ -116,7 +110,7 @@
             <div
               v-for="item in complianceChecklist"
               :key="item.check"
-              class="flex items-start gap-4 p-4 border transition-all duration-200"
+              class="flex items-start gap-4 p-4 rounded-xl border transition-all duration-200"
               :class="item.common
                 ? 'border-red-500/20 bg-red-500/5'
                 : 'border-white/10 hover:border-white/20'"
@@ -158,10 +152,10 @@
           <div
             v-for="(cert, i) in securityCerts"
             :key="cert.name"
-            class="reveal-up p-6 bg-white border border-navy-900/8 text-center hover:border-gold-500/50 transition-all duration-300"
+            class="reveal-up p-6 bg-white rounded-2xl border border-navy-900/8 text-center hover:border-gold-500/50 transition-all duration-300"
             :style="{ transitionDelay: (i * 80) + 'ms' }"
           >
-            <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center border border-gold-500/20 bg-gold-500/5" aria-hidden="true">
+            <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-lg border border-gold-500/20 bg-gold-500/5" aria-hidden="true">
               <svg class="w-7 h-7 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="cert.icon"></svg>
             </div>
             <div class="font-sans font-bold text-navy-900 text-xs uppercase tracking-wide">{{ cert.name }}</div>
@@ -183,7 +177,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-          <div class="reveal-up bg-white/[0.03] border border-white/10 p-6 lg:p-10">
+          <div class="reveal-up rounded-3xl bg-white/[0.03] border border-white/10 p-6 lg:p-10">
             <h3 class="font-sans font-bold text-white/50 text-xs uppercase tracking-widest mb-6">Compliance as an afterthought</h3>
             <ul class="space-y-4">
               <li v-for="item in contrastBoltOn" :key="item" class="flex items-start gap-3">
@@ -194,7 +188,7 @@
               </li>
             </ul>
           </div>
-          <div class="reveal-up bg-gold-500/[0.06] border border-gold-500/30 p-6 lg:p-10" style="transition-delay: 120ms;">
+          <div class="reveal-up rounded-3xl bg-gold-500/[0.06] border border-gold-500/30 p-6 lg:p-10" style="transition-delay: 120ms;">
             <h3 class="font-sans font-bold text-gold-400 text-xs uppercase tracking-widest mb-6">Compliance-first architecture</h3>
             <ul class="space-y-4">
               <li v-for="item in contrastBuiltIn" :key="item" class="flex items-start gap-3">
@@ -224,13 +218,13 @@
           <div
             v-for="(faq, i) in faqs"
             :key="i"
-            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-sm"
+            class="reveal-up border border-navy-900/10 bg-white overflow-hidden rounded-xl"
             :style="{ transitionDelay: i * 60 + 'ms' }"
           >
             <dt>
               <button
                 type="button"
-                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-gold-600 transition-colors"
+                class="w-full flex items-center justify-between gap-4 min-h-[3.25rem] py-5 px-6 text-left font-sans font-semibold text-navy-900 text-base hover:text-charcoal-500 transition-colors"
                 :aria-expanded="openFaq === i"
                 :aria-controls="`ct-faq-${i}`"
                 @click="openFaq = openFaq === i ? null : i"
@@ -268,7 +262,6 @@ import { useScrollReveal } from '@/composables/useScrollReveal'
 import { useSeoMeta, SCHEMAS } from '@/composables/useSeoMeta'
 import { getPageSeo } from '@/data/seo-pages'
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 import RelatedServices from '@/components/ui/RelatedServices.vue'
 import SeoRelatedGuides from '@/components/seo/SeoRelatedGuides.vue'
 

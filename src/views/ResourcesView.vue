@@ -2,13 +2,11 @@
   <div class="resources-page">
 
     <!-- ══ HERO ══ -->
-    <section class="relative min-h-screen flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Resources page hero">
-      <HeroBackground
-        src="/hero-resources-knowledge.png"
-        overlay-class="bg-gradient-to-r from-navy-900/93 via-navy-900/80 to-navy-900/50"
-        image-opacity="opacity-40"
-        image-position="object-right object-center"
-      />
+    <section class="relative flex items-center bg-navy-900 overflow-hidden pt-28 pb-20 lg:pt-40 lg:pb-24" aria-label="Resources page hero">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.035]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);"></div>
+        <div class="hero-glow w-[40rem] h-[26rem] -top-40 left-1/2 -translate-x-1/2"></div>
+      </div>
       <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <BreadcrumbNav :crumbs="[{ label: 'Resources', path: '/resources' }]" />
 
@@ -21,10 +19,6 @@
           Free guides, whitepapers, and case studies on digital strategy for accounting firms and financial service providers. Learn how to reduce admin, build a compliant digital presence, and attract more clients online.
         </p>
         <div class="gold-divider mt-8 reveal-up" style="transition-delay: 250ms;"></div>
-      </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce" aria-hidden="true">
-        <span class="font-sans text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
       </div>
     </section>
 
@@ -62,7 +56,7 @@
             class="reveal-up group"
             :style="{ transitionDelay: (i * 60) + 'ms' }"
           >
-            <RouterLink :to="`/resources/${resource.slug}`" class="block h-full bg-white border border-navy-900/8 hover:border-gold-500/50 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden" :aria-label="`Read: ${resource.title}`">
+            <RouterLink :to="`/resources/${resource.slug}`" class="block h-full bg-white rounded-2xl border border-navy-900/8 hover:border-gold-500/50 hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden" :aria-label="`Read: ${resource.title}`">
               <!-- Resource image area -->
               <div class="relative w-full h-48 overflow-hidden">
                 <!-- Real photo -->
@@ -100,11 +94,11 @@
 
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-4">
-                  <span class="font-sans text-xs text-gold-600 bg-gold-500/10 border border-gold-500/20 px-2 py-0.5">{{ resource.category }}</span>
+                  <span class="font-sans text-xs text-charcoal-500 bg-gold-500/10 border border-gold-500/20 px-2 py-0.5">{{ resource.category }}</span>
                   <span class="font-sans text-charcoal-400 text-xs">{{ resource.readTime }} read</span>
                 </div>
 
-                <h2 class="font-serif text-navy-900 text-lg font-medium mb-3 group-hover:text-gold-600 transition-colors leading-snug">
+                <h2 class="font-serif text-navy-900 text-lg font-medium mb-3 group-hover:text-charcoal-500 transition-colors leading-snug">
                   {{ resource.title }}
                 </h2>
                 <p class="font-sans text-charcoal-500 text-sm leading-relaxed mb-5">{{ resource.excerpt }}</p>
@@ -238,7 +232,6 @@ import { getPageSeo } from '@/data/seo-pages'
 
 const pageSeo = getPageSeo('resources')
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav.vue'
-import HeroBackground from '@/components/ui/HeroBackground.vue'
 import { resources } from '@/data/resources.js'
 
 const { initReveal } = useScrollReveal()
