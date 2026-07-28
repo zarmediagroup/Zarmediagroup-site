@@ -725,6 +725,136 @@ export const resources = [
       },
     ],
   },
+  {
+    slug: 'fic-directive-11-rcr-deadline-companies-house-software-filing-2027',
+    type: 'Compliance',
+    category: 'compliance',
+    title: 'FIC Directive 11 RCR Deadline and Companies House Software-Only Filing: What Accountants Must Know',
+    seoTitle: 'FIC RCR Deadline & Companies House Filing Changes 2026',
+    excerpt:
+      'FIC\'s 2026 Risk and Compliance Return is due 31 July, and Companies House moves to software-only accounts filing by April 2027 — what SA and UK practices must do now.',
+    keywords: 'FIC Directive 11, Risk and Compliance Return deadline, RCR 2026 South Africa, accountable institutions FICA, FIC RCR submission deadline, Companies House software-only filing, iXBRL accounts filing 2027, Companies House accounts changes, UK accountant compliance 2026, ECCTA accounts reform',
+    author: 'Zubayr Abdullatief',
+    authorInitials: 'ZA',
+    authorRole: 'Founder & Chief Executive Officer',
+    authorPhoto: '/zubayr-abdullatief-zar-media-group.png',
+    image: '/software-portal-integration-south-africa.jpg',
+    imageAlt: 'South African and UK accounting practice reviewing FIC Risk and Compliance Return and Companies House software-only accounts filing requirements',
+    readTime: '9 min',
+    date: 'Jul 2026',
+    dateISO: '2026-07-28',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
+    gradientFrom: '#0d0d0d',
+    gradientTo: '#1a1a1a',
+    content: [
+      {
+        type: 'intro',
+        text: 'South African accountable institutions caught by FIC Directive 11 of 2026 must submit their Risk and Compliance Return (RCR) by 31 July 2026, and UK practices are heading toward a hard cutover: from 1 April 2027, Companies House will only accept company accounts filed through commercial software. Neither deadline is far off — here is exactly what South African and UK practices need to check this week.',
+      },
+      {
+        type: 'heading',
+        text: 'What is the FIC Directive 11 RCR deadline for 2026?',
+      },
+      {
+        type: 'paragraph',
+        text: 'The Financial Intelligence Centre published Directive 11 of 2026 on 31 March 2026, requiring specified accountable institutions to submit their annual Risk and Compliance Return electronically. The submission window opened on 4 May 2026 and closes on staggered dates depending on the institution\'s Schedule 1 item: institutions under item 11 (non-bank), and items 14, 20, 21 and 22 including casinos under items 2 and 9, had to file by 30 June 2026. A second deadline of 31 July 2026 at 17:00 applies to institutions under items 1, 3 and 9 that do not operate as casinos, along with high-value goods dealers under item 20.',
+      },
+      {
+        type: 'heading',
+        text: 'Which accountable institutions must file the 2026 RCR by 31 July?',
+      },
+      {
+        type: 'paragraph',
+        text: 'The RCR is not optional paperwork — it is how the FIC measures whether an accountable institution understands and manages its money laundering, terrorist financing and proliferation financing risk. Any practice registered with the FIC as an accountable institution — including firms operating as trust or company service providers, or otherwise falling within the Schedule 1 items named in Directive 11 — needs to confirm which deadline applies to its registration category and file accordingly. Getting the item number wrong, or assuming a practice is exempt because it is a small firm, is one of the most common reasons submissions are missed.',
+      },
+      {
+        type: 'heading',
+        text: 'What should SA accounting and TCSP practices do about the RCR now?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Confirm your firm\'s FIC registration status and Schedule 1 item number today, not the week of the deadline. If your practice — or a client entity you administer — is registered as an accountable institution, check whether it falls into the 31 July 2026 category and complete the RCR through the FIC\'s online portal before the 17:00 cutoff. Firms that have never registered but perform trust or company administration work for clients should also confirm whether that activity brings them into scope, since the FIC has been explicit that institutions must register under the correct item number.',
+      },
+      {
+        type: 'heading',
+        text: 'When does Companies House require software-only accounts filing?',
+      },
+      {
+        type: 'paragraph',
+        text: 'From 1 April 2027, every company and LLP on the UK register — including dormant and micro-entities — will have to file accounts using compliant commercial software. Paper AA02 forms and the Companies House WebFiling service for accounts will no longer be accepted; WebFiling for annual accounts already closed on 31 March 2026. Accounts filed after the cutover must be tagged in iXBRL (Inline eXtensible Business Reporting Language) format. This is part of the wider Economic Crime and Corporate Transparency Act (ECCTA) reform of the UK company register.',
+      },
+      {
+        type: 'heading',
+        text: 'What changes for small companies under the software-only filing rules?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Small companies will no longer be able to file abridged accounts. From 1 April 2027, a small company must file its balance sheet, directors\' report, profit and loss account, and an auditor\'s report unless it qualifies for audit exemption — in which case directors must add a statement on the balance sheet specifying which exemption is being claimed and confirming the company qualifies for it. Firms currently relying on manual or web-based filing for straightforward small-company accounts should treat this as a workflow change, not just a form change.',
+      },
+      {
+        type: 'heading',
+        text: 'What should UK accounting practices do to prepare?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Confirm that your practice\'s accounts production software supports iXBRL tagging and Companies House\'s software filing API well before the 1 April 2027 cutover. Firms still filing any client accounts on paper or through WebFiling should migrate now rather than waiting for the deadline, since the transition also overlaps with the separate director and PSC identity verification rollout under ECCTA. Build both changes into the same client review rather than treating them as unrelated compliance items.',
+      },
+      {
+        type: 'heading',
+        text: 'Why do these two changes matter for the same client base?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Both rules shift compliance from a once-a-year form-filling exercise to an ongoing, software-dependent obligation. A South African practice that has never registered under the correct FIC Schedule 1 item, or a UK practice still filing accounts through a channel that disappears in 2027, will not find out until a submission is rejected. Treating both as recurring items on a compliance calendar — checked monthly, not once a year — is what keeps client filings moving without a last-minute scramble.',
+      },
+      {
+        type: 'external',
+        text: 'The FIC\'s official page on the 2026 Risk and Compliance Return submission process and deadlines.',
+        href: 'https://www.fic.gov.za/risk-and-compliance-return-submissions/',
+        label: 'Read the FIC\'s 2026 RCR submission guidance',
+      },
+      {
+        type: 'external',
+        text: 'Herbert Smith Freehills Kramer\'s summary of the Companies House move to software-only accounts filing from 2027.',
+        href: 'https://www.hsfkramer.com/notes/corporate/2025-posts/companies-house-software-only-filing-for-all-company-accounts-coming-in-2027',
+        label: 'Read the Companies House software-only filing summary',
+      },
+      {
+        type: 'external',
+        text: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+        href: 'https://www.linkedin.com/company/zarmediagroup/',
+        label: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+      },
+      {
+        type: 'cta',
+        text: 'Want compliance-aware content and a client portal that keeps your practice\'s filings and client records organised? Talk to our team.',
+        link: '/services/compliance-trust',
+        linkLabel: 'See Compliance & Trust',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Who must submit the FIC 2026 Risk and Compliance Return by 31 July?',
+        answer: 'Accountable institutions falling under Schedule 1 items 1, 3 and 9 (excluding casinos) and item 20 high-value goods dealers must file by 31 July 2026 at 17:00, under FIC Directive 11 of 2026. Other categories, including item 11 non-banks and items 2, 9 (casinos), 14, 21 and 22, had an earlier 30 June 2026 deadline.',
+      },
+      {
+        question: 'What happens if an accountable institution misses its RCR deadline?',
+        answer: 'The RCR is a mandatory regulatory submission, not optional reporting. Missing it leaves an institution unable to demonstrate compliance with its money laundering, terrorist financing and proliferation financing risk obligations, which the FIC can act on directly.',
+      },
+      {
+        question: 'When must UK companies switch to software-only accounts filing?',
+        answer: 'From 1 April 2027, all companies and LLPs on the Companies House register must file accounts using compliant commercial software tagged in iXBRL. Paper AA02 forms and WebFiling for accounts will no longer be accepted; WebFiling for accounts already closed on 31 March 2026.',
+      },
+      {
+        question: 'Can small UK companies still file abridged accounts after 2027?',
+        answer: 'No. From 1 April 2027, small companies must file a balance sheet, directors\' report and profit and loss account, plus an auditor\'s report unless they qualify for audit exemption, in which case directors must add a statement confirming the exemption claimed.',
+      },
+      {
+        question: 'How should accounting practices prepare for both changes?',
+        answer: 'Confirm your FIC Schedule 1 item number and RCR deadline now, and separately confirm your accounts software supports iXBRL tagging and Companies House\'s filing API ahead of April 2027. Track both as recurring monthly compliance checks rather than annual, one-off tasks.',
+      },
+    ],
+  },
 ]
 
 export function getResourceBySlug(slug) {
