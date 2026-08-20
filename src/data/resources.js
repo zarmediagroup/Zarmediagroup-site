@@ -892,6 +892,164 @@ export const resources = [
       },
     ],
   },
+  {
+    slug: 'sars-2026-draft-tax-bills-mtd-deadlines-accountants',
+    type: 'Compliance',
+    category: 'compliance',
+    title: 'The 2026 Draft Tax Bills and Your Next MTD Deadline: What Accountants Must Do in August 2026',
+    seoTitle: '2026 Draft Tax Bills & MTD Deadlines: August Guide',
+    excerpt:
+      'SARS 2026 draft tax bills close for comment on 28 August. The next MTD quarterly update is due 7 November. What accountants must action now.',
+    keywords: '2026 draft tax bills, TLAB 2026, TALAB 2026, SARS public comment deadline, donations tax non-resident spouse, voluntary disclosure programme interest, SARS filing season 2026, Making Tax Digital for Income Tax, MTD quarterly update deadline, HMRC penalty points, MTD 7 November 2026, accountants South Africa, accountants UK, tax compliance deadlines',
+    author: 'Zubayr Abdullatief',
+    authorInitials: 'ZA',
+    authorRole: 'Founder & Chief Executive Officer',
+    authorPhoto: '/zubayr-abdullatief-zar-media-group.png',
+    image: '/accounting-workflow-drafting-south-africa.jpg',
+    imageAlt: 'Accountant reviewing 2026 draft tax bill deadlines and MTD quarterly update dates for South African and UK clients',
+    readTime: '6 min',
+    date: 'Aug 2026',
+    dateISO: '2026-08-18',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
+    gradientFrom: '#0d0d0d',
+    gradientTo: '#1a1a1a',
+    content: [
+      {
+        type: 'intro',
+        text: 'Two compliance clocks are running this month. In South Africa, National Treasury and SARS published the 2026 draft Taxation Laws Amendment Bill and draft Tax Administration Laws Amendment Bill on 30 July 2026, and written comments close at close of business on 28 August 2026. In the UK, the first Making Tax Digital for Income Tax quarterly update deadline passed on 7 August 2026, with the next one due 7 November 2026. Both need action from practising accountants before the end of this month.',
+      },
+      {
+        type: 'heading',
+        text: 'When does public comment on the 2026 draft tax bills close?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Written comments on the 2026 draft TLAB and 2026 draft TALAB must reach National Treasury and SARS by close of business on 28 August 2026. Treasury published both bills on 30 July 2026. They carry the tax proposals announced in the 2026 Budget on 25 February 2026, plus technical corrections. Comments go to National Treasury\'s tax policy depository at AnnexCProposals@zatreasury.onmicrosoft.com and to SARS at acollins@sars.gov.za. This is the window in which the drafting still moves — once it closes, you are advising clients on settled wording.',
+      },
+      {
+        type: 'heading',
+        text: 'What is changing for donations tax where a spouse is non-resident?',
+      },
+      {
+        type: 'paragraph',
+        text: 'The 2026 draft TLAB proposes limiting the inter-spousal donations tax exemption so that it applies only to donations made to a spouse who is a South African tax resident. Treasury states the purpose plainly: to stop spouses from deliberately staggering their cessation of tax residence in order to avoid paying donations tax and capital gains tax. If you act for emigrating families, mixed-residence couples, or anyone mid-way through a cessation-of-residence plan, this is the proposal to read first. It changes the arithmetic on transfers that are routine under the current exemption.',
+      },
+      {
+        type: 'heading',
+        text: 'Can VDP applicants now apply for interest relief at the same time?',
+      },
+      {
+        type: 'paragraph',
+        text: 'That is what the 2026 draft TALAB proposes. It would specifically permit applicants for voluntary disclosure relief to simultaneously apply for the separate remission of interest in respect of the defaults disclosed in the voluntary disclosure application. Today those are two processes. For firms running voluntary disclosure work, collapsing them into one application removes a step and shortens the timeline. If you have open or planned VDP files, this proposal is worth a comment based on what you actually see in practice.',
+      },
+      {
+        type: 'heading',
+        text: 'What else is in the 2026 draft TLAB and TALAB?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Four further proposals will touch general practice. First, the de minimis limit for living annuities must be determined on a cumulative basis where an annuitant holds multiple living annuities with the same insurer or fund. Second, special economic zones: the anti-profit-shifting rule would be replaced with the arm\'s length principle for domestic transactions between SEZ companies qualifying for the 15% corporate income tax rate and related companies outside the SEZ. Third, the VAT Act claw-back on leasehold improvements would extend to lessors who are not registered vendors, through a specific declaration process. Fourth, carbon budget refunds get revised timing — refunds for the first two tax periods can be claimed in the third year, and for years three to five in the sixth year. On the administration side, the draft TALAB also expands documentary requirements for second-hand goods vendors to align with the Second-Hand Goods Act, and permits banks to carry out pre- or post-deposit screening of refunds. One Annexure C item, the supply of gold to banks, was left out of the draft TLAB pending further consultation.',
+      },
+      {
+        type: 'external',
+        text: 'National Treasury\'s media statement publishing the 2026 draft TLAB and TALAB for public comment.',
+        href: 'https://www.gov.za/news/media-statements/national-treasury-publication-2026-draft-tax-bills-comment-30-jul-2026',
+        label: 'Read the Treasury statement on the 2026 draft tax bills',
+      },
+      {
+        type: 'heading',
+        text: 'When is the SARS 2026 filing season deadline?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Non-provisional individual taxpayers who were not auto-assessed have until 23 October 2026 to file, and provisional taxpayers who were not auto-assessed have until 22 January 2027. The 2026 filing season opened on 1 July 2026, auto-assessment notices ran from 1 July to 12 July 2026, and filing for those not auto-assessed opened on 13 July 2026. Trust returns run from 19 September 2026 to 22 January 2027. One change worth flagging to clients: for the 2026 filing season, certain provisional taxpayers are also being issued with auto-assessments, and where they disagree they may amend and submit by the 22 January 2027 provisional deadline.',
+      },
+      {
+        type: 'external',
+        text: 'SARS\'s summary of what changed for the 2026 filing season, including auto-assessments for certain provisional taxpayers.',
+        href: 'https://www.sars.gov.za/latest-news/changes-for-filing-season-2026/',
+        label: 'Read SARS: Changes for Filing Season 2026',
+      },
+      {
+        type: 'heading',
+        text: 'What happens if a client missed the 7 August 2026 MTD deadline?',
+      },
+      {
+        type: 'paragraph',
+        text: 'There is no fine, but the obligation does not go away. HMRC will not apply penalty points for late quarterly updates during the 2026 to 2027 tax year. That easement covers quarterly updates only. Two consequences still bite. The quarterly update is still required, and your client cannot submit their tax return until the outstanding updates have been sent. And penalty points still apply to late tax returns for that year. The practical instruction is simple: send the missed update now, while nothing is being counted against the client.',
+      },
+      {
+        type: 'heading',
+        text: 'When is the next MTD quarterly update deadline?',
+      },
+      {
+        type: 'paragraph',
+        text: 'The next Making Tax Digital for Income Tax quarterly update is due on 7 November 2026. The four deadlines in the cycle are 7 August, 7 November, 7 February and 7 May. On standard update periods, which align to the tax year, the November update covers 6 April to 5 October. On calendar update periods, which run 1 April to 31 March, it covers 1 April to 30 September — the period differs, the deadline does not. Each update is cumulative: it runs from the start of the tax year to the end of the update period, not just the previous three months. That is why a missed first quarter is swept up when the second update is filed, and it is also why records can be corrected without resending earlier updates.',
+      },
+      {
+        type: 'heading',
+        text: 'How do the MTD penalty points actually work from 2027?',
+      },
+      {
+        type: 'paragraph',
+        text: 'From tax years after 2026 to 2027, each missed quarterly update or tax return deadline earns one penalty point. The threshold is four points. Reach it and HMRC charges a £200 penalty, then a further £200 each time another submission deadline is missed. Only one point can be earned per deadline, even where a client runs several businesses and files several updates late. Below the threshold, points are removed automatically 24 months after the missed deadline. At the threshold, removal requires 12 months of on-time submissions plus clearing any outstanding updates and returns for the previous 24 months. Late payment penalties run on an entirely separate track and are not affected by the quarterly update easement.',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s guidance on how Making Tax Digital penalty points and £200 penalties are applied.',
+        href: 'https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax',
+        label: 'Read HMRC: Penalties for Making Tax Digital for Income Tax',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s guidance on sending Making Tax Digital quarterly updates, including deadlines and cumulative periods.',
+        href: 'https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates',
+        label: 'Read HMRC: send quarterly updates',
+      },
+      {
+        type: 'heading',
+        text: 'What should your firm do before the end of August?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Three actions cover both markets. In South Africa, run a filter for clients with a non-resident spouse and for any open or planned voluntary disclosure file, then submit a comment on the draft bills before 28 August. In the UK, pull the list of clients mandated into MTD from April 2026 and confirm every first-quarter update has been sent, then diarise 7 November against each one. Across both, tell clients what changed before they read it somewhere else — the firms that get the August comment window and the November deadline in front of clients early are the ones that look ahead of it.',
+      },
+      {
+        type: 'external',
+        text: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+        href: 'https://www.linkedin.com/company/zarmediagroup/',
+        label: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+      },
+      {
+        type: 'cta',
+        text: 'Your clients read your website before they read the legislation. If your firm\'s site still says what it said last year, clients assume the same is true of your advice. We build and run websites for accounting firms and financial service providers in South Africa and the UK — so the updates go out without adding to your workload.',
+        link: '/services/website-as-a-service',
+        linkLabel: 'See Website as a Service',
+      },
+    ],
+    faqs: [
+      {
+        question: 'When do comments on the 2026 draft tax bills close?',
+        answer: 'Written comments on the 2026 draft TLAB and TALAB must reach National Treasury and SARS by close of business on 28 August 2026. The bills were published on 30 July 2026.',
+      },
+      {
+        question: 'How does the proposed donations tax change affect non-resident spouses?',
+        answer: 'The 2026 draft TLAB proposes limiting the inter-spousal donations tax exemption to donations made to a spouse who is a South African tax resident. Treasury says the aim is to stop spouses staggering their cessation of tax residence to avoid donations tax and capital gains tax.',
+      },
+      {
+        question: 'Is there a penalty for missing the 7 August 2026 MTD quarterly update?',
+        answer: 'No. HMRC will not apply penalty points for late quarterly updates during the 2026 to 2027 tax year. The update is still required, and the tax return cannot be submitted until outstanding quarterly updates have been sent.',
+      },
+      {
+        question: 'When is the next MTD for Income Tax quarterly update due?',
+        answer: '7 November 2026. On standard update periods it covers 6 April to 5 October 2026; on calendar update periods it covers 1 April to 30 September 2026. The remaining deadlines are 7 February 2027 and 7 May 2027.',
+      },
+      {
+        question: 'When is the SARS 2026 filing season deadline for individuals?',
+        answer: 'Non-provisional individual taxpayers who were not auto-assessed have until 23 October 2026. Provisional taxpayers who were not auto-assessed have until 22 January 2027, which is also the trust deadline.',
+      },
+    ],
+  },
 ]
 
 export function getResourceBySlug(slug) {
