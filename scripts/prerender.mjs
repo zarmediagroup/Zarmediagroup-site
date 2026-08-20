@@ -13,7 +13,9 @@ import sirv from 'sirv'
 import { PRERENDER_PATHS } from '../generated/middleware-paths.js'
 
 async function launchBrowser() {
-  if (process.env.VERCEL) {
+  // Sparticuz chromium is a Linux-only build for serverless containers.
+  // `vercel build` run locally also sets VERCEL=1, so check the platform too.
+  if (process.env.VERCEL && process.platform === 'linux') {
     const chromium = (await import('@sparticuz/chromium')).default
     const puppeteer = (await import('puppeteer-core')).default
     return puppeteer.launch({
@@ -152,8 +154,12 @@ try {
 } catch (err) {
   console.error('Prerender failed:', err)
   if (process.env.VERCEL) {
-    console.warn('Vercel: continuing deploy without prerender (SPA routes still work).')
-    process.exit(0)
+    console.error(
+      'Headless Chrome cannot launch in the Vercel build container (missing system libraries).\n' +
+        'Deploy prebuilt output from a machine where Chrome works instead:\n' +
+        '  npm run deploy\n' +
+        'Failing the build — shipping without prerendered HTML makes every page invisible to AI crawlers.',
+    )
   }
   process.exit(1)
 }

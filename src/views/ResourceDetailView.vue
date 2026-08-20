@@ -346,7 +346,7 @@ const seoSchemas = computed(() => {
         ? [{ url: resource.value.image, width: 1200, height: 630 }, ...inlineImages]
         : undefined,
       datePublished: resource.value.dateISO,
-      dateModified: resource.value.dateISO,
+      dateModified: resource.value.dateModifiedISO || resource.value.dateISO,
       author: resource.value.author,
       authorRole: resource.value.authorRole,
       url: `/resources/${resource.value.slug}`,

@@ -12,6 +12,9 @@
     "build:fast": "SKIP_PRERENDER=1 vite build",
     "preview": "vite preview",
     "verify:seo": "node scripts/verify-prerender.mjs",
+    "verify:live": "node scripts/verify-live.mjs",
+    "deploy": "npx vercel build --prod && npx vercel deploy --prebuilt --prod && node scripts/verify-live.mjs",
+    "deploy:preview": "npx vercel build && npx vercel deploy --prebuilt",
     "lint": "eslint ."
   },
   "dependencies": {

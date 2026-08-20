@@ -1,0 +1,26 @@
+# Zar Media Group
+
+> Zar Media Group (ZARMEDIAGROUP (PTY) LTD, CIPC 2026/166396/07) builds and manages secure client portals and websites for accountants, bookkeepers and financial service providers. Based in Cape Town, South Africa, serving firms across South Africa and abroad. Portals include secure document exchange, e-signatures, client intake and CRM/workflow integration (Xero, Sage, QuickBooks, DocuSign and more), designed with POPIA compliance in mind.
+
+## Services
+
+- [Client Portal & Document Vault](https://zarmediagroup.com/services/client-portal): Branded, POPIA-conscious client portal integrated into the firm's own website — secure document upload, e-signatures, progress tracking.
+- [Website as a Service](https://zarmediagroup.com/services/website-as-a-service): Managed accounting firm websites — design, hosting, updates and portal kept in one subscription.
+- [Workflow Integration](https://zarmediagroup.com/services/workflow-integration): Connecting portals with practice management and accounting tools (Xero, Sage, QuickBooks, HubSpot, TaxDome, Karbon).
+- [Compliance & Trust](https://zarmediagroup.com/services/compliance-trust): POPIA, FSCA and FAIS-aware website and portal requirements for South African financial firms.
+
+## Guides & Resources
+
+- [Best Client Portal for Small Accounting Firms: 2026 Comparison](https://zarmediagroup.com/resources/best-client-portal-small-accounting-firms): Build vs buy, SA pricing in rand, Xero/DocuSign integration, POPIA-friendly hosting.
+- [Accounting Firm Website Design: The Complete 2026 Guide](https://zarmediagroup.com/resources/accounting-firm-website-design-guide): Pages, trust signals, lead generation and compliance for SA practices.
+- [POPIA Compliance for Accounting Firm Websites](https://zarmediagroup.com/resources/popia-compliance-accounting-websites): 2026 checklist.
+- [FSCA Website Requirements](https://zarmediagroup.com/resources/fsca-website-requirements): What FSPs must display on their websites.
+- [How to Reduce Admin in an Accounting Firm](https://zarmediagroup.com/resources/how-to-reduce-admin-accounting-firm): Workflow and portal automation.
+- [ABC INC Chartered Accountants Case Study](https://zarmediagroup.com/resources/abc-inc-chartered-accountants-website-case-study): Website + client portal built for a SAICA-registered Cape Town practice.
+- [All resources](https://zarmediagroup.com/resources)
+
+## Company
+
+- [What We Do](https://zarmediagroup.com/what-we-do)
+- [Team](https://zarmediagroup.com/about/team)
+- [Contact](https://zarmediagroup.com/contact): info@zarmediagroup.com · +27 68 507 0088 · Cape Town, Western Cape, South Africa

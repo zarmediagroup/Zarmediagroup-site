@@ -95,6 +95,7 @@ export const resources = [
     readTime: '12 min',
     date: 'Jan 2026',
     dateISO: '2026-01-15',
+    dateModifiedISO: '2026-08-20',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>',
     gradientFrom: '#1a1a1a',
     gradientTo: '#0d0d0d',
@@ -144,10 +145,46 @@ export const resources = [
         text: 'For practices with fewer than 5 staff, we recommend starting with an integrated website portal rather than adding another SaaS subscription to your stack. The goal is to consolidate your digital presence — not fragment it. When your portal, website, and marketing all work from the same platform, the client experience is seamless and your admin is minimised.',
       },
       {
+        type: 'heading',
+        text: 'Choosing a Portal in Cape Town and the Western Cape',
+      },
+      {
+        type: 'paragraph',
+        text: 'For Cape Town practices, two local factors shape the decision. First, POPIA data residency: many international SaaS portals store documents on US servers, while a locally built portal can keep client records on South African or EU-based infrastructure. Second, support and pricing: USD-billed subscriptions fluctuate with the exchange rate, whereas a portal built and managed by a Cape Town team is priced in rand and supported in your timezone. Zar Media Group is based in Cape Town and builds integrated document portals for accounting and tax practices across the city, the Western Cape, and the rest of South Africa.',
+      },
+      {
         type: 'cta',
         text: 'Want a custom client portal built into your website? Our Website as a Service plans include portal setup and integration.',
         link: '/services/client-portal',
         linkLabel: 'View the portal tour',
+      },
+    ],
+    contentLocation: {
+      name: 'Cape Town',
+      locality: 'Cape Town',
+      region: 'Western Cape',
+      country: 'ZA',
+    },
+    faqs: [
+      {
+        question: 'What is the best accounting document portal for a small firm in Cape Town?',
+        answer: 'For most small practices, a branded document portal integrated into the firm\'s own website beats adding another SaaS login. Clients exchange documents through your own site, in your controlled digital environment, with POPIA-conscious storage on South African or EU-based servers. Off-the-shelf tools like TaxDome, Karbon or Canopy suit firms that want quick implementation and accept per-user USD fees. Zar Media Group builds integrated portals for accounting firms in Cape Town and across South Africa.',
+      },
+      {
+        question: 'How much does a client portal cost for a South African accounting firm?',
+        answer: 'Off-the-shelf portal software typically costs R400–R1,200 per user per month when converted from USD pricing — R1,200–R3,600/month for a 3-person firm. A custom portal integrated into your website, amortised over 2 years, typically works out 40–60% less than cumulative SaaS subscriptions, and the firm owns the asset.',
+      },
+      {
+        question: 'Does an accounting client portal need to be POPIA compliant?',
+        answer: 'Yes. Exchanging financial records over unsecured email attachments is a POPIA risk. A compliant portal provides access-controlled document storage — ideally on South African or EU-based servers — with secure upload, audit trails and e-signature capability.',
+      },
+      {
+        question: 'Which accounting software should a client portal integrate with?',
+        answer: 'For South African practices, the portal should integrate with your practice management and accounting stack — Xero, Sage or QuickBooks — plus e-signature (such as DocuSign) and automated reminder workflows, so documents and requests do not have to be re-keyed between systems.',
+      },
+      {
+        question: 'Should a small accounting firm build or buy a client portal?',
+        answer: 'Firms with fewer than 5 staff usually do best with a portal integrated into their existing website rather than another SaaS subscription: one brand, one login, no per-user fees. Off-the-shelf products win when speed of rollout matters more than integration depth and cost of ownership.',
       },
     ],
   },
