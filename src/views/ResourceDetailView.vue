@@ -68,6 +68,15 @@
     <section class="section-padding bg-cream" aria-label="Article content">
       <div class="max-w-3xl mx-auto px-6 lg:px-8">
         <article class="prose-article">
+          <!-- Answer-first summary (Answer Engine Optimisation — liftable direct answer) -->
+          <div
+            v-if="resource.quickAnswer"
+            class="mb-10 p-6 lg:p-7 bg-white rounded-2xl border border-gold-500/40 reveal-up"
+          >
+            <p class="font-sans text-navy-900 text-xs font-semibold tracking-wide uppercase mb-3">Quick answer</p>
+            <p class="font-sans text-charcoal-600 text-base leading-relaxed">{{ resource.quickAnswer }}</p>
+          </div>
+
           <template v-for="(block, i) in resource.content" :key="i">
 
             <!-- Intro paragraph -->

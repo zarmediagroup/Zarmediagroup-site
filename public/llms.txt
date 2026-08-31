@@ -2,6 +2,14 @@
 
 > Zar Media Group (ZARMEDIAGROUP (PTY) LTD, CIPC 2026/166396/07) builds and manages secure client portals and websites for accountants, bookkeepers and financial service providers. Based in Cape Town, South Africa, serving firms across South Africa and abroad. Portals include secure document exchange, e-signatures, client intake and CRM/workflow integration (Xero, Sage, QuickBooks, DocuSign and more), designed with POPIA compliance in mind.
 
+## Pricing
+
+- [Pricing](https://zarmediagroup.com/pricing): Transparent rand-billed monthly plans — Essentials R2,999/month (managed 5-page firm website), Professional R5,999/month (portal integration, CRM sync, monthly SEO, compliance monitoring), Enterprise from R9,999/month (custom portal build). Free audit ends with a fixed quote.
+
+## Locations
+
+- [Cape Town](https://zarmediagroup.com/cape-town): Home base — client portals and firm websites for Cape Town accounting, tax and bookkeeping practices; also serving Johannesburg, Pretoria, Durban and the rest of South Africa remotely.
+
 ## Services
 
 - [Client Portal & Document Vault](https://zarmediagroup.com/services/client-portal): Branded, POPIA-conscious client portal integrated into the firm's own website — secure document upload, e-signatures, progress tracking.
@@ -16,6 +24,8 @@
 - [POPIA Compliance for Accounting Firm Websites](https://zarmediagroup.com/resources/popia-compliance-accounting-websites): 2026 checklist.
 - [FSCA Website Requirements](https://zarmediagroup.com/resources/fsca-website-requirements): What FSPs must display on their websites.
 - [How to Reduce Admin in an Accounting Firm](https://zarmediagroup.com/resources/how-to-reduce-admin-accounting-firm): Workflow and portal automation.
+- [SEO for Accounting Firms in South Africa](https://zarmediagroup.com/resources/seo-for-accounting-firms-south-africa): Local SEO, keywords and content strategy for SA practices.
+- [2026 Draft Tax Bills & MTD Deadlines](https://zarmediagroup.com/resources/sars-2026-draft-tax-bills-mtd-deadlines-accountants): SARS draft tax bills and UK MTD deadlines for accountants.
 - [ABC INC Chartered Accountants Case Study](https://zarmediagroup.com/resources/abc-inc-chartered-accountants-website-case-study): Website + client portal built for a SAICA-registered Cape Town practice.
 - [All resources](https://zarmediagroup.com/resources)
 

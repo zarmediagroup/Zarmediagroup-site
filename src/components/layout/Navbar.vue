@@ -107,6 +107,11 @@
             </Transition>
           </div>
 
+          <!-- Pricing -->
+          <RouterLink to="/pricing" class="nav-link" :class="{ active: $route.name === 'Pricing' }">
+            Pricing
+          </RouterLink>
+
           <!-- Resources -->
           <RouterLink to="/resources" class="nav-link" :class="{ active: $route.name === 'Resources' }">
             Resources
@@ -196,6 +201,7 @@
             </Transition>
           </div>
 
+          <MobileNavItem to="/pricing" label="Pricing" @click="appStore.closeNav()" />
           <MobileNavItem to="/resources" label="Resources" @click="appStore.closeNav()" />
           <MobileNavItem to="/contact" label="Contact" @click="appStore.closeNav()" />
 

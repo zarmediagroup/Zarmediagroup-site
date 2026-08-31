@@ -82,6 +82,18 @@ const routes = [
     },
   },
   {
+    path: '/pricing',
+    name: 'Pricing',
+    component: () => import('@/views/PricingView.vue'),
+    meta: meta('pricing'),
+  },
+  {
+    path: '/cape-town',
+    name: 'CapeTown',
+    component: () => import('@/views/CapeTownView.vue'),
+    meta: meta('cape-town'),
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: () => import('@/views/ContactView.vue'),

@@ -16,6 +16,9 @@ export const resources = [
     readTime: '8 min',
     date: 'Feb 2026',
     dateISO: '2026-02-01',
+    dateModifiedISO: '2026-08-20',
+    quickAnswer:
+      'To reduce admin at an accounting firm: audit one week of recurring tasks, digitise client intake with an online form that feeds your CRM, move document collection into a secure client portal with automated reminders, let clients self-schedule appointments, and connect your website directly to your practice systems. Most SA practices spend 20–35% of the working week on automatable admin — a document portal alone can cut collection time by up to 70%.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>',
     gradientFrom: '#111111',
     gradientTo: '#2a2a2a',
@@ -75,6 +78,28 @@ export const resources = [
         linkLabel: 'Explore Website as a Service',
       },
     ],
+    faqs: [
+      {
+        question: 'How much time do accounting firms lose to admin?',
+        answer: 'South African accounting and bookkeeping practices typically spend 20–35% of the working week on tasks that could be automated or eliminated — client intake, document requests, follow-up emails, invoice chasing, and scheduling. Most practices that log their tasks for a week discover 10+ hours of automatable work.',
+      },
+      {
+        question: 'What is the fastest way to reduce admin in an accounting practice?',
+        answer: 'Start with client intake and document collection — the two biggest drains. A smart online intake form that feeds your CRM cuts onboarding from days to hours, and a client document portal with automated reminders removes the email chasing that consumes tax season. Self-service appointment booking alone typically saves another 2–3 hours per week.',
+      },
+      {
+        question: 'How does a client document portal reduce admin?',
+        answer: 'Clients upload documents securely through your website, receive automated reminders, and can see which documents are still outstanding — so your team stops chasing attachments over email. Portals that integrate with Xero, SARS eFiling, and SA practice management platforms can cut document collection time by up to 70%.',
+      },
+      {
+        question: 'What information should a digital client intake form capture?',
+        answer: 'Personal or company details, SARS registration numbers, current accounting software in use, VAT status, year-end date, and urgency of service required. When this flows automatically into your CRM or practice management system, double-entry disappears.',
+      },
+      {
+        question: 'Which systems should an accounting firm website connect to?',
+        answer: 'Your website\'s enquiry forms, booking calendar, and document portal should feed directly into your CRM, accounting software (Xero, QuickBooks, Sage), and project management tools. That connection is what eliminates the manual re-keying of data between systems.',
+      },
+    ],
   },
   {
     slug: 'best-client-portal-small-accounting-firms',
@@ -96,6 +121,8 @@ export const resources = [
     date: 'Jan 2026',
     dateISO: '2026-01-15',
     dateModifiedISO: '2026-08-20',
+    quickAnswer:
+      'For a small South African accounting firm, the best client portal is usually one integrated into the firm\'s own website rather than another SaaS subscription: one brand, one login, no per-user USD fees, and POPIA-conscious storage on SA or EU-based servers. Off-the-shelf tools (TaxDome, Karbon, Canopy) cost roughly R400–R1,200 per user per month; a custom integrated portal typically works out 40–60% cheaper over two years — and the firm owns the asset.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>',
     gradientFrom: '#1a1a1a',
     gradientTo: '#0d0d0d',
@@ -206,6 +233,9 @@ export const resources = [
     readTime: '15 min',
     date: 'Jan 2026',
     dateISO: '2026-01-08',
+    dateModifiedISO: '2026-08-20',
+    quickAnswer:
+      'A high-performing accounting firm website in 2026 needs six core pages (home with a clear call-to-action, services in plain language, about with team bios, contact with embedded booking, a resources section, and landing pages for key services and locations), POPIA-compliant privacy and cookie consent, visible trust signals such as SAICA/SAIPA/IRBA memberships, and Core Web Vitals performance — Lighthouse 90+ with Largest Contentful Paint under 2.5 seconds.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>',
     gradientFrom: '#222222',
     gradientTo: '#111111',
@@ -259,6 +289,28 @@ export const resources = [
         text: 'Ready to build an accounting firm website that actually generates leads? Explore our Website as a Service plans.',
         link: '/services/website-as-a-service',
         linkLabel: 'See Website as a Service',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What pages does an accounting firm website need?',
+        answer: 'Six essentials: a Home page with a clear value proposition and primary call-to-action, a Services page written in client-friendly language, an About page with team photos and bios, a Contact page with multiple contact methods and embedded booking, a Resources section to demonstrate expertise, and dedicated landing pages for your primary services and target locations.',
+      },
+      {
+        question: 'What makes an accounting firm website generate leads?',
+        answer: 'Every page needs a clear next step — an enquiry form, a booking button, or a downloadable guide in exchange for contact details. The highest-converting CTAs for accounting firms are typically "Get a Free Consultation", "Calculate Your Fee", and "Download Our Services Guide". Test multiple CTAs and track which produces qualified enquiries.',
+      },
+      {
+        question: 'What compliance requirements apply to South African accounting websites?',
+        answer: 'POPIA requires a clear privacy policy, consent mechanisms for data collection (including a compliant cookie banner), and secure handling of client information. Firms holding an FSP licence must also meet FSCA advertising and disclosure guidelines. Secure HTTPS forms and a detailed privacy policy are the 2026 minimum.',
+      },
+      {
+        question: 'How fast should an accounting firm website load?',
+        answer: 'Target a Lighthouse performance score of 90+ with Largest Contentful Paint under 2.5 seconds. Google\'s Core Web Vitals are direct ranking factors, so a slow site both frustrates visitors and suppresses rankings.',
+      },
+      {
+        question: 'What design elements build trust for financial firms?',
+        answer: 'A conservative but polished colour palette, professional photography rather than stock images, clear display of qualifications and memberships (SAICA, SAIPA, IRBA), and transparent fee structures — or at minimum an obvious process for getting a quote. Financial clients are risk-averse; the design must signal stability before they read a word.',
       },
     ],
   },
@@ -416,6 +468,9 @@ export const resources = [
     readTime: '10 min',
     date: 'Feb 2026',
     dateISO: '2026-02-10',
+    dateModifiedISO: '2026-08-20',
+    quickAnswer:
+      'To make an accounting firm website POPIA-compliant: publish a plain-language privacy policy linked from every page, run a genuine-choice cookie consent banner (no pre-ticked boxes), serve all forms over HTTPS, enforce data retention limits (purge unconverted enquiries after 12–24 months), and register your Information Officer with the Information Regulator. Client portals need 2FA, encryption, and access logs on top. Non-compliance risks fines up to R10 million.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
     gradientFrom: '#0d0d0d',
     gradientTo: '#1a1a1a',
@@ -471,6 +526,28 @@ export const resources = [
         linkLabel: 'See Compliance & Trust',
       },
     ],
+    faqs: [
+      {
+        question: 'What does POPIA require on an accounting firm website?',
+        answer: 'Five things: a clear, plain-language privacy policy linked from every page; a compliant cookie consent banner for any cookies collecting personal data; HTTPS on all forms that collect personal information; enforced data retention limits; and registration of your Information Officer with the Information Regulator.',
+      },
+      {
+        question: 'What are the penalties for POPIA non-compliance?',
+        answer: 'POPIA non-compliance can result in fines of up to R10 million or up to 10 years imprisonment for serious offences. For accounting firms, which process financial records, tax numbers, and identity documents, the exposure is heightened.',
+      },
+      {
+        question: 'Do Google Analytics cookies need consent under POPIA?',
+        answer: 'Yes. Analytics cookies collect personal data, so they require informed consent from South African visitors — a banner that gives users a genuine choice and records their preference. Pre-ticked boxes or consent buried in terms and conditions do not comply.',
+      },
+      {
+        question: 'How long can a firm keep website enquiry data?',
+        answer: 'Not indefinitely. POPIA requires specified, enforced retention limits — client enquiries that never convert to engagements should typically be purged after 12–24 months, and your privacy policy must state the limits you apply.',
+      },
+      {
+        question: 'What extra POPIA measures do client portals need?',
+        answer: 'Because portals handle special categories of personal information — financial records, tax numbers, identity documents — they need two-factor authentication, encryption at rest and in transit, access logs, and clear data processing agreements with any third-party portal provider.',
+      },
+    ],
   },
   {
     slug: 'fsca-website-requirements',
@@ -489,6 +566,9 @@ export const resources = [
     readTime: '9 min',
     date: 'Jan 2026',
     dateISO: '2026-01-22',
+    dateModifiedISO: '2026-08-20',
+    quickAnswer:
+      'An FSP\'s website must display the firm\'s full legal and trading name, FSP licence number, licensed product categories, Key Individual names, and compliance officer contact details on every page advertising financial services; explain the fee structure transparently (including commissions); and publish an accessible complaints procedure including the FAIS Ombud\'s details. Non-compliance can lead to FSP licence suspension or revocation.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>',
     gradientFrom: '#1a1a1a',
     gradientTo: '#0d0d0d',
@@ -544,6 +624,28 @@ export const resources = [
         linkLabel: 'See Compliance & Trust',
       },
     ],
+    faqs: [
+      {
+        question: 'What must an FSP display on its website?',
+        answer: 'Your full legal entity and trading name, your FSP licence number (e.g. "Authorised Financial Services Provider FSP XXXXX"), the categories of financial products you are licensed to advise on, the full name of your Key Individual(s), and contact details for your compliance officer.',
+      },
+      {
+        question: 'Where must FSP disclosures appear on the website?',
+        answer: 'On every page where financial services are advertised or described — in practice that means the site footer plus each service page, so the disclosures are visible wherever advice is promoted.',
+      },
+      {
+        question: 'What does the FSCA require about fees on advisor websites?',
+        answer: 'Clear fee transparency under the Retail Distribution Review reforms: state whether you charge fee-for-service, receive commissions, or both, and disclose commissions on recommended products. Vague wording like "fees may apply" does not meet the standard.',
+      },
+      {
+        question: 'What complaints information must a financial advisor website include?',
+        answer: 'A clear process for submitting complaints to the firm, contact details of the person responsible for handling them, and information about the FAIS Ombud for unresolved complaints — typically on a dedicated Complaints page or within the Terms of Service.',
+      },
+      {
+        question: 'Can financial advisors publish testimonials and projections?',
+        answer: 'Yes, with care: testimonials must not make misleading claims about past performance, projections and illustrations must carry appropriate risk warnings, and blog content must stay general information rather than personalised advice unless the site has a proper client identification mechanism.',
+      },
+    ],
   },
   {
     slug: 'seo-for-accounting-firms-south-africa',
@@ -562,6 +664,9 @@ export const resources = [
     readTime: '14 min',
     date: 'Feb 2026',
     dateISO: '2026-02-18',
+    dateModifiedISO: '2026-08-20',
+    quickAnswer:
+      'To rank an accounting firm on Google in South Africa: target commercial keywords like "accountant [city]" rather than informational ones, fully optimise your Google Business Profile with consistent name-address-phone details, build one dedicated page per service (600–1,200 words targeting a single keyword cluster), publish a substantial article every fortnight answering questions clients actually search, and meet the technical basics — HTTPS, Lighthouse 90+, mobile-first, sitemap submitted to Search Console. Expect meaningful movement in 3–6 months.',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>',
     gradientFrom: '#111111',
     gradientTo: '#2a2a2a',
@@ -623,6 +728,28 @@ export const resources = [
         text: 'Want an SEO-optimised website for your accounting firm, built and managed for you? Explore our Website as a Service plans.',
         link: '/services/website-as-a-service',
         linkLabel: 'Explore Website as a Service',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Which keywords should an accounting firm target?',
+        answer: 'Prioritise commercial and transactional keywords that signal buying intent: "accountant [city]", "tax advisor [city]", "bookkeeper for small business [city]", and service-specific searches like "SARS objection specialist" or "provisional tax return Cape Town". Informational searches like "what is double-entry bookkeeping" rarely convert.',
+      },
+      {
+        question: 'What are the three pillars of local SEO for accountants?',
+        answer: 'A fully optimised, regularly updated Google Business Profile; consistent Name-Address-Phone (NAP) information across all online directories; and location-specific content on your website. Local SEO is where the highest-value leads come from, because Google strongly favours local results for professional service searches.',
+      },
+      {
+        question: 'How long does SEO take for an accounting firm?',
+        answer: 'Meaningful results for competitive local accounting keywords typically emerge within 3–6 months of implementing a proper strategy. Set benchmarks in month one using Google Search Console and Analytics, then review positions, clicks, and enquiry conversions quarterly.',
+      },
+      {
+        question: 'How much content should an accounting firm publish?',
+        answer: 'One substantial article (1,000+ words) per fortnight, each answering a question your ideal clients actually search. Topics that consistently perform for SA firms include "how to register for VAT in South Africa", "SARS eFiling guide for small businesses", and "[city] accountant fees".',
+      },
+      {
+        question: 'What technical SEO basics must an accounting website meet?',
+        answer: 'HTTPS encryption, a Lighthouse performance score of 90+, mobile-friendly design (over 60% of South African searches happen on mobile), a sitemap.xml submitted to Google Search Console, and no broken links or redirect chains. These are table stakes, not advanced tactics.',
       },
     ],
   },

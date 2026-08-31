@@ -99,6 +99,32 @@ export const PAGE_SEO = {
     canonical: '/resources',
     relatedGuides: [],
   },
+  pricing: {
+    title: 'Pricing: Accounting Firm Websites & Client Portals | ZMG',
+    description:
+      'Transparent rand pricing for SA accounting firms: managed websites from R2,999/month, Professional with client portal & CRM sync at R5,999/month, Enterprise from R9,999.',
+    keywords:
+      'client portal pricing South Africa, accounting firm website cost, website as a service pricing accountants, how much does a client portal cost, accounting website monthly plans',
+    canonical: '/pricing',
+    relatedGuides: [
+      'best-client-portal-small-accounting-firms',
+      'accounting-firm-website-design-guide',
+      'abc-inc-chartered-accountants-website-case-study',
+    ],
+  },
+  'cape-town': {
+    title: 'Client Portals for Cape Town Accounting Firms | Zar Media Group',
+    description:
+      'Cape Town-based team building POPIA-conscious client document portals and managed websites for accounting, tax & bookkeeping firms. Plans from R2,999/month, rand-billed.',
+    keywords:
+      'accounting document portal Cape Town, client portal Cape Town accountants, accounting firm website Cape Town, web design accountants Cape Town, POPIA client portal Western Cape',
+    canonical: '/cape-town',
+    relatedGuides: [
+      'abc-inc-chartered-accountants-website-case-study',
+      'best-client-portal-small-accounting-firms',
+      'popia-compliance-accounting-websites',
+    ],
+  },
   contact: {
     title: 'Free Website Audit for Accounting Firms | Contact ZMG',
     description:

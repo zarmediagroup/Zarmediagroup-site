@@ -52,6 +52,18 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://zarmediagroup.com/pricing</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zarmediagroup.com/cape-town</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zarmediagroup.com/resources</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>

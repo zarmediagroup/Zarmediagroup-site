@@ -16,6 +16,8 @@ const KEY_ROUTES = [
   '/services/client-portal',
   '/resources/accounting-firm-website-design-guide',
   '/resources/best-client-portal-small-accounting-firms',
+  '/pricing',
+  '/cape-town',
   '/contact',
 ]
 

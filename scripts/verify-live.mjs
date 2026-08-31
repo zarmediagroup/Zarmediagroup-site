@@ -35,6 +35,33 @@ const CHECKS = [
     },
   },
   {
+    path: '/pricing',
+    tests: {
+      'serves the Pricing page, not the SPA fallback': (html) => /<title>Pricing:/i.test(html),
+      'has <h1> content': (html) => /<h1[^>]*>[\s\S]*?\S[\s\S]*?<\/h1>/i.test(html),
+      'shows R2,999 pricing': (html) => /R2,999/.test(html),
+      'has Offer schema': (html) => /"@type":\s*"Offer"/.test(html),
+      'has FAQPage schema': (html) => /"@type":\s*"FAQPage"/.test(html),
+    },
+  },
+  {
+    path: '/cape-town',
+    tests: {
+      'serves the Cape Town page, not the SPA fallback': (html) => /<title>Client Portals for Cape Town/i.test(html),
+      'has <h1> content': (html) => /<h1[^>]*>[\s\S]*?\S[\s\S]*?<\/h1>/i.test(html),
+      'mentions Cape Town': (html) => /Cape Town/.test(html),
+      'has LocalBusiness/ProfessionalService schema': (html) => /"@type":\s*"ProfessionalService"/.test(html),
+      'has FAQPage schema': (html) => /"@type":\s*"FAQPage"/.test(html),
+    },
+  },
+  {
+    path: '/resources/sars-2026-draft-tax-bills-mtd-deadlines-accountants',
+    tests: {
+      'is not a 404 (newest article live)': (html) => !/Page not found/i.test(html),
+      'has <h1> content': (html) => /<h1[^>]*>[\s\S]*?\S[\s\S]*?<\/h1>/i.test(html),
+    },
+  },
+  {
     path: '/llms.txt',
     tests: {
       'serves the real llms.txt, not the HTML shell': (text) => text.trimStart().startsWith('# Zar Media Group'),

@@ -24,6 +24,8 @@ const sitemapStaticPathList = [
   '/services/workflow-integration',
   '/services/client-portal',
   '/services/compliance-trust',
+  '/pricing',
+  '/cape-town',
   '/resources',
   '/contact',
   '/privacy-policy',
@@ -56,9 +58,9 @@ const staticPaths = sitemapStaticPathList.map((path) => ({
   priority:
     path === '/'
       ? '1.0'
-      : path === '/services' || path.startsWith('/services') || path === '/what-we-do'
+      : path === '/services' || path.startsWith('/services') || path === '/what-we-do' || path === '/pricing'
         ? '0.9'
-        : path === '/resources' || path === '/contact'
+        : path === '/resources' || path === '/contact' || path === '/cape-town'
           ? '0.8'
           : path === '/about/team'
             ? '0.7'

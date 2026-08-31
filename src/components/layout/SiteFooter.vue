@@ -178,6 +178,8 @@ const companyLinks = [
   { to: '/', label: 'Home' },
   { to: '/what-we-do', label: 'What We Do' },
   { to: '/about/team', label: 'Meet the Team' },
+  { to: '/pricing', label: 'Pricing' },
+  { to: '/cape-town', label: 'Cape Town' },
   { to: '/resources', label: 'Resources' },
   { to: '/contact', label: 'Contact Us' },
 ]
