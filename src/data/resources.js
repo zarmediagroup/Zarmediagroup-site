@@ -1177,6 +1177,154 @@ export const resources = [
       },
     ],
   },
+  {
+    slug: 'emp501-interim-reconciliation-self-assessment-registration-accountants',
+    type: 'Compliance',
+    category: 'compliance',
+    title: 'Interim EMP501 Season and the 5 October Self Assessment Deadline: What Accountants Must Do in September 2026',
+    seoTitle: 'EMP501 Interim Season & 5 October Deadline: Sept Guide',
+    excerpt:
+      'SARS opens the interim EMP501 window on 21 September. HMRC\'s Self Assessment registration deadline is 5 October — and the 2025/26 return decides MTD mandation. What accountants must action now.',
+    keywords: 'EMP501 interim reconciliation 2026, employer interim reconciliation dates, SARS EMP501 deadline 31 October, e@syFile Employer, PAYE administrative penalties, employment tax incentive forfeiture, IRP5 IT3a certificates, register for Self Assessment 5 October 2026, HMRC failure to notify, Making Tax Digital April 2027, MTD 30000 threshold, qualifying income, accountants South Africa, accountants UK, tax compliance deadlines',
+    author: 'Zubayr Abdullatief',
+    authorInitials: 'ZA',
+    authorRole: 'Founder & Chief Executive Officer',
+    authorPhoto: '/zubayr-abdullatief-zar-media-group.png',
+    image: '/accounting-firm-office-cape-town.png',
+    imageAlt: 'Accounting team planning payroll reconciliation and Self Assessment registration deadlines for September 2026',
+    readTime: '6 min',
+    date: 'Sep 2026',
+    dateISO: '2026-09-08',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
+    gradientFrom: '#0d0d0d',
+    gradientTo: '#1a1a1a',
+    content: [
+      {
+        type: 'intro',
+        text: 'Two filing windows open within a fortnight of each other. In South Africa, SARS confirmed on 31 August 2026 that the employer interim reconciliation (EMP501) runs from 21 September to 31 October 2026, covering payroll from 1 March to 31 August 2026. In the UK, anyone who needs to complete a 2025/26 Self Assessment return for the first time must tell HMRC by 5 October 2026 — and this year that return also decides who is mandated into Making Tax Digital for Income Tax from April 2027. Both need action from practising accountants in September.',
+      },
+      {
+        type: 'heading',
+        text: 'When does the 2026 interim EMP501 season run?',
+      },
+      {
+        type: 'paragraph',
+        text: 'The employer interim reconciliation submission window opens on 21 September 2026 and closes on 31 October 2026. It covers the first six months of the 2027 tax year — payroll from 1 March 2026 to 31 August 2026. Employers must submit an accurate EMP501 through e@syFile™ Employer or SARS eFiling, reconciling three things that have to balance: the EMP201 declarations submitted each month, the payments actually made, and the IRP5/IT3(a) tax certificates for every employee for the six-month period.',
+      },
+      {
+        type: 'heading',
+        text: 'What happens if the EMP501 is submitted late?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Late submission triggers administrative penalties equal to 1% of the employer\'s annual PAYE, increasing by one percentage point each month to a maximum of 10%. Non-compliant employers also forfeit Employment Tax Incentive credits — real money for any client claiming ETI on younger employees. And wilful non-compliance is a criminal offence carrying a fine or imprisonment of up to two years. For a payroll client of any size, the arithmetic is unforgiving: a firm that leaves a large EMP501 to the last week of October is gambling a percentage of annual PAYE on nothing going wrong with the reconciliation.',
+      },
+      {
+        type: 'heading',
+        text: 'What must be in place before you submit?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Two practical gates. First, SARS is releasing an updated e@syFile™ Employer build in mid-September 2026, and employers must download it before submitting — diarise the update alongside the opening date. Second, income tax numbers are mandatory for employee submissions: an EMP501 without the required tax reference numbers will not be accepted. If any client has employees without income tax numbers on record, September is the month to fix that, not the last week of October. The reconciliation work itself — EMP201s against payments against certificates — can all be done before the window even opens.',
+      },
+      {
+        type: 'external',
+        text: 'SARS\'s Pay As You Earn page carrying the interim reconciliation dates, penalties and e@syFile requirements.',
+        href: 'https://www.sars.gov.za/types-of-tax/pay-as-you-earn/',
+        label: 'Read SARS: Pay As You Earn — interim reconciliation',
+      },
+      {
+        type: 'external',
+        text: 'SARS\'s explanation of the twice-yearly employer reconciliation cycle and what the EMP501 must balance.',
+        href: 'https://www.sars.gov.za/types-of-tax/pay-as-you-earn/reconciliations/',
+        label: 'Read SARS: Employer reconciliations',
+      },
+      {
+        type: 'heading',
+        text: 'Who must register for Self Assessment by 5 October 2026?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Anyone who needs to complete a tax return for the 2025/26 tax year and has either never sent one before, or registered in the past but did not need to send a return for 2024/25, must tell HMRC by 5 October 2026. In practice this catches the clients who do not yet know they are clients: people who started working for themselves, first let out a property, or picked up new untaxed income at any point between 6 April 2025 and 5 April 2026. A September sweep of your client list — and their families and businesses — for new income sources is the cheapest piece of risk management your firm will do this quarter.',
+      },
+      {
+        type: 'heading',
+        text: 'What are the 2025/26 Self Assessment filing deadlines?',
+      },
+      {
+        type: 'paragraph',
+        text: 'HMRC must receive paper returns by 11:59pm on 31 October 2026. Online returns are due by 11:59pm on 31 January 2027, which is also the payment deadline. One date in between is easy to miss: clients who want tax collected through their tax code must submit their online return by 30 December 2026. All three dates carry late-filing or late-payment penalties on their own tracks.',
+      },
+      {
+        type: 'heading',
+        text: 'Why does the 2025/26 return decide MTD mandation from 2027?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Making Tax Digital for Income Tax arrives in phases: qualifying income over £50,000 brought sole traders and landlords in from April 2026, and qualifying income over £30,000 in the 2025/26 tax year brings the next wave in from 6 April 2027. Qualifying income is total income from self-employment and property before expenses — turnover, not profit. That is why this year\'s registration deadline counts double: a new landlord you register this month could be filing quarterly updates from next April. Telling them now — while software can be chosen calmly — is a better conversation than telling them in March 2027.',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s rules on who must send a tax return, including the 5 October notification deadline.',
+        href: 'https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return',
+        label: 'Read HMRC: Who must send a tax return',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s Self Assessment deadlines for the 2025/26 tax year — paper, online, payment and tax-code collection.',
+        href: 'https://www.gov.uk/self-assessment-tax-returns/deadlines',
+        label: 'Read HMRC: Self Assessment deadlines',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s guidance on qualifying income thresholds and when sole traders and landlords must start using Making Tax Digital.',
+        href: 'https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax',
+        label: 'Read HMRC: When you need to use Making Tax Digital',
+      },
+      {
+        type: 'heading',
+        text: 'What should your firm do before the end of September?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Three actions cover both markets. In South Africa, reconcile every payroll client\'s EMP201s, payments and certificates now, confirm every employee record carries an income tax number, and download the new e@syFile™ build the day it lands — then submit early in the window, not late. In the UK, sweep for anyone with new self-employment or property income in 2025/26 and get registrations to HMRC before 5 October, flagging everyone whose qualifying income will clear £30,000 for an MTD conversation. Across both, the pattern is the same as every deadline this newsletter covers: the firms that move in the first week of the window spend October advising, while everyone else spends it queueing.',
+      },
+      {
+        type: 'external',
+        text: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+        href: 'https://www.linkedin.com/company/zarmediagroup/',
+        label: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+      },
+      {
+        type: 'cta',
+        text: 'Your clients read your website before they read the legislation. If your firm\'s site still says what it said last year, clients assume the same is true of your advice. We build and run websites for accounting firms and financial service providers in South Africa and the UK — so the updates go out without adding to your workload.',
+        link: '/services/website-as-a-service',
+        linkLabel: 'See Website as a Service',
+      },
+    ],
+    faqs: [
+      {
+        question: 'When does the 2026 interim EMP501 submission period run?',
+        answer: 'From 21 September to 31 October 2026, covering payroll from 1 March to 31 August 2026. SARS confirmed the dates on 31 August 2026. Submissions go through e@syFile™ Employer or SARS eFiling.',
+      },
+      {
+        question: 'What is the penalty for a late interim EMP501?',
+        answer: 'An administrative penalty of 1% of annual PAYE, increasing by 1% each month to a maximum of 10%. Non-compliant employers also forfeit Employment Tax Incentive credits, and wilful non-compliance carries a fine or up to two years\' imprisonment.',
+      },
+      {
+        question: 'Does SARS accept EMP501 submissions without employee income tax numbers?',
+        answer: 'No. Income tax numbers are mandatory for employee submissions — an EMP501 without the required tax reference numbers will not be accepted. Fix missing numbers before the window opens on 21 September.',
+      },
+      {
+        question: 'Who must register for Self Assessment by 5 October 2026?',
+        answer: 'Anyone who needs to complete a 2025/26 tax return and has never sent one before, or registered previously but did not need to file for 2024/25 — typically new sole traders and first-time landlords from the year to 5 April 2026.',
+      },
+      {
+        question: 'Who is mandated into Making Tax Digital from April 2027?',
+        answer: 'Sole traders and landlords with qualifying income over £30,000 in the 2025/26 tax year must use Making Tax Digital for Income Tax from 6 April 2027. Qualifying income is total self-employment and property income before expenses.',
+      },
+    ],
+  },
 ]
 
 export function getResourceBySlug(slug) {
