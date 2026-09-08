@@ -1325,6 +1325,160 @@ export const resources = [
       },
     ],
   },
+  {
+    slug: 'filing-season-2026-deadline-paye-settlement-agreement-accountants',
+    type: 'Compliance',
+    category: 'compliance',
+    title: 'The 23 October Filing Season Deadline and the First 15% PSA Payment: What Accountants Must Do Before Mid-October',
+    seoTitle: 'Filing Season 23 Oct & PSA at 15%: October Guide',
+    excerpt:
+      'SARS closes Filing Season for non-provisional individuals on 23 October — late returns draw penalties of R250 to R16,000 a month. In the UK, the 2025/26 PSA payment is due 22 October, the first at the 15% Class 1B rate.',
+    keywords: 'SARS filing season 2026 deadline, 23 October 2026 tax deadline, non-provisional taxpayer deadline, SARS administrative penalties R16000, trust filing season 19 September 2026, provisional taxpayer 22 January 2027, auto-assessment 2026, PAYE Settlement Agreement deadline, PSA payment 22 October 2026, Class 1B National Insurance 15%, minor irregular impracticable benefits, HMRC PSA penalties interest, accountants South Africa, accountants UK, tax compliance deadlines',
+    author: 'Zubayr Abdullatief',
+    authorInitials: 'ZA',
+    authorRole: 'Founder & Chief Executive Officer',
+    authorPhoto: '/zubayr-abdullatief-zar-media-group.png',
+    image: '/accounting-firm-office-cape-town.png',
+    imageAlt: 'Accounting team working through Filing Season client returns and PAYE Settlement Agreement calculations before the October 2026 deadlines',
+    readTime: '6 min',
+    date: 'Sep 2026',
+    dateISO: '2026-09-15',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
+    gradientFrom: '#0d0d0d',
+    gradientTo: '#1a1a1a',
+    content: [
+      {
+        type: 'intro',
+        text: 'Two payment-and-filing cliffs sit in the same October week. In South Africa, Filing Season 2026 closes for non-provisional individual taxpayers on 23 October 2026, and the penalty for an outstanding return is not a once-off — it recurs monthly for up to 35 months. In the UK, employers with a PAYE Settlement Agreement must pay the 2025/26 tax and Class 1B National Insurance by 22 October 2026, and for the first time the bill is calculated at the 15% Class 1B rate rather than 13.8%. Both deadlines are close enough that the work has to start now, and far enough away that starting now makes them easy.',
+      },
+      {
+        type: 'heading',
+        text: 'When does Filing Season 2026 close?',
+      },
+      {
+        type: 'paragraph',
+        text: 'SARS set the Filing Season 2026 dates as follows: auto-assessment notices went out from 1 to 12 July 2026, non-provisional individuals who were not auto-assessed have from 13 July to 23 October 2026 to file, and provisional taxpayers have until 22 January 2027. Trusts file from 19 September 2026 to 22 January 2027 — which means the trust window opens the same week this update goes out. One change worth flagging to clients: this year, eligible provisional taxpayers received auto-assessments for the first time. A client who agrees with an auto-assessment need do nothing; a client who disagrees must amend and file by the deadline that applies to them.',
+      },
+      {
+        type: 'heading',
+        text: 'What does missing 23 October actually cost?',
+      },
+      {
+        type: 'paragraph',
+        text: 'An administrative non-compliance penalty — a fixed amount of between R250 and R16,000 a month, set by the taxpayer\'s taxable income. The figure that changes client behaviour is not the amount but the recurrence: the penalty is charged again for every month the return remains outstanding, up to a maximum of 35 months. SARS imposes it on natural persons with one or more income tax returns outstanding for years of assessment from 2007 onwards. A "forgotten" return is therefore not a R250 problem; left alone, it compounds into a five-figure one on even the lowest band.',
+      },
+      {
+        type: 'heading',
+        text: 'What should firms do with the five weeks that remain?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pull the list of non-provisional clients who have not yet filed and book them in this week — five weeks is comfortable for a prepared firm and impossible for a queue formed on 20 October. Check every auto-assessed client, including the provisional taxpayers newly swept in, and confirm whether the assessment stands or needs an amended return. And diarise 19 September for every trust on the books: the trust season runs to 22 January 2027, but trust returns lean on beneficial-ownership detail and supporting documents that take longer to assemble than clients expect.',
+      },
+      {
+        type: 'external',
+        text: 'SARS\'s Filing Season page carrying the 2026 dates for auto-assessments, individuals, provisional taxpayers and trusts.',
+        href: 'https://www.sars.gov.za/types-of-tax/personal-income-tax/filingseason/',
+        label: 'Read SARS: Filing Season dates',
+      },
+      {
+        type: 'external',
+        text: 'SARS\'s summary of what changed for Filing Season 2026, including auto-assessment for eligible provisional taxpayers.',
+        href: 'https://www.sars.gov.za/latest-news/changes-for-filing-season-2026/',
+        label: 'Read SARS: Changes for Filing Season 2026',
+      },
+      {
+        type: 'external',
+        text: 'SARS\'s admin penalty page: fixed monthly penalties of R250 to R16,000 based on taxable income, recurring up to 35 months.',
+        href: 'https://www.sars.gov.za/individuals/what-if-i-do-not-agree/admin-penalty/',
+        label: 'Read SARS: Administrative penalties',
+      },
+      {
+        type: 'heading',
+        text: 'What is a PAYE Settlement Agreement?',
+      },
+      {
+        type: 'paragraph',
+        text: 'A PAYE Settlement Agreement lets a UK employer make one annual payment covering all the tax and National Insurance due on minor, irregular or impracticable expenses or benefits given to employees — staff entertaining and small gifts being the classic contents. Items in a PSA do not go through payroll; instead of Class 1A National Insurance at year-end, the employer pays Class 1B as part of the settlement. Agreements for 2025/26 had to be in place by 5 July 2026, so October is not about applying — it is purely about calculating and paying.',
+      },
+      {
+        type: 'heading',
+        text: 'When must the 2025/26 PSA be paid — and what if it is late?',
+      },
+      {
+        type: 'paragraph',
+        text: 'The tax and Class 1B National Insurance must reach HMRC by 22 October 2026, or by 19 October 2026 if paying by post. Two warnings sit in HMRC\'s own guidance. First, late payment can bring penalties and interest. Second, the amount owed depends on the value of expenses and benefits reported to HMRC — and if an employer fails to report, HMRC can calculate the amount itself, which can lead to higher charges and misallocated payments. The calculation, in other words, is not optional paperwork attached to the payment; it is what protects the client from HMRC\'s version of the number.',
+      },
+      {
+        type: 'heading',
+        text: 'Why is this year\'s PSA bill bigger than last year\'s?',
+      },
+      {
+        type: 'paragraph',
+        text: 'Because the rate changed. The Class 1B National Insurance rate for 2025/26 is 15%, up from 13.8% in 2024/25 — following the employer National Insurance increase that took effect from April 2025. The PSA payment due this October is the first settled at the higher rate, which means any client budgeting from last year\'s bill is budgeting short even if their benefits spend is identical. The useful client conversation happens in September: finish the calculation, share the number, and let the payment on 22 October be a formality rather than a surprise.',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s guidance on paying a PSA: the 22 October and 19 October deadlines, and what happens if payment is late or unreported.',
+        href: 'https://www.gov.uk/pay-psa',
+        label: 'Read HMRC: Pay a PAYE Settlement Agreement',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s overview of PAYE Settlement Agreements: what they cover, Class 1B National Insurance, and the application and payment deadlines.',
+        href: 'https://www.gov.uk/paye-settlement-agreements',
+        label: 'Read HMRC: PAYE Settlement Agreements',
+      },
+      {
+        type: 'external',
+        text: 'HMRC\'s employer rates and thresholds for 2025 to 2026, confirming the Class 1B National Insurance rate of 15%.',
+        href: 'https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026',
+        label: 'Read HMRC: Employer rates 2025 to 2026',
+      },
+      {
+        type: 'heading',
+        text: 'What should your firm do before mid-October?',
+      },
+      {
+        type: 'paragraph',
+        text: 'In South Africa: identify every unfiled non-provisional return this week and schedule the filings well clear of 23 October, review each auto-assessment — especially for provisional clients receiving one for the first time — and open the trust files when the window starts on 19 September. In the UK: complete every outstanding PSA calculation, submit the values to HMRC rather than leaving HMRC to invent them, warn clients that the 15% Class 1B rate makes this year\'s payment larger, and diarise 22 October — or 19 October for anyone still paying by post. Different taxes, same rule as every week this newsletter is written: the firms that move first spend deadline week advising, and everyone else spends it apologising.',
+      },
+      {
+        type: 'external',
+        text: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+        href: 'https://www.linkedin.com/company/zarmediagroup/',
+        label: 'Follow Zar Media Group on LinkedIn for weekly compliance updates',
+      },
+      {
+        type: 'cta',
+        text: 'Your clients read your website before they read the legislation. If your firm\'s site still says what it said last year, clients assume the same is true of your advice. We build and run websites for accounting firms and financial service providers in South Africa and the UK — so the updates go out without adding to your workload.',
+        link: '/services/website-as-a-service',
+        linkLabel: 'See Website as a Service',
+      },
+    ],
+    faqs: [
+      {
+        question: 'When is the 2026 tax filing deadline for individuals in South Africa?',
+        answer: 'Non-provisional individual taxpayers must file by 23 October 2026. Provisional taxpayers and trusts have until 22 January 2027. Trust filing season opens on 19 September 2026.',
+      },
+      {
+        question: 'What is the SARS penalty for not filing a tax return?',
+        answer: 'A fixed administrative penalty of R250 to R16,000 a month, based on taxable income, charged for every month the return remains outstanding up to a maximum of 35 months. It applies to natural persons with one or more returns outstanding for years of assessment from 2007 onwards.',
+      },
+      {
+        question: 'What changed about auto-assessments in Filing Season 2026?',
+        answer: 'For the first time, eligible provisional taxpayers received auto-assessment notices (issued 1–12 July 2026). Clients who agree need take no action; clients who disagree must amend and file by their applicable deadline.',
+      },
+      {
+        question: 'When must a 2025/26 PAYE Settlement Agreement be paid?',
+        answer: 'The tax and Class 1B National Insurance must reach HMRC by 22 October 2026, or 19 October 2026 if paying by post. Late payment can attract penalties and interest.',
+      },
+      {
+        question: 'What is the Class 1B National Insurance rate for 2025/26?',
+        answer: 'The Class 1B rate for 2025 to 2026 is 15%, up from 13.8% in 2024 to 2025. The PSA payment due in October 2026 is the first calculated at the higher rate.',
+      },
+    ],
+  },
 ]
 
 export function getResourceBySlug(slug) {
